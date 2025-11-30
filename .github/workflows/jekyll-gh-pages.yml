@@ -1,0 +1,34 @@
+name: Build and Deploy Jekyll with Minimal Mistakes
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  jekyll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle init
+          echo "gem 'minimal-mistakes-jekyll'" >> Gemfile
+          bundle install
+      - name: Build site
+        run: bundle exec jekyll build --destination ./_site
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
