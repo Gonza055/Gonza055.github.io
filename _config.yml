@@ -1,1 +1,26 @@
+title: "Gonzalo Loayza"
+subtitle: "Machine Learning & Data Science Portfolio"
+description: "Senior Computer Science @ BYU | ML & Predictive Analytics"
+url: "https://gonza055.github.io"
+baseurl: ""
+
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "default"
+
+author:
+  name: "Gonzalo Loayza"
+  bio: "Machine Learning • Data Science • Predictive Analytics • BYU Computer Science"
+  location: "Provo, Utah"
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+include:
+  - _pages
+
+paginate: 5
+paginate_path: "/page:num/"
 
