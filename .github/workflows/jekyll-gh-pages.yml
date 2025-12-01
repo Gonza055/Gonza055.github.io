@@ -20,9 +20,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          bundle init
-          echo "gem 'minimal-mistakes-jekyll'" >> Gemfile
+          gem install bundler
           bundle install
+
+          
 
       - name: Build site
         run: bundle exec jekyll build -d _site
