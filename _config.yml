@@ -4,7 +4,7 @@ description: "Senior Computer Science @ BYU | ML & Predictive Analytics"
 url: "https://gonza055.github.io"
 baseurl: ""
 
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "default"
 
 author:
