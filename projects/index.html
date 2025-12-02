@@ -159,10 +159,18 @@
 
       <section class="page__content" itemprop="text">
         
-        <p class="projects-intro">
-  A selection of projects that show how I work with data, build ML pipelines, and connect models to
-  real-world decisions. This page is focused on end-to-end thinking rather than just model accuracy:
-  how data is collected, cleaned, modeled, and evaluated.
+        <div class="projects-hero">
+  <p class="projects-label">Gonzalo Loayza · Portfolio</p>
+  <h1 class="projects-title">Selected Projects</h1>
+  <p class="projects-tagline">
+    A closer look at how I work with data, build ML pipelines, and connect models to real-world decisions.
+  </p>
+</div>
+
+<p class="projects-intro">
+  This page highlights a few projects that emphasize end-to-end thinking: how data is collected, cleaned,
+  modeled, and evaluated. The focus is less on a single metric and more on the pipeline and the decisions
+  it enables.
 </p>
 
 <hr />
@@ -281,7 +289,7 @@
 <hr />
 
 <style>
-/* Reuse Stanford palette from Home for consistency */
+/* Reusar paleta Stanford del Home */
 :root {
   --proj-border: #e5e7eb;
   --proj-text-main: #111827;
@@ -289,16 +297,67 @@
   --proj-accent: #8c1515;
 }
 
-/* Intro paragraph */
+/* Ocultar el título automático de la página y usar nuestro hero */
+.page__title {
+  display: none;
+}
+
+/* HERO tipo Stanford, alineado a la izquierda */
+.projects-hero {
+  max-width: 760px;
+  margin: 0 auto 1.8rem auto;
+  padding: 1.6rem 0 1.4rem 0;
+  border-bottom: 1px solid var(--proj-border);
+}
+
+.projects-label {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--proj-accent);
+  margin: 0 0 0.25rem 0;
+}
+
+.projects-title {
+  margin: 0;
+  font-size: 2.0rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--proj-text-main);
+}
+
+.projects-tagline {
+  margin: 0.35rem 0 0 0;
+  font-size: 0.95rem;
+  color: var(--proj-text-muted);
+}
+
+/* Intro alineada con el hero */
 .projects-intro {
   max-width: 760px;
+  margin: 1.3rem auto 1.6rem auto;
   font-size: 0.96rem;
   line-height: 1.6;
   color: #374151;
-  margin-bottom: 1.6rem;
 }
 
-/* Project blocks */
+/* Contenido general: limitar ancho como en Home */
+.page__content {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* Encabezados de secciones dentro de Projects */
+.page__content h2 {
+  margin-top: 2.1rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.15rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+/* Bloques de proyecto – estilo limpio, académico */
 .project-block {
   padding: 1.4rem 0 1.6rem 0;
   border-bottom: 1px solid var(--proj-border);
@@ -340,10 +399,9 @@
   margin-bottom: 0.25rem;
 }
 
-/* Figures / images (placeholders for now) */
+/* Figuras / imágenes (por ahora placeholders) */
 .project-figure {
   margin: 0.85rem 0 0 0;
-  padding-left: 0.2rem;
 }
 
 .project-figure img {
@@ -358,7 +416,7 @@
   color: var(--proj-text-muted);
 }
 
-/* Smaller projects / coursework */
+/* Sección adicional */
 .project-small-list {
   font-size: 0.94rem;
   line-height: 1.6;
@@ -368,12 +426,21 @@
   margin-bottom: 0.4rem;
 }
 
-/* Note text */
 .projects-note {
   margin-top: 0.8rem;
   font-size: 0.85rem;
   color: var(--proj-text-muted);
   font-style: italic;
+}
+
+/* Móvil */
+@media (max-width: 600px) {
+  .projects-title {
+    font-size: 1.8rem;
+  }
+  .projects-intro {
+    font-size: 0.94rem;
+  }
 }
 </style>
 
