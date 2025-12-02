@@ -70,5 +70,28 @@ metrics) to support downstream failure-prediction models.
 
 ### TrainOps Simulation Data Optimization
 
-Data-engineering and automation
+Data-engineering and automation project using Python and C++ to process
+200k+ rail-simulation records. Developed parsers and scripts that reduced
+output-processing time by ~70% compared to manual workflows, and integrated
+rider-survey data with onboard sensor logs to analyze service scenarios.
 
+→ <a href="/projects/#trainops">Read full project</a>
+
+---
+
+### Predictive Maintenance Modeling Prototype (Academic)
+
+Academic ML prototype that mirrors industrial predictive-maintenance settings.
+Includes EDA, noise reduction, feature engineering, exploratory labeling of
+time-series, and benchmarking of baseline models such as Random Forest, SVM,
+and gradient boosting for early detection of abnormal equipment behavior.
+
+→ <a href="/projects/#pm-modeling">Read full project</a>
+
+---
+
+## Contact
+
+- Email: <a href="mailto:gloayza5@byu.edu">gloayza5@byu.edu</a>  
+- LinkedIn: <a href="https://www.linkedin.com/in/CS_gloayza" target="_blank">CS_gloayza</a>  
+- GitHub: <a href="https://github.com/Gonza055" target="_blank">Gonza055</a>
