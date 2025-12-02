@@ -19,8 +19,9 @@ plugins:
   - jekyll-sitemap
 
 include:
-  - _pages
+  - projects.md
 
-paginate: 5
-paginate_path: "/page:num/"
-
+navigation:
+  main:
+    - title: "Projects"
+      url: /projects/
