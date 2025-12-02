@@ -172,17 +172,16 @@ If you’d like to talk about internships, ML systems, or industrial data projec
 <style>
 /* COLOR SYSTEM */
 :root {
-  --home-bg-soft: #f5f7fb;
-  --home-bg-soft-strong: #e7f0ff;
+  --home-bg-band: #f8fafc;
   --home-border: #e2e6f0;
   --home-border-strong: #c5d0ea;
-  --home-text-main: #1f2933;
-  --home-text-muted: #6c7a89;
-  --home-accent: #3273dc;
-  --home-accent-soft: rgba(50, 115, 220, 0.08);
-  --home-shadow-soft: 0 16px 40px rgba(15, 23, 42, 0.06);
+  --home-text-main: #111827;
+  --home-text-muted: #6b7280;
+  --home-accent: #2563eb;
+  --home-accent-soft: rgba(37, 99, 235, 0.08);
+  --home-accent-green: #10b981;
   --home-shadow-card: 0 8px 20px rgba(15, 23, 42, 0.05);
-  --home-radius-lg: 1rem;
+  --home-radius-lg: 0.9rem;
   --home-radius-md: 0.85rem;
 }
 
@@ -197,18 +196,13 @@ If you’d like to talk about internships, ML systems, or industrial data projec
   margin-bottom: 0.75rem;
 }
 
-/* HERO */
+/* HERO – nuevo diseño en banda completa, sin "tarjeta" */
 .home-hero {
   text-align: center;
-  padding: 3.25rem 1.5rem 2.75rem;
-  border-radius: var(--home-radius-lg);
-  background:
-    radial-gradient(circle at top left, rgba(50, 115, 220, 0.18), transparent 55%),
-    linear-gradient(135deg, var(--home-bg-soft) 0%, var(--home-bg-soft-strong) 100%);
-  margin: 0 auto 2.75rem auto;
-  max-width: 960px;
-  box-shadow: var(--home-shadow-soft);
-  color: var(--home-text-main);
+  padding: 2.8rem 1.5rem 2.4rem;
+  margin: 0 -1.5rem 2.5rem -1.5rem; /* se extiende un poco para sentirlo como banda */
+  background: linear-gradient(180deg, #ffffff 0%, var(--home-bg-band) 100%);
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .home-kicker {
@@ -217,27 +211,36 @@ If you’d like to talk about internships, ML systems, or industrial data projec
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--home-text-muted);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.55rem;
 }
 
 .home-name {
-  font-size: 2.8rem;
-  margin: 0.1rem 0;
+  font-size: 2.6rem;
+  margin: 0.1rem 0 0.35rem 0;
   font-weight: 700;
+  color: var(--home-text-main);
+}
+
+/* tagline y summary comparten el mismo ancho visual */
+.home-tagline,
+.home-summary {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .home-tagline {
-  font-size: 1.1rem;
-  color: #505967;
-  margin-bottom: 0.9rem;
+  font-size: 1.05rem;
+  color: #4b5563;
+  margin-bottom: 0.85rem;
+  font-weight: 500;
 }
 
 .home-summary {
-  max-width: 720px;
-  margin: 0 auto 1.7rem auto;
-  color: #414856;
-  font-size: 1rem;
+  color: #4b5563;
+  font-size: 0.98rem;
   line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
 .home-actions .btn {
@@ -262,12 +265,12 @@ If you’d like to talk about internships, ML systems, or industrial data projec
 }
 
 .btn--primary:hover {
-  box-shadow: 0 8px 18px rgba(50, 115, 220, 0.35);
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.35);
   transform: translateY(-1px);
 }
 
 .btn:hover {
-  background: #f7f8fc;
+  background: #f3f4ff;
 }
 
 /* GRID & CARDS */
@@ -318,82 +321,3 @@ If you’d like to talk about internships, ML systems, or industrial data projec
 }
 
 .home-card p {
-  margin-bottom: 0.55rem;
-  font-size: 0.9rem;
-  line-height: 1.55;
-}
-
-.home-card ul {
-  margin: 0.4rem 0 0.6rem 1.1rem;
-  font-size: 0.9rem;
-}
-
-.home-card-meta {
-  font-size: 0.84rem;
-  color: var(--home-text-muted);
-}
-
-/* Card variants */
-.home-card--experience {
-  border-top: 3px solid var(--home-accent);
-  background: linear-gradient(135deg, #ffffff 0%, #f6f8ff 100%);
-}
-
-.home-card--experience::before {
-  background: radial-gradient(circle at top left, var(--home-accent-soft), transparent 60%);
-}
-
-.home-card--focus {
-  border-top: 3px solid var(--home-border-strong);
-  background: linear-gradient(135deg, #ffffff 0%, #f9fbff 100%);
-}
-
-.home-card--focus::before {
-  background: radial-gradient(circle at top left, rgba(148, 163, 184, 0.15), transparent 60%);
-}
-
-.home-card--project {
-  border-top: 3px solid #10b981;
-  background: linear-gradient(135deg, #ffffff 0%, #f4fdf9 100%);
-}
-
-.home-card--project::before {
-  background: radial-gradient(circle at top left, rgba(16, 185, 129, 0.12), transparent 60%);
-}
-
-/* Hover effects */
-.home-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.10);
-  border-color: var(--home-border-strong);
-}
-
-.home-card:hover::before {
-  opacity: 1;
-}
-
-/* Links inside cards */
-.home-card a {
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.18s ease, color 0.18s ease;
-}
-
-.home-card a:hover {
-  border-color: currentColor;
-}
-
-/* Mobile tweaks */
-@media (max-width: 600px) {
-  .home-name {
-    font-size: 2.2rem;
-  }
-  .home-summary {
-    font-size: 0.95rem;
-  }
-  .home-hero {
-    padding: 2.6rem 1.25rem 2.3rem;
-    border-radius: 0.9rem;
-  }
-}
-</style>
