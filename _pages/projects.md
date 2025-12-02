@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Projects"
+title: Projects
 permalink: /projects/
 ---
 
@@ -12,7 +12,7 @@ development.
 
 ---
 
-## Predictive Maintenance – Sensor Data Conditioning & Feature Engineering {#predictive-maintenance}
+## Predictive Maintenance – Sensor Data Conditioning & Feature Engineering
 
 **Context.** Industrial maintenance setting with 50k+ high-noise sensor
 time-series from crushing and grinding equipment.
@@ -21,8 +21,8 @@ time-series from crushing and grinding equipment.
 
 - A reproducible preprocessing pipeline (smoothing, outlier capping, signal
   reconstruction) for noisy sensor data.
-- A reliability-focused feature set including load ratios, temperature deltas,
-  and transient-spike metrics designed for condition-based maintenance.
+- Reliability-focused feature sets including load ratios, temperature deltas,
+  and transient-spike metrics.
 - Structured datasets ready for downstream failure-prediction models.
 
 **Tech stack**
@@ -32,24 +32,21 @@ time-series from crushing and grinding equipment.
 
 **Impact**
 
-- Enabled future ML experimentation for early-warning indicators and
-  reliability analysis on critical assets.
+- Enabled future ML experimentation for early-warning indicators and reliability analysis.
 
 ---
 
-## TrainOps Simulation Data Optimization {#trainops}
+## TrainOps Simulation Data Optimization
 
-**Context.** Data-engineering project using simulation outputs from TrainOps
-for rail operations planning (~200k records across multiple scenarios).
+**Context.** Data-engineering project using simulation outputs (~200k records)
+for rail operations planning.
 
 **What I built**
 
-- Python and C++ parsers to transform raw simulation outputs into structured,
+- Python & C++ parsers to convert raw simulation logs into structured,
   analysis-ready datasets.
-- Automation scripts that eliminated manual parsing and reduced processing time
-  by about 70%.
-- Workflows to integrate rider-survey data with onboard sensor logs to validate
-  demand and service patterns.
+- Automation workflow reducing processing time by ~70%.
+- Pipelines integrating rider-survey data with onboard sensor logs for validation.
 
 **Tech stack**
 
@@ -57,23 +54,20 @@ for rail operations planning (~200k records across multiple scenarios).
 
 **Impact**
 
-- Improved clarity and speed of scenario comparison for planning teams and
-  supported data-driven decision-making.
+- Improved scenario comparison and supported data-driven transit-planning decisions.
 
 ---
 
-## Predictive Maintenance Modeling Prototype (Academic) {#pm-modeling}
+## Predictive Maintenance Modeling Prototype (Academic)
 
 **Context.** Academic project inspired by industrial predictive-maintenance
-settings.
+scenarios.
 
 **What I built**
 
-- An ML pipeline including data cleaning, noise reduction, feature engineering,
-  and exploratory labeling of time-series patterns.
-- Baseline models (Random Forest, SVM, Gradient Boosting) to test early
-  detection of abnormal equipment behavior.
-- Evaluation and comparison of models using standard metrics and visualization.
+- ML pipeline with cleaning, denoising, feature engineering, and exploratory labeling.
+- Baseline models (Random Forest, SVM, Gradient Boosting).
+- Evaluation with standard metrics + visualization.
 
 **Tech stack**
 
@@ -81,21 +75,4 @@ settings.
 
 **Outcome**
 
-- Served as an experimental foundation for later industrial work on predictive
-  maintenance.
-
----
-
-## Honors Thesis – Unsupervised Mode Discovery in Mineral Processing (In Progress)
-
-**Goal.** Design an unsupervised-learning framework to identify operating modes
-in mineral-processing circuits using plant datasets.
-
-**Approach**
-
-- Clustering, dimensionality reduction, and statistical validation of
-  discovered modes.
-- Focus on supporting performance monitoring and early detection of suboptimal
-  operating states.
-
-*(More details coming as the research progresses.)*
+- Provided foundational experimentation for later industrial predictive maintenance work.
