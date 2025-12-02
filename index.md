@@ -1,97 +1,104 @@
 ---
-layout: default
-title: "Gonzalo Loayza – Machine Learning & Data Science"
+layout: single
+title: "Gonzalo Loayza"
+classes: wide
 ---
 
-<div class="hero">
-  <h1>Gonzalo Loayza</h1>
-  <p class="subtitle">
-    Machine Learning & Data Science · B.S. Computer Science @ BYU
-  </p>
+# Gonzalo Loayza
 
-  <p class="tagline">
-    I work on predictive maintenance, large-scale time-series analysis, and
-    data-centric ML systems for real-world engineering problems.
-  </p>
+**Machine Learning & Data Science · B.S. Computer Science @ BYU**
 
-  <div class="hero-buttons">
-    <a class="btn primary" href="/projects/">View Projects</a>
-    <a class="btn" href="/assets/Gonzalo_Loayza_Resume.pdf">Download Resume</a>
-    <a class="btn" href="https://github.com/Gonza055" target="_blank">GitHub</a>
-  </div>
-</div>
+I work on predictive maintenance, large-scale time-series analysis, and data-centric ML systems for real-world engineering problems.
+
+[View Projects](/projects/){: .btn .btn--primary }
+[Download Resume](/assets/CV_Gonzalo_Loayza.pdf){: .btn }
+[GitHub](https://github.com/Gonza055){: .btn }
+[LinkedIn](https://www.linkedin.com/){: .btn }
 
 ---
 
-## About
+## What I do
 
-I am a senior Computer Science student at Brigham Young University (BYU) with a
-Machine Learning emphasis. My work focuses on applying ML and statistical
-methods to noisy, real-world datasets from mining, transportation, and
-industrial operations.
+- **Predictive maintenance on industrial equipment** using high-noise sensor time-series (vibration, pressure, load, temperature).
+- **End-to-end data workflows**: from raw logs and messy CSVs to clean features, validation datasets, and useful dashboards.
+- **Practical machine learning** for engineers: feature engineering, baselines, error analysis, and clear communication of results.
 
-I enjoy building clean, reproducible data pipelines, designing features for
-time-series and sensor data, and turning complex datasets into actionable,
-engineering-grade insights.
+Right now I’m especially interested in **reliability analytics**, **ML for operations**, and **robust time-series modeling**.
 
 ---
 
-## Technical Focus
+## Highlighted projects
 
-- **Machine Learning & Data**
-  - anomaly detection, time-series analysis, feature engineering  
-  - exploratory data analysis (EDA), model evaluation, ML pipelines  
-  - scikit-learn, Pandas, NumPy
+### Predictive Maintenance – Sensor Data Conditioning & Feature Engineering (2025)
 
-- **Programming & Systems**
-  - Python, C++, SQL, basic JavaScript  
-  - Git, Linux, Jupyter Notebook
+Industrial maintenance setting with 50k+ noisy sensor time-series from crushing and grinding equipment.  
+Built preprocessing workflows (smoothing, outlier capping, signal reconstruction) and engineered reliability-focused feature sets (load ratios, temperature deltas, transient spikes) to support downstream ML failure-prediction models.
 
-- **Domains**
-  - predictive maintenance and reliability  
-  - simulation data analysis (rail operations)  
-  - industrial and mineral-processing systems
+[Read more](/projects/){: .btn .btn--small }
 
 ---
 
-## Highlighted Projects
+### TrainOps Simulation Data Optimization (2024)
 
-### Predictive Maintenance – Sensor Data Conditioning & Feature Engineering
+Data-engineering project using Python and C++ to process 200k+ rail-simulation records.  
+Developed parsers and automation scripts that cut output-processing time by ~70% versus manual workflows and integrated survey data with onboard sensor logs to validate operational scenarios.
 
-Industrial time-series project based on 50k+ high-noise sensor signals from
-crushing and grinding equipment. Built a reproducible preprocessing workflow
-with smoothing, outlier handling, and signal reconstruction, then engineered
-reliability-focused features (load ratios, temperature deltas, transient-spike
-metrics) to support downstream failure-prediction models.
-
-→ <a href="/projects/#predictive-maintenance">Read full project</a>
+[Read more](/projects/){: .btn .btn--small }
 
 ---
 
-### TrainOps Simulation Data Optimization
+### Predictive Maintenance Modeling Prototype (Academic, 2024–25)
 
-Data-engineering and automation project using Python and C++ to process
-200k+ rail-simulation records. Developed parsers and scripts that reduced
-output-processing time by ~70% compared to manual workflows, and integrated
-rider-survey data with onboard sensor logs to analyze service scenarios.
+Academic ML prototype mirroring industrial predictive-maintenance settings.  
+Includes EDA, noise reduction, feature engineering, exploratory labeling of time series, and benchmarking of baseline models (Random Forest, SVM, gradient boosting) for early detection of abnormal equipment behavior.
 
-→ <a href="/projects/#trainops">Read full project</a>
+[Read more](/projects/){: .btn .btn--small }
 
 ---
 
-### Predictive Maintenance Modeling Prototype (Academic)
+## Skills snapshot
 
-Academic ML prototype that mirrors industrial predictive-maintenance settings.
-Includes EDA, noise reduction, feature engineering, exploratory labeling of
-time-series, and benchmarking of baseline models such as Random Forest, SVM,
-and gradient boosting for early detection of abnormal equipment behavior.
+**Programming**
 
-→ <a href="/projects/#pm-modeling">Read full project</a>
+- Python (pandas, NumPy, scikit-learn, Jupyter)
+- C++ for data processing and performance-critical tools
+- SQL for querying and aggregating structured data
+
+**Machine Learning & Data**
+
+- Time-series analysis and feature engineering  
+- Model training, validation, and basic hyperparameter tuning  
+- Evaluation metrics, error analysis, and simple baselines as anchors
+
+**Tools & Ecosystem**
+
+- Git & GitHub for version control and collaboration  
+- Jupyter / VS Code for exploratory work  
+- Linux environment familiarity for scripting and automation
+
+---
+
+## Education
+
+**Brigham Young University (BYU)** – B.S. Computer Science, Machine Learning emphasis  
+*Senior standing* – coursework in algorithms, data structures, statistics, and applied machine learning.
+
+---
+
+## How I work
+
+I like projects where:
+
+- The **data is messy** and requires real cleaning and structuring.  
+- There is a clear **operational or business objective** (throughput, reliability, safety, cost).  
+- Results can be explained **clearly to non-ML stakeholders**: engineers, managers, or operators.
+
+If that sounds like your team, feel free to reach out.
 
 ---
 
 ## Contact
 
-- Email: <a href="mailto:gloayza5@byu.edu">gloayza5@byu.edu</a>  
-- LinkedIn: <a href="https://www.linkedin.com/in/CS_gloayza" target="_blank">CS_gloayza</a>  
-- GitHub: <a href="https://github.com/Gonza055" target="_blank">Gonza055</a>
+- **Email:** your.email@byu.edu  
+- **GitHub:** [github.com/Gonza055](https://github.com/Gonza055)  
+- **LinkedIn:** https://www.linkedin.com/
