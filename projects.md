@@ -29,6 +29,32 @@ permalink: /projects/
 <div class="project-block">
 
   <div class="project-block__header">
+    <h3 class="project-block__title">Predictive Maintenance – Sensor Data Conditioning</h3>
+    <p class="project-block__meta">2025 · Industrial Time-Series · Reliability Analytics</p>
+  </div>
+
+  <div class="project-block__body">
+    <p>
+      Preprocessing and feature-engineering pipeline for 50k+ high-noise industrial sensor time-series
+      from crushing and grinding equipment. The goal was to turn raw vibration, load, and pressure signals
+      into stable inputs for ML failure-mode models and early-warning indicators.
+    </p>
+
+    <ul class="project-block__list">
+      <li><strong>Problem.</strong> Raw sensor feeds were noisy, inconsistent, and difficult to use directly for reliability analysis or ML models.</li>
+      <li><strong>Data.</strong> 50k+ tagged time-series segments (multi-channel) plus equipment metadata and maintenance events.</li>
+      <li><strong>Approach.</strong> Implemented smoothing, outlier handling, resampling, and basic signal reconstruction; engineered window-based reliability features (trend, volatility, envelope statistics).</li>
+      <li><strong>Outcome.</strong> Delivered a reproducible preprocessing flow and feature set that fed into failure-mode prototyping and reliability dashboards.</li>
+    </ul>
+  </div>
+
+</div>
+
+
+
+<div class="project-block">
+
+  <div class="project-block__header">
     <h3 class="project-block__title">Liner Wear &amp; EDA – Ball Mill at Buenaventura</h3>
     <p class="project-block__meta">2025 · Maintenance Data Analyst Intern · Peru</p>
   </div>
@@ -82,6 +108,55 @@ permalink: /projects/
 
 </div>
 
+
+
+<div class="project-block">
+
+  <div class="project-block__header">
+    <h3 class="project-block__title">TrainOps Simulation Data Optimization</h3>
+    <p class="project-block__meta">2024 · C++ &amp; Python Tooling · Transportation Analytics</p>
+  </div>
+
+  <div class="project-block__body">
+    <p>
+      Data-engineering utilities for 200k+ rail-simulation records combining operational logs and
+      passenger survey information. The main objective was to eliminate manual processing and make
+      simulation outputs usable for planning and “what-if” analysis.
+    </p>
+
+    <ul class="project-block__list">
+      <li><strong>Problem.</strong> Simulation outputs were large, fragmented text files that required manual cleaning before any analysis.</li>
+      <li><strong>Data.</strong> 200k+ simulation records across multiple scenarios, plus structured survey responses from riders.</li>
+      <li><strong>Approach.</strong> Built C++ and Python parsers to normalize schemas, validate fields, and produce analysis-ready tables; joined survey data to simulated trips.</li>
+      <li><strong>Outcome.</strong> Cut processing time by ~70% and enabled analysts to run scenario comparisons directly from standardized datasets.</li>
+    </ul>
+  </div>
+
+  <figure class="project-figure project-figure--grid">
+    <div class="project-figure-grid">
+      <div class="project-figure-grid-item">
+        <img src="/assets/images/projects/trainops-caps-003-2.webp"
+             alt="Freight train on yard used as context image for TrainOps simulation work" />
+      </div>
+      <div class="project-figure-grid-item">
+        <img src="/assets/images/projects/trainops-caps-004.webp"
+             alt="Acceleration, resistance and tractive effort curves from TrainOps simulation" />
+      </div>
+      <div class="project-figure-grid-item">
+        <img src="/assets/images/projects/trainops-caps-009-2.webp"
+             alt="Track elevation and speed profile along simulated route in TrainOps" />
+      </div>
+    </div>
+    <figcaption>
+      Visual material from the TrainOps work: locomotive context (left) and simulation outputs
+      such as speed, acceleration, resistance and elevation profiles (center and right) used for scenario analysis.
+    </figcaption>
+  </figure>
+
+</div>
+
+
+
 <div class="project-block">
 
   <div class="project-block__header">
@@ -111,8 +186,28 @@ permalink: /projects/
 
 ---
 
+## Additional Work & Coursework
+
+<ul class="project-small-list">
+  <li>
+    <strong>Course Projects (BYU CS &amp; ML).</strong>
+    Implemented classical ML algorithms, data-structure libraries, and web applications as part of
+    the Computer Science curriculum. Representative work includes search and optimization algorithms,
+    clustering and classification, and data-centric web services.
+  </li>
+  <li>
+    <strong>Analytics &amp; Visualization Exercises.</strong>
+    Smaller notebooks focused on EDA, hypothesis testing, and communicating uncertainty using real-world datasets.
+  </li>
+</ul>
+
+<p class="projects-note">
+  Code repositories and notebooks for these projects will be linked here as they are cleaned up and published.
+</p>
+
+</div>
+
 <style>
-/* Stanford-style palette */
 :root {
   --proj-border: #e5e7eb;
   --proj-text-main: #111827;
@@ -120,7 +215,7 @@ permalink: /projects/
   --proj-accent: #8c1515;  /* Stanford cardinal */
 }
 
-/* Ocultar el título automático de Minimal Mistakes */
+/* Ocultar título automático de Minimal Mistakes */
 .page__title {
   display: none;
 }
@@ -170,7 +265,7 @@ permalink: /projects/
   color: #374151;
 }
 
-/* Alinear el contenido principal con el hero */
+/* Alinear contenido principal */
 .page__content {
   max-width: 760px;
   margin: 0 auto;
@@ -238,7 +333,7 @@ permalink: /projects/
   text-align: center;
 }
 
-/* Grid reutilizable para Buenaventura */
+/* Grid para Buenaventura y TrainOps */
 .project-figure--grid .project-figure-grid {
   display: grid;
   gap: 0.6rem;
@@ -250,6 +345,23 @@ permalink: /projects/
   display: block;
   border-radius: 0.4rem;
   border: 1px solid var(--proj-border);
+}
+
+/* Additional work */
+.project-small-list {
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.project-small-list li {
+  margin-bottom: 0.4rem;
+}
+
+.projects-note {
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  color: var(--proj-text-muted);
+  font-style: italic;
 }
 
 /* Mobile tweaks */
