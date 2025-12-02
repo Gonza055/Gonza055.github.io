@@ -26,7 +26,7 @@ permalink: /resume/
     </div>
 
     <p class="resume-download">
-      <a href="{{ '/assets/resume/Gonzalo_Loayza_Resume_2025.pdf' | relative_url }}" target="_blank" rel="noopener">
+      <a href="{{ '/assets/resume/Gonzalo_Loayza_Resume.pdf' | relative_url }}" target="_blank" rel="noopener">
         Download full resume (PDF)
       </a>
     </p>
