@@ -30,7 +30,7 @@ permalink: /resume/
         Download full resume (PDF)
       </a>
     </p>
-  </header>
+      </header>
 
   <!-- SUMMARY -->
   <section class="resume-section">
