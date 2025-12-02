@@ -26,11 +26,11 @@ permalink: /resume/
     </div>
 
     <p class="resume-download">
-      <a href="{{ '/assets/resume/CV_Gonzalo_Loayza_Nov2025_Full.pdf' | relative_url }}" target="_blank" rel="noopener">
+      <a href="{{ '/assets/resume/Gonzalo_Loayza_Resume_2025.pdf' | relative_url }}" target="_blank" rel="noopener">
         Download full resume (PDF)
       </a>
     </p>
-      </header>
+  </header>
 
   <!-- SUMMARY -->
   <section class="resume-section">
@@ -247,12 +247,12 @@ permalink: /resume/
   --res-accent: #8c1515;  /* Stanford cardinal */
 }
 
-/* Ocultar el título automático de Minimal Mistakes */
+/* Hide Minimal Mistakes automatic title */
 .page__title {
   display: none;
 }
 
-/* Contenedor principal */
+/* Main container */
 .resume-page {
   max-width: 760px;
   margin: 0 auto;
@@ -261,7 +261,7 @@ permalink: /resume/
   color: var(--res-text-main);
 }
 
-/* Alinear contenido principal */
+/* Ensure content width matches */
 .page__content {
   max-width: 760px;
   margin: 0 auto;
@@ -378,7 +378,7 @@ permalink: /resume/
   line-height: 1.5;
 }
 
-/* Skills rows (two-column feel) */
+/* Skills rows */
 .resume-skill-row {
   display: grid;
   grid-template-columns: 140px minmax(0, 1fr);
