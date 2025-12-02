@@ -4,7 +4,7 @@ title: "Home"
 permalink: /
 ---
 
-<div class="home-hero home-hero--stanford">
+<div class="home-hero home-hero--byu">
   <p class="home-label">Gonzalo Loayza</p>
   <h1 class="home-name">Machine Learning Engineer</h1>
   <p class="home-tagline">
@@ -37,29 +37,25 @@ difference between a one-off notebook and a reliable system.
 
 ## Experience
 
-<div class="two-column two-column--stack">
+<div class="exp-item">
+  <h3 class="exp-title">Maintenance Data Analyst Intern</h3>
+  <p class="exp-meta">Compañía de Minas Buenaventura &middot; Peru &middot; 2025</p>
+  <p>
+    Processed and analyzed 50k+ high-noise industrial time-series from crushing and grinding systems.
+    Built reproducible pipelines for smoothing, outlier handling, and signal reconstruction, and engineered
+    reliability-focused features used for early-warning indicators and ML failure-mode prototyping.
+    Structured 100+ assets under ISO&nbsp;14224/17359 to improve data consistency and traceability.
+  </p>
+</div>
 
-  <div class="exp-item">
-    <h3 class="exp-title">Maintenance Data Analyst Intern</h3>
-    <p class="exp-meta">Compañía de Minas Buenaventura &middot; Peru &middot; 2025</p>
-    <p>
-      Processed and analyzed 50k+ high-noise industrial time-series from crushing and grinding systems.
-      Built reproducible pipelines for smoothing, outlier handling, and signal reconstruction, and engineered
-      reliability-focused features used for early-warning indicators and ML failure-mode prototyping.
-      Structured 100+ assets under ISO&nbsp;14224/17359 to improve data consistency and traceability.
-    </p>
-  </div>
-
-  <div class="exp-item">
-    <h3 class="exp-title">Data Analytics Intern</h3>
-    <p class="exp-meta">Hatch Ltd (Urban Solutions) &middot; USA &middot; 2024</p>
-    <p>
-      Developed C++ and Python automation utilities to parse and structure 200k+ rail-simulation records,
-      reducing processing time by ~70%. Integrated rider-survey responses with onboard sensor logs to validate
-      operational scenarios and analyze network performance for planning teams.
-    </p>
-  </div>
-
+<div class="exp-item">
+  <h3 class="exp-title">Data Analytics Intern</h3>
+  <p class="exp-meta">Hatch Ltd (Urban Solutions) &middot; USA &middot; 2024</p>
+  <p>
+    Developed C++ and Python automation utilities to parse and structure 200k+ rail-simulation records,
+    reducing processing time by ~70%. Integrated rider-survey responses with onboard sensor logs to validate
+    operational scenarios and analyze network performance for planning teams.
+  </p>
 </div>
 
 <div class="exp-item exp-item--single">
@@ -159,12 +155,13 @@ engineering projects, you can reach me at:
 ---
 
 <style>
-/* STANFORD-STYLE PALETTE: sober, academic */
+/* BYU-STYLE PALETTE: navy + neutros */
 :root {
   --home-border: #e5e7eb;
   --home-text-main: #111827;
   --home-text-muted: #6b7280;
-  --home-accent: #8c1515; /* Stanford cardinal */
+  --home-accent: #002e5d;   /* BYU blue */
+  --home-accent-soft: #1d4f91;
 }
 
 /* Hide automatic "Home" title */
@@ -172,8 +169,8 @@ engineering projects, you can reach me at:
   display: none;
 }
 
-/* HERO – academic, left-aligned */
-.home-hero--stanford {
+/* HERO – academic, left-aligned, BYU colors */
+.home-hero--byu {
   max-width: 760px;
   margin: 0 auto 2.5rem auto;
   padding: 1.8rem 0 2rem 0;
@@ -219,7 +216,7 @@ engineering projects, you can reach me at:
   gap: 0.75rem;
 }
 
-/* Buttons – simple, no gradients */
+/* Buttons – simple, BYU blue */
 .btn {
   padding: 0.55rem 1.3rem;
   border-radius: 999px;
@@ -248,8 +245,8 @@ engineering projects, you can reach me at:
 }
 
 .btn--solid:hover {
-  background: #701010;
-  border-color: #701010;
+  background: var(--home-accent-soft);
+  border-color: var(--home-accent-soft);
 }
 
 /* Section headings */
@@ -273,30 +270,21 @@ engineering projects, you can reach me at:
   font-size: 0.95rem;
 }
 
-/* Columns – clean, no boxes */
-.two-column {
-  display: grid;
-  gap: 1.6rem;
-}
-
-.two-column--stack {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-
+/* Columns – clean for Technical Focus only */
 .three-column {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
-/* EXPERIENCE – simple left border */
+/* EXPERIENCE – single-column list with left border */
 .exp-item {
-  border-left: 3px solid rgba(140, 21, 21, 0.45);
+  border-left: 3px solid rgba(0, 46, 93, 0.5); /* BYU blue, soft */
   padding-left: 0.9rem;
+  margin-bottom: 1.4rem;
 }
 
 .exp-item--single {
-  margin-top: 1.5rem;
   border-left-color: rgba(148, 163, 184, 0.95);
 }
 
@@ -310,10 +298,6 @@ engineering projects, you can reach me at:
   margin: 0 0 0.4rem 0;
   font-size: 0.85rem;
   color: var(--home-text-muted);
-}
-
-.exp-item p {
-  margin: 0;
 }
 
 /* TECHNICAL FOCUS */
@@ -355,4 +339,26 @@ engineering projects, you can reach me at:
   margin: 0 0 0.3rem 0;
 }
 
-.project-link
+.project-link a {
+  font-size: 0.9rem;
+  color: var(--home-accent);
+  text-decoration: none;
+}
+
+.project-link a:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .home-hero--byu {
+    padding: 1.6rem 0 1.9rem 0;
+  }
+  .home-name {
+    font-size: 2.0rem;
+  }
+  .home-summary {
+    font-size: 0.95rem;
+  }
+}
+</style>
