@@ -41,7 +41,7 @@ difference between a one-off notebook and a reliable system.
 
   <div class="exp-item">
     <h3 class="exp-title">Maintenance Data Analyst Intern</h3>
-    <p class="exp-meta">Compañía de Minas Buenaventura &middot; 2025</p>
+    <p class="exp-meta">Compañía de Minas Buenaventura &middot; Peru &middot; 2025</p>
     <p>
       Processed and analyzed 50k+ high-noise industrial time-series from crushing and grinding systems.
       Built reproducible pipelines for smoothing, outlier handling, and signal reconstruction, and engineered
@@ -52,7 +52,7 @@ difference between a one-off notebook and a reliable system.
 
   <div class="exp-item">
     <h3 class="exp-title">Data Analytics Intern</h3>
-    <p class="exp-meta">Hatch Ltd (Urban Solutions, USA) &middot; 2024</p>
+    <p class="exp-meta">Hatch Ltd (Urban Solutions) &middot; USA &middot; 2024</p>
     <p>
       Developed C++ and Python automation utilities to parse and structure 200k+ rail-simulation records,
       reducing processing time by ~70%. Integrated rider-survey responses with onboard sensor logs to validate
@@ -150,15 +150,16 @@ difference between a one-off notebook and a reliable system.
 
 ## Contact
 
-If you’d like to talk about internships, ML systems, or data-driven projects, you can reach me via:
+If you’d like to discuss opportunities for **Spring or Summer 2026 internships**, ML systems work, or data-driven
+engineering projects, you can reach me at:
 
 - **Email:** gloayza5@byu.edu  
-- **LinkedIn:** (add your LinkedIn URL)
+- **LinkedIn:** <a href="https://www.linkedin.com/in/gonzaloayza" target="_blank" rel="noopener">gonzaloayza</a>
 
 ---
 
 <style>
-/* STANFORD-STYLE PALETTE: muy sobrio */
+/* STANFORD-STYLE PALETTE: sober, academic */
 :root {
   --home-border: #e5e7eb;
   --home-text-main: #111827;
@@ -166,12 +167,12 @@ If you’d like to talk about internships, ML systems, or data-driven projects, 
   --home-accent: #8c1515; /* Stanford cardinal */
 }
 
-/* Ocultar título automático "Home" */
+/* Hide automatic "Home" title */
 .page__title {
   display: none;
 }
 
-/* HERO – layout académico, alineado izquierda */
+/* HERO – academic, left-aligned */
 .home-hero--stanford {
   max-width: 760px;
   margin: 0 auto 2.5rem auto;
@@ -208,3 +209,150 @@ If you’d like to talk about internships, ML systems, or data-driven projects, 
   max-width: 720px;
   font-size: 0.98rem;
   line-height: 1.6;
+  color: #374151;
+  margin: 0 0 1.3rem 0;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* Buttons – simple, no gradients */
+.btn {
+  padding: 0.55rem 1.3rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease,
+              border-color 0.15s ease;
+}
+
+.btn--outline {
+  border: 1px solid var(--home-border);
+  color: #111827;
+  background: #ffffff;
+}
+
+.btn--outline:hover {
+  border-color: #cbd5e1;
+  background: #f9fafb;
+}
+
+.btn--solid {
+  border: 1px solid var(--home-accent);
+  background: var(--home-accent);
+  color: #ffffff;
+}
+
+.btn--solid:hover {
+  background: #701010;
+  border-color: #701010;
+}
+
+/* Section headings */
+.page__content h2 {
+  margin-top: 2.3rem;
+  margin-bottom: 0.9rem;
+  font-size: 1.15rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  color: var(--home-text-main);
+}
+
+/* Generic paragraphs */
+.page__content p {
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
+/* Lists */
+.page__content ul {
+  font-size: 0.95rem;
+}
+
+/* Columns – clean, no boxes */
+.two-column {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.two-column--stack {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.three-column {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* EXPERIENCE – simple left border */
+.exp-item {
+  border-left: 3px solid rgba(140, 21, 21, 0.45);
+  padding-left: 0.9rem;
+}
+
+.exp-item--single {
+  margin-top: 1.5rem;
+  border-left-color: rgba(148, 163, 184, 0.95);
+}
+
+.exp-title {
+  margin: 0 0 0.1rem 0;
+  font-size: 1.0rem;
+  font-weight: 600;
+}
+
+.exp-meta {
+  margin: 0 0 0.4rem 0;
+  font-size: 0.85rem;
+  color: var(--home-text-muted);
+}
+
+.exp-item p {
+  margin: 0;
+}
+
+/* TECHNICAL FOCUS */
+.focus-block h3 {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.focus-block ul {
+  margin: 0.1rem 0 0 1.1rem;
+  padding: 0;
+}
+
+/* PROJECTS – academic list style */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.project-item {
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--home-border);
+}
+
+.project-item:last-child {
+  border-bottom: none;
+}
+
+.project-title {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.0rem;
+  font-weight: 600;
+}
+
+.project-item p {
+  margin: 0 0 0.3rem 0;
+}
+
+.project-link
