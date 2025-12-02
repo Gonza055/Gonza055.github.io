@@ -21,6 +21,9 @@ plugins:
 include:
   - projects.md
 
+paginate: 5
+paginate_path: "/page:num/"
+
 navigation:
   main:
     - title: "Projects"
