@@ -4,7 +4,7 @@ title: "Projects"
 permalink: /projects/
 ---
 
-# Selected Projects
+# Projects
 
 Below are selected projects that demonstrate my experience with
 machine learning, time-series analysis, and data-centric software
@@ -12,7 +12,7 @@ development.
 
 ---
 
-## Predictive Maintenance – Sensor Data Conditioning & Feature Engineering (2025)
+## Predictive Maintenance – Sensor Data Conditioning & Feature Engineering
 
 **Context.** Industrial maintenance setting with 50k+ high-noise sensor
 time-series from crushing and grinding equipment.
@@ -33,11 +33,11 @@ time-series from crushing and grinding equipment.
 **Impact**
 
 - Enabled future ML experimentation for early-warning indicators and
-  reliability analysis on critical assets.
+  reliability analysis.
 
 ---
 
-## TrainOps Simulation Data Optimization (2024)
+## TrainOps Simulation Data Optimization
 
 **Context.** Data-engineering project using simulation outputs (~200k records)
 for rail operations planning.
@@ -55,20 +55,22 @@ for rail operations planning.
 
 **Impact**
 
-- Improved scenario comparison and supported data-driven transit-planning decisions.
+- Improved scenario comparison and supported data-driven transit-planning
+  decisions.
 
 ---
 
-## Predictive Maintenance Modeling Prototype (Academic, 2024–25)
+## Predictive Maintenance Modeling Prototype (Academic)
 
 **Context.** Academic project inspired by industrial predictive-maintenance
 scenarios.
 
 **What I built**
 
-- ML pipeline with cleaning, denoising, feature engineering, and exploratory labeling.
+- ML pipeline with cleaning, denoising, feature engineering, and exploratory
+  labeling.
 - Baseline models (Random Forest, SVM, Gradient Boosting).
-- Evaluation with standard metrics + visualization.
+- Evaluation with standard metrics plus visualization.
 
 **Tech stack**
 
@@ -78,8 +80,3 @@ scenarios.
 
 - Provided foundational experimentation for later industrial predictive
   maintenance work.
-
----
-
-More projects coming soon.
-
