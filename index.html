@@ -193,7 +193,7 @@ I care about clarity, robustness, and engineering precision in every stage of th
 
 <div class="home-grid home-grid--two">
 
-<div class="home-card">
+<div class="home-card home-card--experience">
 <h3>Maintenance Data Analyst Intern<br /><span class="home-card-sub">Compañía de Minas Buenaventura &middot; 2025</span></h3>
 <p>
 Processed and analyzed 50k+ high-noise industrial sensor time-series from crushing and grinding systems. Built
@@ -206,7 +206,7 @@ Industrial time-series &bull; Predictive maintenance &bull; Reliability feature 
 </p>
 </div>
 
-<div class="home-card">
+<div class="home-card home-card--experience">
 <h3>Data Analytics Intern<br /><span class="home-card-sub">Hatch Ltd (Urban Solutions, USA) &middot; 2024</span></h3>
 <p>
 Developed C++ and Python automation utilities to parse and structure 200k+ rail-simulation records, reducing
@@ -218,7 +218,7 @@ Simulation data processing &bull; Workflow automation &bull; Scenario analytics
 </p>
 </div>
 
-<div class="home-card">
+<div class="home-card home-card--experience">
 <h3>Honors Thesis Researcher<br /><span class="home-card-sub">BYU Honors Program &middot; 2025–2026</span></h3>
 <p>
 Designing an unsupervised-learning framework to discover operating modes in mineral-processing circuits using
@@ -238,7 +238,7 @@ Unsupervised ML &bull; Dimensionality reduction &bull; Mineral-processing analyt
 
 <div class="home-grid home-grid--three">
 
-<div class="home-card">
+<div class="home-card home-card--focus">
 <h3>Machine Learning &amp; Data</h3>
 <ul>
   <li>Time-series modeling and anomaly detection</li>
@@ -249,7 +249,7 @@ Unsupervised ML &bull; Dimensionality reduction &bull; Mineral-processing analyt
 </ul>
 </div>
 
-<div class="home-card">
+<div class="home-card home-card--focus">
 <h3>Software Engineering</h3>
 <ul>
   <li>Python, C++, SQL, JavaScript</li>
@@ -259,7 +259,7 @@ Unsupervised ML &bull; Dimensionality reduction &bull; Mineral-processing analyt
 </ul>
 </div>
 
-<div class="home-card">
+<div class="home-card home-card--focus">
 <h3>Domains</h3>
 <ul>
   <li>Industrial sensor data (vibration, load, pressure, temperature)</li>
@@ -276,7 +276,7 @@ Unsupervised ML &bull; Dimensionality reduction &bull; Mineral-processing analyt
 
 <div class="home-grid home-grid--three">
 
-<div class="home-card">
+<div class="home-card home-card--project">
 <h3>Predictive Maintenance &mdash; Sensor Data Conditioning (2025)</h3>
 <p>
 Built end-to-end preprocessing workflows for 50k+ industrial time-series, implementing noise reduction, outlier
@@ -288,7 +288,7 @@ and maintenance analytics.
 </p>
 </div>
 
-<div class="home-card">
+<div class="home-card home-card--project">
 <h3>TrainOps Simulation Data Optimization (2024)</h3>
 <p>
 Developed C++ and Python tooling to structure 200k+ simulation records, cutting manual processing time by ~70%.
@@ -299,7 +299,7 @@ Merged sensor data with rider-survey logs to validate scenario fidelity and impr
 </p>
 </div>
 
-<div class="home-card">
+<div class="home-card home-card--project">
 <h3>ML Failure-Mode Prototyping (2024–2025)</h3>
 <p>
 Exploratory ML pipeline inspired by industrial maintenance settings, including EDA, feature engineering, and baseline
@@ -327,20 +327,45 @@ models (Random Forest, SVM, Gradient Boosting) to detect early abnormal behavior
 <hr />
 
 <style>
+/* COLOR SYSTEM */
+:root {
+  --home-bg-soft: #f5f7fb;
+  --home-bg-soft-strong: #e7f0ff;
+  --home-border: #e2e6f0;
+  --home-border-strong: #c5d0ea;
+  --home-text-main: #1f2933;
+  --home-text-muted: #6c7a89;
+  --home-accent: #3273dc;
+  --home-accent-soft: rgba(50, 115, 220, 0.08);
+  --home-shadow-soft: 0 16px 40px rgba(15, 23, 42, 0.06);
+  --home-shadow-card: 0 8px 20px rgba(15, 23, 42, 0.05);
+  --home-radius-lg: 1rem;
+  --home-radius-md: 0.85rem;
+}
+
 /* Hide the automatic "Home" title that Minimal Mistakes prints */
 .page__title {
   display: none;
+}
+
+/* SECTION SPACING */
+.page__content h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
 }
 
 /* HERO */
 .home-hero {
   text-align: center;
   padding: 3.25rem 1.5rem 2.75rem;
-  border-radius: 1rem;
-  background: linear-gradient(135deg, #f5f7fb 0%, #e7f0ff 100%);
+  border-radius: var(--home-radius-lg);
+  background:
+    radial-gradient(circle at top left, rgba(50, 115, 220, 0.18), transparent 55%),
+    linear-gradient(135deg, var(--home-bg-soft) 0%, var(--home-bg-soft-strong) 100%);
   margin: 0 auto 2.75rem auto;
   max-width: 960px;
-  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+  box-shadow: var(--home-shadow-soft);
+  color: var(--home-text-main);
 }
 
 .home-kicker {
@@ -348,7 +373,7 @@ models (Random Forest, SVM, Gradient Boosting) to detect early abnormal behavior
   letter-spacing: 0.12em;
   font-size: 0.8rem;
   font-weight: 600;
-  color: #6c7a89;
+  color: var(--home-text-muted);
   margin-bottom: 0.4rem;
 }
 
@@ -384,12 +409,22 @@ models (Random Forest, SVM, Gradient Boosting) to detect early abnormal behavior
   border: 1px solid #d0d4e4;
   font-size: 0.9rem;
   text-decoration: none;
+  transition: background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
 }
 
 .btn--primary {
-  background: #3273dc;
-  border-color: #3273dc;
+  background: var(--home-accent);
+  border-color: var(--home-accent);
   color: #fff !important;
+}
+
+.btn--primary:hover {
+  box-shadow: 0 8px 18px rgba(50, 115, 220, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn:hover {
+  background: #f7f8fc;
 }
 
 /* GRID & CARDS */
@@ -408,11 +443,23 @@ models (Random Forest, SVM, Gradient Boosting) to detect early abnormal behavior
 }
 
 .home-card {
-  border-radius: 0.85rem;
-  border: 1px solid #e2e6f0;
+  position: relative;
+  border-radius: var(--home-radius-md);
+  border: 1px solid var(--home-border);
   padding: 1.3rem 1.4rem;
   background: #ffffff;
-  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+  box-shadow: var(--home-shadow-card);
+  overflow: hidden;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
+.home-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease;
 }
 
 .home-card h3 {
@@ -424,7 +471,7 @@ models (Random Forest, SVM, Gradient Boosting) to detect early abnormal behavior
 .home-card-sub {
   font-weight: 400;
   font-size: 0.86rem;
-  color: #6c7a89;
+  color: var(--home-text-muted);
 }
 
 .home-card p {
@@ -440,7 +487,57 @@ models (Random Forest, SVM, Gradient Boosting) to detect early abnormal behavior
 
 .home-card-meta {
   font-size: 0.84rem;
-  color: #6c7a89;
+  color: var(--home-text-muted);
+}
+
+/* Card variants */
+.home-card--experience {
+  border-top: 3px solid var(--home-accent);
+  background: linear-gradient(135deg, #ffffff 0%, #f6f8ff 100%);
+}
+
+.home-card--experience::before {
+  background: radial-gradient(circle at top left, var(--home-accent-soft), transparent 60%);
+}
+
+.home-card--focus {
+  border-top: 3px solid var(--home-border-strong);
+  background: linear-gradient(135deg, #ffffff 0%, #f9fbff 100%);
+}
+
+.home-card--focus::before {
+  background: radial-gradient(circle at top left, rgba(148, 163, 184, 0.15), transparent 60%);
+}
+
+.home-card--project {
+  border-top: 3px solid #10b981;
+  background: linear-gradient(135deg, #ffffff 0%, #f4fdf9 100%);
+}
+
+.home-card--project::before {
+  background: radial-gradient(circle at top left, rgba(16, 185, 129, 0.12), transparent 60%);
+}
+
+/* Hover effects */
+.home-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.10);
+  border-color: var(--home-border-strong);
+}
+
+.home-card:hover::before {
+  opacity: 1;
+}
+
+/* Links inside cards */
+.home-card a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.18s ease, color 0.18s ease;
+}
+
+.home-card a:hover {
+  border-color: currentColor;
 }
 
 /* Mobile tweaks */
@@ -450,6 +547,10 @@ models (Random Forest, SVM, Gradient Boosting) to detect early abnormal behavior
   }
   .home-summary {
     font-size: 0.95rem;
+  }
+  .home-hero {
+    padding: 2.6rem 1.25rem 2.3rem;
+    border-radius: 0.9rem;
   }
 }
 </style>
