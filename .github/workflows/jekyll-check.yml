@@ -6,7 +6,7 @@ on:
       - main
   push:
     branches:
-      - portfolio-refresh-2026
+      - portfolio-visual-pass-3
 
 permissions:
   contents: read
@@ -24,11 +24,9 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: true
 
-      - name: Generate portfolio assets
+      - name: Generate derived portfolio assets
         run: |
           python -m pip install --quiet pillow reportlab
-          mkdir -p assets/images/real
-          unzip -o _portfolio_assets/portfolio-real-assets.zip -d assets/images/real
           python scripts/generate_social_previews.py
           python scripts/generate_resume_pdf.py
 
