@@ -98,6 +98,11 @@ description: "Hatch Urban Solutions case study: Python and C++ automation for la
           allowing more attention to shift from data preparation toward interpreting operational scenarios and planning implications.
         </p>
       </section>
+
+      <figure class="case-media case-media--wide case-media--photo">
+        <img src="/assets/images/real/trainops-team.webp" alt="Gonzalo with the Hatch Urban Solutions team in Vermont">
+        <figcaption>Hatch Urban Solutions team in Vermont — the technical work was developed inside a multidisciplinary transportation-planning environment.</figcaption>
+      </figure>
     </div>
 
     <aside class="case-sidebar">
