@@ -23,8 +23,8 @@ description: "BYU Honors thesis case study applying time-series preprocessing, P
   </header>
 
   <figure class="case-media case-media--wide case-media--technical">
-    <img src="/assets/images/diagrams/honors-regimes.svg" alt="Public-safe visualization of three retained operating regimes in PCA space">
-    <figcaption>Thesis result reconstructed for the public portfolio: three recurrent operating regimes rather than one homogeneous operating state.</figcaption>
+    <img src="/assets/images/diagrams/honors-regimes.svg" alt="Visualization of three retained operating regimes in PCA space">
+    <figcaption>Three recurrent operating regimes emerged from the retained analytical structure rather than one homogeneous operating state.</figcaption>
   </figure>
 
   <section class="case-metric-strip">
@@ -49,7 +49,7 @@ description: "BYU Honors thesis case study applying time-series preprocessing, P
 
       <figure class="case-media case-media--wide case-media--technical">
         <img src="/assets/images/diagrams/honors-method.svg" alt="Analytical workflow from minute-level process data and daily KPI context through scaling, PCA, DBSCAN, and interpretation">
-        <figcaption>Public reconstruction of the thesis workflow: process data + KPI context → scaling → PCA → DBSCAN → regime profiling and interpretation.</figcaption>
+        <figcaption>Analytical workflow: process data + KPI context → scaling → PCA → DBSCAN → regime profiling and interpretation.</figcaption>
       </figure>
 
       <div class="case-points">
@@ -79,7 +79,7 @@ description: "BYU Honors thesis case study applying time-series preprocessing, P
       <div class="case-fact"><span>Data</span><strong>Minute-level process data + daily KPI context</strong></div>
       <div class="case-fact"><span>Methods</span><strong>StandardScaler · PCA · DBSCAN · KPI profiling</strong></div>
       <div class="case-fact"><span>Goal</span><strong>Interpretable operational modes</strong></div>
-      <div class="case-note"><strong>Public scope</strong><p>The industrial partner and identifying process details are intentionally not disclosed.</p></div>
+      <div class="case-note"><strong>Research context</strong><p>The industrial partner is anonymized here; the analytical methods and result-level regime summaries are preserved.</p></div>
     </aside>
   </section>
 
