@@ -30,6 +30,11 @@ description: "Hatch Urban Solutions case study: Python and C++ automation for la
     </div>
   </header>
 
+  <figure style="margin:0 0 2.8rem;overflow:hidden;border:1px solid #e2e8f0;border-radius:16px;background:#fff;">
+    <img src="/assets/images/projects/trainops-caps-003-2.webp" alt="TrainOps simulation interface and operating profile" style="display:block;width:100%;aspect-ratio:16/7;object-fit:cover;object-position:center;margin:0;">
+    <figcaption style="padding:.8rem 1rem .9rem;color:#64748b;font-size:.76rem;line-height:1.5;border-top:1px solid #e2e8f0;">TrainOps simulation environment — the automation work focused on turning large output sets into faster, repeatable scenario analysis.</figcaption>
+  </figure>
+
   <section class="case-metric-strip">
     <div><strong>200k+</strong><span>simulation records processed</span></div>
     <div><strong>~70%</strong><span>reduction in output-processing time</span></div>
@@ -83,10 +88,16 @@ description: "Hatch Urban Solutions case study: Python and C++ automation for la
         </p>
       </section>
 
-      <section class="case-image-grid" aria-label="Existing TrainOps visual material">
-        <img src="/assets/images/projects/trainops-caps-004.webp" alt="TrainOps acceleration, resistance, and tractive effort curves">
-        <img src="/assets/images/projects/trainops-caps-009-2.webp" alt="TrainOps route elevation and speed profile">
-      </section>
+      <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:0 0 2.8rem;">
+        <figure style="margin:0;overflow:hidden;border:1px solid #e2e8f0;border-radius:14px;background:#fff;">
+          <img src="/assets/images/projects/trainops-caps-004.webp" alt="TrainOps acceleration, resistance, and tractive effort curves" style="display:block;width:100%;height:230px;object-fit:cover;margin:0;">
+          <figcaption style="padding:.7rem .85rem;color:#64748b;font-size:.73rem;line-height:1.45;">Performance curves used in simulation interpretation.</figcaption>
+        </figure>
+        <figure style="margin:0;overflow:hidden;border:1px solid #e2e8f0;border-radius:14px;background:#fff;">
+          <img src="/assets/images/projects/trainops-caps-009-2.webp" alt="TrainOps route elevation and speed profile" style="display:block;width:100%;height:230px;object-fit:cover;margin:0;">
+          <figcaption style="padding:.7rem .85rem;color:#64748b;font-size:.73rem;line-height:1.45;">Route elevation and speed profile for scenario analysis.</figcaption>
+        </figure>
+      </div>
     </div>
 
     <aside class="case-sidebar">
