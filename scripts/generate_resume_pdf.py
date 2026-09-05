@@ -21,13 +21,13 @@ RULE = colors.HexColor('#dbe4ee')
 
 styles = getSampleStyleSheet()
 name = ParagraphStyle('Name', parent=styles['Normal'], fontName='ResumeSans-Bold', fontSize=17.5, leading=19, textColor=NAVY, spaceAfter=1)
-contact = ParagraphStyle('Contact', parent=styles['Normal'], fontName='ResumeSans', fontSize=7.35, leading=8.5, textColor=TEXT, spaceAfter=3)
-section = ParagraphStyle('Section', parent=styles['Heading2'], fontName='ResumeSans-Bold', fontSize=8.7, leading=9.6, textColor=BLUE, spaceBefore=3.1, spaceAfter=1.2)
-body = ParagraphStyle('Body', parent=styles['Normal'], fontName='ResumeSans', fontSize=7.45, leading=8.95, textColor=TEXT, spaceAfter=1.3)
-role = ParagraphStyle('Role', parent=styles['Normal'], fontName='ResumeSans-Bold', fontSize=8.0, leading=9.0, textColor=NAVY, spaceAfter=0)
-meta = ParagraphStyle('Meta', parent=styles['Normal'], fontName='ResumeSans', fontSize=7.1, leading=8.1, textColor=MUTED, spaceAfter=0.8)
+contact = ParagraphStyle('Contact', parent=styles['Normal'], fontName='ResumeSans', fontSize=7.8, leading=9.1, textColor=TEXT, spaceAfter=3)
+section = ParagraphStyle('Section', parent=styles['Heading2'], fontName='ResumeSans-Bold', fontSize=9.3, leading=10.3, textColor=BLUE, spaceBefore=3.1, spaceAfter=1.2)
+body = ParagraphStyle('Body', parent=styles['Normal'], fontName='ResumeSans', fontSize=8.1, leading=9.7, textColor=TEXT, spaceAfter=1.3)
+role = ParagraphStyle('Role', parent=styles['Normal'], fontName='ResumeSans-Bold', fontSize=8.6, leading=9.7, textColor=NAVY, spaceAfter=0)
+meta = ParagraphStyle('Meta', parent=styles['Normal'], fontName='ResumeSans', fontSize=7.55, leading=8.7, textColor=MUTED, spaceAfter=0.8)
 bullet = ParagraphStyle('Bullet', parent=body, leftIndent=8, firstLineIndent=-5, bulletIndent=0, spaceAfter=0.45)
-small = ParagraphStyle('Small', parent=body, fontSize=7.15, leading=8.45, spaceAfter=0.8)
+small = ParagraphStyle('Small', parent=body, fontSize=7.8, leading=9.25, spaceAfter=0.8)
 
 
 def p(text, style=body):
