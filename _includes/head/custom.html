@@ -1,0 +1,19 @@
+{% comment %}Page-specific social preview images for LinkedIn, Open Graph, and Twitter cards.{% endcomment %}
+{% assign social_image = '/assets/images/social/portfolio-social.jpg' %}
+{% case page.url %}
+  {% when '/projects/hatch-digital/' %}
+    {% assign social_image = '/assets/images/social/hatch-digital-social.jpg' %}
+  {% when '/projects/predictive-maintenance/' %}
+    {% assign social_image = '/assets/images/social/predictive-maintenance-social.jpg' %}
+  {% when '/projects/operational-mode-discovery/' %}
+    {% assign social_image = '/assets/images/social/operational-mode-social.jpg' %}
+  {% when '/projects/trainops/' %}
+    {% assign social_image = '/assets/images/social/trainops-social.jpg' %}
+  {% when '/projects/wildfire-prediction/' %}
+    {% assign social_image = '/assets/images/social/wildfire-social.jpg' %}
+{% endcase %}
+<meta property="og:image" content="{{ social_image | absolute_url }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ social_image | absolute_url }}">
