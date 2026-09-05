@@ -22,7 +22,7 @@ description: "Hatch Digital internship case study: data automation, mining data 
     <p class="case-hero__lead">
       During my internship with Hatch Digital, I worked across data automation, measurement concepts,
       and decision-support problems for mining and engineering applications. The common lesson was simple:
-      the technology only becomes useful when the data is trustworthy and the operational decision is clear.
+      technology only becomes useful when the data is trustworthy and the operational decision is clear.
     </p>
     <div class="case-tags">
       <span class="pf-tag">Data Engineering</span>
@@ -53,9 +53,11 @@ description: "Hatch Digital internship case study: data automation, mining data 
         <p class="pf-section__label">01 · Measurement</p>
         <h2>Drones: the problem was not flying — it was measuring with confidence.</h2>
         <p>
-          I explored drone-based measurement concepts for mining applications. The useful question was not whether
-          an aerial image could be captured, but whether geometry, positioning, reconstruction, and reference checks
-          could turn that capture into a measurement that an engineer could defend.
+          I explored drone-enabled measurement concepts for mining applications. A representative use case was the
+          quality of a truck load at the end of a loading cycle: combine continuous capture with an independent aerial
+          reference, process the information close to the operation, and turn it into a traceable per-cycle decision.
+          The key question was not whether imagery could be collected, but whether the measurement was reliable enough
+          to support an operational action.
         </p>
       </section>
 
@@ -63,6 +65,23 @@ description: "Hatch Digital internship case study: data automation, mining data 
         <img src="/assets/images/real/hatch-digital-drones.webp" alt="Drone measurement concept showing capture, reference, reconstruction, and comparison steps">
         <figcaption>Measurement concept from <em>Digital en práctica</em>: capture → reference → reconstruct → contrast. A useful measurement must also explain when not to trust it.</figcaption>
       </figure>
+
+      <section class="case-architecture" aria-label="Generalized drone-enabled measurement architecture">
+        <div class="case-architecture__head">
+          <p class="pf-section__label">Project logic</p>
+          <h3>From capture to a decision per cycle.</h3>
+          <p>Generalized from the underlying project architecture; client-specific implementation details are intentionally omitted.</p>
+        </div>
+        <div class="case-architecture__grid">
+          <div><span>01</span><strong>Continuous capture</strong><small>Observe each cycle consistently.</small></div>
+          <i>→</i>
+          <div><span>02</span><strong>Independent reference</strong><small>Add geometry and a second point of view.</small></div>
+          <i>→</i>
+          <div><span>03</span><strong>Edge processing</strong><small>Convert images and cycle data into usable metrics.</small></div>
+          <i>→</i>
+          <div><span>04</span><strong>Decision per cycle</strong><small>Release, correct, or add load with traceability.</small></div>
+        </div>
+      </section>
 
       <section class="case-section">
         <p class="pf-section__label">02 · Data automation</p>
@@ -87,12 +106,22 @@ description: "Hatch Digital internship case study: data automation, mining data 
 
       <section class="case-section">
         <p class="pf-section__label">03 · Decision support</p>
-        <h2>SIC: convert a shift event into a consistent action while there is still time to act.</h2>
+        <h2>SIC: turn a shift deviation into a consistent response while there is still time to act.</h2>
         <p>
-          My decision-support work explored how shift-level deviations can be detected, evaluated, assigned a response,
-          and closed with traceability. Rather than starting from a dashboard, the logic starts with the operating decision:
-          what changed, what matters now, what action is recommended, and who owns it.
+          My decision-support work explored how shift-level deviations can move from detection to action with clearer
+          ownership and traceability. The operating-model work made the sequence more explicit: plan, execute, detect the
+          deviation, assess its impact, identify the right decision owner, coordinate the response, execute, verify, and learn.
+          Digital tools — including future LLM-based support — sit on top of that structure rather than replacing operational accountability.
         </p>
+      </section>
+
+      <section class="case-flow-strip" aria-label="Generalized SIC shift decision cycle">
+        <div><span>01</span><strong>Plan</strong><small>Baseline &amp; sequence</small></div>
+        <div><span>02</span><strong>Execute</strong><small>Real-time conditions</small></div>
+        <div><span>03</span><strong>Detect</strong><small>Deviation from plan</small></div>
+        <div><span>04</span><strong>Assess</strong><small>Impact, risk, context</small></div>
+        <div><span>05</span><strong>Decide</strong><small>Owner &amp; response</small></div>
+        <div><span>06</span><strong>Learn</strong><small>Verify &amp; feed back</small></div>
       </section>
 
       <section class="case-media-grid case-media-grid--equal" aria-label="SIC and operational decision-support context">
@@ -106,7 +135,7 @@ description: "Hatch Digital internship case study: data automation, mining data 
         </figure>
       </section>
 
-      <div class="case-evidence-note"><strong>What connected all three workstreams:</strong> define the decision first, determine what information it needs, and make validation part of the workflow rather than an afterthought.</div>
+      <div class="case-evidence-note"><strong>What connected all three workstreams:</strong> define the decision first, determine what information it needs, make validation explicit, and only then decide what automation or modeling is worth adding.</div>
 
       <section class="case-section">
         <p class="pf-section__label">What I learned</p>
@@ -128,7 +157,7 @@ description: "Hatch Digital internship case study: data automation, mining data 
       <div class="case-fact"><span>Focus</span><strong>Mining &amp; industrial operations</strong></div>
       <div class="case-note">
         <strong>Public case-study scope</strong>
-        <p>The visuals focus on Gonzalo's work and presentation narrative; client-specific data and proprietary implementation details are not reproduced.</p>
+        <p>Authentic internship photos and Gonzalo's own presentation visuals are shown. Underlying client project material is used only to ground the narrative; client names, economics, vendor evaluations, and implementation-specific values are not reproduced.</p>
       </div>
     </aside>
   </section>
