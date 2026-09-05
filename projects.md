@@ -40,15 +40,13 @@ description: "Selected work by Gonzalo Loayza across machine learning, data engi
         </div>
         <span class="work-feature__link">Read case study →</span>
       </div>
-      <div class="work-feature__art work-feature__art--hatch" aria-hidden="true">
-        <span>DATA</span><span>CONTEXT</span><span>DECISION</span>
-      </div>
+      <img src="/assets/images/social/hatch-digital-social.jpg" alt="Hatch Digital data engineering and decision support portfolio preview" style="display:block;width:100%;height:100%;min-height:430px;object-fit:cover;border-left:1px solid #e2e8f0;">
     </a>
 
     <a class="work-feature" href="/projects/predictive-maintenance/">
-      <div class="work-feature__art work-feature__art--signal" aria-hidden="true"></div>
+      <img src="/assets/images/projects/EDA4.png" alt="Mining operation where reliability analytics work was performed" style="display:block;width:100%;height:235px;object-fit:cover;object-position:center;border-bottom:1px solid #e2e8f0;">
       <div class="work-feature__content">
-        <p class="work-feature__meta">Buenaventura · 2025 · Reliability Analytics</p>
+        <p class="work-feature__meta">Buenaventura · San Gabriel · 2025 · Reliability Analytics</p>
         <h2>Predictive Maintenance &amp; Reliability Analytics</h2>
         <p>
           An end-to-end industrial analytics experience spanning noisy sensor data, feature engineering,
@@ -64,7 +62,7 @@ description: "Selected work by Gonzalo Loayza across machine learning, data engi
     </a>
 
     <a class="work-feature" href="/projects/operational-mode-discovery/">
-      <div class="work-feature__art work-feature__art--clusters" aria-hidden="true"></div>
+      <img src="/assets/images/social/operational-mode-social.jpg" alt="Operational mode discovery and business value analysis portfolio preview" style="display:block;width:100%;height:235px;object-fit:cover;border-bottom:1px solid #e2e8f0;">
       <div class="work-feature__content">
         <p class="work-feature__meta">BYU Honors · 2025–2026 · Industrial Time-Series</p>
         <h2>Operational Mode Discovery &amp; Business Value Analysis</h2>
@@ -92,7 +90,8 @@ description: "Selected work by Gonzalo Loayza across machine learning, data engi
     </div>
 
     <div class="work-small-grid">
-      <a class="work-small-card" href="/projects/trainops/">
+      <a class="work-small-card" href="/projects/trainops/" style="overflow:hidden;">
+        <img src="/assets/images/projects/trainops-caps-009-2.webp" alt="TrainOps route elevation and speed profile" style="display:block;width:calc(100% + 2.8rem);height:150px;margin:-1.4rem -1.4rem 1.1rem;object-fit:cover;border-bottom:1px solid #e2e8f0;">
         <div class="work-small-card__top">
           <p class="work-feature__meta">Hatch Urban Solutions · 2024</p>
           <span class="work-small-card__number">01</span>
@@ -105,7 +104,8 @@ description: "Selected work by Gonzalo Loayza across machine learning, data engi
         <span class="work-feature__link">View project →</span>
       </a>
 
-      <a class="work-small-card" href="/projects/wildfire-prediction/">
+      <a class="work-small-card" href="/projects/wildfire-prediction/" style="overflow:hidden;">
+        <img src="/assets/images/social/wildfire-social.jpg" alt="Wildfire prediction system portfolio preview" style="display:block;width:calc(100% + 2.8rem);height:150px;margin:-1.4rem -1.4rem 1.1rem;object-fit:cover;border-bottom:1px solid #e2e8f0;">
         <div class="work-small-card__top">
           <p class="work-feature__meta">BYU · 2026</p>
           <span class="work-small-card__number">02</span>
