@@ -1,4 +1,4 @@
-/* Second visual pass: richer evidence, real project media, cleaner responsive behavior. */
+/* Second/third visual pass: richer evidence, authentic project media, cleaner responsive behavior. */
 
 /* Homepage hero evidence collage */
 .pf-hero__evidence {
@@ -6,7 +6,7 @@
   grid-template-columns: 1.15fr 0.85fr;
   grid-template-rows: 1fr 0.78fr;
   gap: 0.55rem;
-  min-height: 300px;
+  min-height: 320px;
 }
 
 .pf-hero__evidence figure,
@@ -144,12 +144,36 @@
   object-position: center;
 }
 
+.case-media--photo img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.case-media--technical img {
+  padding: 0.75rem;
+  object-fit: contain !important;
+  background: #f8fafc;
+}
+
+.case-media--technical.case-media--wide img {
+  aspect-ratio: auto;
+  max-height: 620px;
+}
+
 .case-media-grid {
   display: grid;
   grid-template-columns: 0.86fr 1.14fr;
   gap: 1rem;
   align-items: stretch;
   margin: 0 0 3rem;
+}
+
+.case-media-grid--equal {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.case-media-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .case-media-grid .case-media {
@@ -160,14 +184,33 @@
 .case-media-grid .case-media img {
   flex: 1;
   min-height: 260px;
+  object-fit: cover;
+}
+
+.case-media-grid .case-media--technical img {
   object-fit: contain;
 }
 
-.case-media-grid .case-media:first-child img {
-  padding: 0.8rem;
+.case-media-grid--three .case-media img {
+  min-height: 220px;
 }
 
-/* TrainOps visual gallery */
+/* Evidence callout used between technical sections */
+.case-evidence-note {
+  margin: -0.6rem 0 2.8rem;
+  padding: 1rem 1.1rem;
+  border-left: 3px solid var(--pf-blue);
+  background: var(--pf-surface);
+  color: var(--pf-text);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.case-evidence-note strong {
+  color: var(--pf-ink);
+}
+
+/* TrainOps / project visual gallery */
 .case-gallery {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -203,7 +246,7 @@
 
 @media (max-width: 900px) {
   .pf-hero__evidence {
-    min-height: 260px;
+    min-height: 270px;
   }
 
   .work-feature--hero .work-feature__media {
@@ -213,20 +256,22 @@
     border-bottom: 1px solid var(--pf-border);
   }
 
-  .case-media-grid {
+  .case-media-grid,
+  .case-media-grid--equal,
+  .case-media-grid--three {
     grid-template-columns: 1fr;
   }
 
   .case-media-grid .case-media img {
     min-height: 0;
-    max-height: 440px;
+    max-height: 460px;
   }
 }
 
 @media (max-width: 700px) {
   .pf-hero__evidence {
     grid-template-columns: 1.2fr 0.8fr;
-    min-height: 235px;
+    min-height: 245px;
     margin-top: 0.4rem;
   }
 
@@ -254,5 +299,13 @@
     height: auto;
     max-height: 360px;
     object-fit: contain;
+  }
+
+  .case-media--wide img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .case-media--technical.case-media--wide img {
+    aspect-ratio: auto;
   }
 }
