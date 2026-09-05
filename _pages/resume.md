@@ -170,7 +170,7 @@ description: "Resume of Gonzalo Loayza, BYU Computer Science student focused on 
 
       <section class="resume2026__side-block">
         <h3>Certification</h3>
-        <p>AWS Certification in Progress<br>Expected completion: August 2026.</p>
+        <p>AWS Certification — In Progress</p>
       </section>
 
       <section class="resume2026__side-block">
