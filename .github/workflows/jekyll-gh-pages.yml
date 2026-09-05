@@ -18,11 +18,16 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1' # versión soportada por GitHub Pages
+          ruby-version: '3.1'
           bundler-cache: true
 
       - name: Install Dependencies
         run: bundle install
+
+      - name: Generate social preview images
+        run: |
+          python -m pip install --quiet pillow
+          python scripts/generate_social_previews.py
 
       - name: Build Site
         run: bundle exec jekyll build -d _site
