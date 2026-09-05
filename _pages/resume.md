@@ -2,420 +2,182 @@
 layout: single
 title: "Resume"
 permalink: /resume/
+description: "Resume of Gonzalo Loayza, BYU Computer Science student focused on machine learning, data engineering, industrial analytics, and decision support."
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/resume-2026.css' | relative_url }}">
 
-<div class="resume-page">
+<div class="resume2026">
 
-  <!-- HEADER -->
-  <header class="resume-header">
-    <h1 class="resume-name">Gonzalo Loayza</h1>
-    <p class="resume-role">B.S. Computer Science @ BYU · Machine Learning &amp; Predictive Analytics</p>
-
-    <div class="resume-contact">
-      <span>Provo, UT</span>
-      <span>·</span>
-      <span>+1 (801) 735-8034</span>
-      <span>·</span>
-      <a href="mailto:gloayza5@byu.edu">gloayza5@byu.edu</a>
-      <span>·</span>
-      <a href="https://www.linkedin.com/in/gonzaloayza" target="_blank" rel="noopener">LinkedIn</a>
-      <span>·</span>
-      <a href="https://gonza055.github.io" target="_blank" rel="noopener">Portfolio</a>
+  <header class="resume2026__header">
+    <div>
+      <p class="pf-eyebrow">Resume</p>
+      <h1>Gonzalo Loayza</h1>
+      <p class="resume2026__headline">
+        Senior Computer Science student at BYU with a Machine Learning emphasis and applied experience across
+        data engineering, industrial analytics, time-series, simulation, and decision-support workflows.
+      </p>
+      <div class="resume2026__contact">
+        <span>Provo, UT</span>
+        <a href="mailto:gloayza5@byu.edu">gloayza5@byu.edu</a>
+        <a href="https://www.linkedin.com/in/gonzaloayza" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Gonza055" target="_blank" rel="noopener">GitHub</a>
+        <a href="/projects/">Selected Work</a>
+      </div>
     </div>
-
-    <p class="resume-download">
-      <a href="{{ '/assets/resume/Gonzalo_Loayza_Resume.pdf' | relative_url }}" target="_blank" rel="noopener">
-        Download full resume (PDF)
-      </a>
-    </p>
+    <div class="resume2026__status">
+      <span>Education status</span>
+      <strong>B.S. Computer Science<br>Expected Dec 2026</strong>
+    </div>
   </header>
 
-  <!-- SUMMARY -->
-  <section class="resume-section">
-    <h2 class="resume-section__title">Summary</h2>
-    <p class="resume-section__body">
-      Senior Computer Science student at BYU specializing in Machine Learning and predictive analytics.
-      Experienced working with large-scale time-series, simulation, and operational datasets, applying Python,
-      statistics, and ML workflows to support data-driven engineering and decision-making problems.
-      Strong foundation in algorithms, systems, and data-centric development.
+  <section class="resume2026__summary">
+    <p class="resume2026__label">Profile</p>
+    <p>
+      Experienced with Python, SQL, C++, time-series analysis, feature engineering, model evaluation, and
+      operational analytics using real-world datasets. I am particularly interested in technical problems where
+      understanding the system, improving the data foundation, and connecting analytics to practical decisions
+      matter as much as the model itself.
     </p>
   </section>
 
-  <!-- EDUCATION -->
-  <section class="resume-section">
-    <h2 class="resume-section__title">Education</h2>
+  <div class="resume2026__layout">
+    <main>
+      <section class="resume2026__section">
+        <h2>Experience</h2>
 
-    <div class="resume-item">
-      <div class="resume-item__header">
-        <div>
-          <h3 class="resume-item__title">Brigham Young University (BYU)</h3>
-          <p class="resume-item__subtitle">B.S. in Computer Science — Machine Learning Emphasis</p>
+        <article class="resume2026__item">
+          <div class="resume2026__item-head">
+            <div>
+              <h3>Data Analytics Intern</h3>
+              <p class="resume2026__org">Hatch Digital · Peru</p>
+            </div>
+            <span class="resume2026__date">Jun 2026 – Aug 2026</span>
+          </div>
+          <ul>
+            <li>Supported digital and analytics initiatives focused on mining and industrial operations, including operational KPIs and decision-support workflows.</li>
+            <li>Contributed to early-stage problem framing, data preparation, dashboard-oriented analysis, and identification of opportunities for process improvement and operational value creation.</li>
+          </ul>
+        </article>
+
+        <article class="resume2026__item">
+          <div class="resume2026__item-head">
+            <div>
+              <h3>Maintenance Data Analyst Intern</h3>
+              <p class="resume2026__org">Compañía de Minas Buenaventura · Peru</p>
+            </div>
+            <span class="resume2026__date">Jun 2025 – Aug 2025</span>
+          </div>
+          <ul>
+            <li>Processed and cleaned 50k+ noisy sensor time-series from crushing and grinding equipment to support predictive-maintenance exploration.</li>
+            <li>Analyzed operating signals linked to equipment wear, ore variability, and process behavior for reliability-focused decision-making.</li>
+            <li>Engineered 15+ features, including temperature deltas, load ratios, and transient-spike indicators.</li>
+            <li>Structured 100+ assets under ISO 14224/17359 standards to improve maintenance-data traceability and analytical usability.</li>
+          </ul>
+        </article>
+
+        <article class="resume2026__item">
+          <div class="resume2026__item-head">
+            <div>
+              <h3>Data Analytics Intern</h3>
+              <p class="resume2026__org">Hatch Ltd · Urban Solutions · Vermont, USA</p>
+            </div>
+            <span class="resume2026__date">May 2024 – Aug 2024</span>
+          </div>
+          <ul>
+            <li>Analyzed 200k+ rail-simulation records to evaluate delays, network performance, and operational bottlenecks.</li>
+            <li>Built Python and C++ automation workflows that reduced simulation-output processing time by about 70%.</li>
+            <li>Integrated rider-survey information with onboard sensor data to strengthen scenario interpretation and service-level assumptions.</li>
+            <li>Supported planning decisions through statistical and optimization-based analysis of simulation outputs.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="resume2026__section">
+        <h2>Selected Projects</h2>
+
+        <article class="resume2026__item">
+          <div class="resume2026__item-head">
+            <div>
+              <h3><a href="/projects/operational-mode-discovery/">Operational Mode Discovery &amp; Business Value Analysis</a></h3>
+              <p class="resume2026__org">BYU Honors Program · Python · PCA · Clustering · Industrial Time-Series</p>
+            </div>
+            <span class="resume2026__date">2025 – 2026</span>
+          </div>
+          <ul>
+            <li>Framed an industrial analytics problem around operating variability, recovery losses, throughput pressure, and equipment bottlenecks.</li>
+            <li>Integrated minute-level process data with daily KPI context and applied preprocessing, feature scaling, PCA, and clustering.</li>
+            <li>Connected operating modes and data-quality gaps to a staged roadmap focused on performance stability and business value.</li>
+          </ul>
+        </article>
+
+        <article class="resume2026__item">
+          <div class="resume2026__item-head">
+            <div>
+              <h3><a href="/projects/wildfire-prediction/">Wildfire Prediction System</a></h3>
+              <p class="resume2026__org">BYU · Python · XGBoost · SHAP · API Integration</p>
+            </div>
+            <span class="resume2026__date">2026</span>
+          </div>
+          <ul>
+            <li>Built a wildfire-risk prediction prototype using seven-day weather time-series and reported fire data.</li>
+            <li>Compared XGBoost, Random Forest, and Naive Bayes models on imbalanced event data and applied SHAP interpretability.</li>
+            <li>Designed a workflow combining weather APIs, satellite-imagery retrieval, and dashboard-style risk visualization.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <aside class="resume2026__side">
+      <section class="resume2026__side-block">
+        <h3>Education</h3>
+        <div class="resume2026__education">
+          <strong>Brigham Young University</strong>
+          <span>B.S. Computer Science<br>Machine Learning Emphasis<br>Expected Dec 2026</span>
         </div>
-        <span class="resume-item__location">Provo, UT · Expected Dec 2026</span>
-      </div>
-      <p class="resume-item__detail">
-        Relevant coursework: Machine Learning, Deep Learning, Data Science Capstone, Algorithms, Data Structures,
-        Computer Systems, Probability &amp; Statistics.
-      </p>
-      <p class="resume-item__detail">
-        Honors Thesis (in progress): Unsupervised mode discovery in mineral-processing circuits.
-      </p>
-      <p class="resume-item__detail">
-        GPA omitted by choice (available upon request).
-      </p>
-    </div>
-  </section>
+      </section>
 
-  <!-- TECHNICAL SKILLS -->
-  <section class="resume-section">
-    <h2 class="resume-section__title">Technical Skills</h2>
-
-    <div class="resume-skill-row">
-      <h3 class="resume-skill-label">Machine Learning &amp; Data</h3>
-      <p class="resume-skill-text">
-        Anomaly detection, time-series analysis, feature engineering, Exploratory Data Analysis (EDA),
-        model evaluation, data pipelines, large data wrangling, time-series forecasting (basic),
-        scikit-learn, Pandas, NumPy.
-      </p>
-    </div>
-
-    <div class="resume-skill-row">
-      <h3 class="resume-skill-label">Programming</h3>
-      <p class="resume-skill-text">
-        Python, C++, Structured Query Language (SQL), JavaScript.
-      </p>
-    </div>
-
-    <div class="resume-skill-row">
-      <h3 class="resume-skill-label">Tools</h3>
-      <p class="resume-skill-text">
-        Git, Linux, Jupyter Notebook, Power BI, AWS/Azure (basic).
-      </p>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section class="resume-section">
-    <h2 class="resume-section__title">Experience</h2>
-
-    <div class="resume-item">
-      <div class="resume-item__header">
-        <div>
-          <h3 class="resume-item__title">Maintenance Data Analyst Intern</h3>
-          <p class="resume-item__subtitle">Compañía de Minas Buenaventura — San Gabriel Unit (Mining)</p>
+      <section class="resume2026__side-block">
+        <h3>Technical Skills</h3>
+        <div class="resume2026__chips">
+          <span class="pf-tag">Python</span>
+          <span class="pf-tag">SQL</span>
+          <span class="pf-tag">C++</span>
+          <span class="pf-tag">JavaScript</span>
+          <span class="pf-tag">scikit-learn</span>
+          <span class="pf-tag">Pandas</span>
+          <span class="pf-tag">NumPy</span>
+          <span class="pf-tag">SHAP</span>
+          <span class="pf-tag">Power BI</span>
+          <span class="pf-tag">Git</span>
+          <span class="pf-tag">Linux</span>
         </div>
-        <span class="resume-item__location">Moquegua, Peru · Jun 2025 – Aug 2025</span>
-      </div>
-      <ul class="resume-item__list">
-        <li>Processed and cleaned 50k+ high-noise sensor time-series, reducing variance through smoothing, outlier capping, and signal reconstruction.</li>
-        <li>Performed EDA on crushing and grinding systems, identifying wear patterns and ore-type correlations to support early-warning indicators.</li>
-        <li>Engineered 15+ reliability features (temperature deltas, load ratios, transient-spike metrics) for condition-based maintenance analysis.</li>
-        <li>Structured 100+ assets under ISO 14224/17359, improving reliability-data traceability and supporting maintenance and monitoring workflows.</li>
-      </ul>
-    </div>
+      </section>
 
-    <div class="resume-item">
-      <div class="resume-item__header">
-        <div>
-          <h3 class="resume-item__title">Data Analytics Intern</h3>
-          <p class="resume-item__subtitle">Hatch Ltd — Urban Solutions Sector</p>
-        </div>
-        <span class="resume-item__location">Vermont, USA · May 2024 – Aug 2024</span>
-      </div>
-      <ul class="resume-item__list">
-        <li>Processed and analyzed 200k+ TrainOps simulation records to evaluate delays, network performance, and operational bottlenecks across multiple scenarios.</li>
-        <li>Built Python and C++ automation scripts that reduced simulation-output processing time by ~70%, eliminating manual parsing for large datasets.</li>
-        <li>Integrated rider-survey responses with onboard sensor signals to identify demand patterns and validate service-level models.</li>
-        <li>Applied statistical and optimization methods to compare transit scenarios, improving clarity and decision-support for planning teams.</li>
-      </ul>
-    </div>
-  </section>
+      <section class="resume2026__side-block">
+        <h3>Analytics Focus</h3>
+        <p>Time-series analysis · Feature engineering · Classification · Unsupervised learning · Model evaluation · Dimensionality reduction · Predictive analytics · KPI and bottleneck analysis.</p>
+      </section>
 
-  <!-- PROJECTS -->
-  <section class="resume-section">
-    <h2 class="resume-section__title">Selected Projects</h2>
+      <section class="resume2026__side-block">
+        <h3>Awards</h3>
+        <p>Donald Goodyear Doll Sr. Scholarship · Dr. Gerald Hatch Scholarship · BYU Honors Program.</p>
+      </section>
 
-    <div class="resume-item">
-      <div class="resume-item__header">
-        <div>
-          <h3 class="resume-item__title">Honors Thesis – Unsupervised Mode Discovery in Mineral Processing</h3>
-          <p class="resume-item__subtitle">Python / ML — BYU Honors Program</p>
-        </div>
-        <span class="resume-item__location">2025 – 2026 (In Progress)</span>
-      </div>
-      <ul class="resume-item__list">
-        <li>Designing an unsupervised-learning framework to identify operational modes in mineral-processing circuits.</li>
-        <li>Applying clustering, dimensionality reduction, and statistical validation using plant datasets.</li>
-        <li>Goal: support performance monitoring and early detection of suboptimal operating states.</li>
-      </ul>
-    </div>
+      <section class="resume2026__side-block">
+        <h3>Leadership</h3>
+        <p>Emergency Response &amp; Rescue Program, Peruvian Army — leadership training in coordination, rapid decision-making, and high-pressure execution.</p>
+      </section>
 
-    <div class="resume-item">
-      <div class="resume-item__header">
-        <div>
-          <h3 class="resume-item__title">Predictive Maintenance – Sensor Data Conditioning &amp; Feature Engineering</h3>
-          <p class="resume-item__subtitle">Python / Industrial Time-Series — Buenaventura</p>
-        </div>
-        <span class="resume-item__location">2025</span>
-      </div>
-      <ul class="resume-item__list">
-        <li>Built a reproducible preprocessing workflow for 50k+ industrial sensor time-series, implementing smoothing, outlier capping, and signal reconstruction.</li>
-        <li>Designed reliability-focused feature sets (load ratios, deltas, transient-spike metrics) prepared for downstream predictive-maintenance prototyping.</li>
-        <li>Delivered structured datasets enabling future ML experimentation for failure-prediction tasks.</li>
-      </ul>
-    </div>
-
-    <div class="resume-item">
-      <div class="resume-item__header">
-        <div>
-          <h3 class="resume-item__title">TrainOps Simulation Data Optimization</h3>
-          <p class="resume-item__subtitle">C++ / Python — Hatch</p>
-        </div>
-        <span class="resume-item__location">2024</span>
-      </div>
-      <ul class="resume-item__list">
-        <li>Developed automated parsers to transform 200k+ TrainOps simulation records into clean, analysis-ready datasets.</li>
-        <li>Implemented workflow automation reducing processing time by ~70% vs. manual parsing.</li>
-        <li>Cross-validated simulation results using rider-survey data and onboard sensor logs to improve scenario fidelity.</li>
-      </ul>
-    </div>
-
-    <div class="resume-item">
-      <div class="resume-item__header">
-        <div>
-          <h3 class="resume-item__title">Predictive Maintenance Modeling Prototype (Academic)</h3>
-          <p class="resume-item__subtitle">Python / ML — BYU</p>
-        </div>
-        <span class="resume-item__location">2024 – 2025</span>
-      </div>
-      <ul class="resume-item__list">
-        <li>Created an ML pipeline inspired by industrial conditions, including EDA, noise reduction, feature engineering, and exploratory time-series labeling.</li>
-        <li>Benchmarked baseline classifiers (Random Forest, SVM, Gradient Boosting) to analyze early detection of abnormal equipment behavior.</li>
-        <li>Used as a foundation for the real predictive-maintenance work performed later at Buenaventura.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- AWARDS -->
-  <section class="resume-section">
-    <h2 class="resume-section__title">Awards</h2>
-    <ul class="resume-item__list">
-      <li>Donald Goodyear Doll Sr. Scholarship</li>
-      <li>Dr. Gerald Hatch Scholarship</li>
-      <li>BYU Honors Program</li>
-    </ul>
-  </section>
-
-  <!-- LEADERSHIP -->
-  <section class="resume-section">
-    <h2 class="resume-section__title">Leadership</h2>
-    <p class="resume-section__body">
-      <strong>Emergency Response &amp; Rescue Program — Peruvian Army.</strong>
-      Leadership training in high-pressure environments, focused on coordination, rapid decision-making,
-      and operational execution.
-    </p>
-  </section>
-
-  <!-- LANGUAGES & CERTIFICATIONS -->
-  <section class="resume-section">
-    <h2 class="resume-section__title">Languages &amp; Certifications</h2>
-
-    <div class="resume-skill-row">
-      <h3 class="resume-skill-label">Languages</h3>
-      <p class="resume-skill-text">
-        English (Fluent), Spanish (Native), French (Intermediate).
-      </p>
-    </div>
-
-    <div class="resume-skill-row">
-      <h3 class="resume-skill-label">Certifications</h3>
-      <p class="resume-skill-text">
-        MITx 6.00.1x · Harvard CS50x · IoT Programming (UCI/Coursera).
-      </p>
-    </div>
-  </section>
+      <section class="resume2026__side-block">
+        <h3>Languages</h3>
+        <p>English — Fluent<br>Spanish — Native<br>French — Intermediate</p>
+      </section>
+    </aside>
+  </div>
 
 </div>
-
-<style>
-:root {
-  --res-border: #e5e7eb;
-  --res-text-main: #111827;
-  --res-text-muted: #6b7280;
-  --res-accent: #8c1515;  /* Stanford cardinal */
-}
-
-/* Hide Minimal Mistakes automatic title */
-.page__title {
-  display: none;
-}
-
-/* Main container */
-.resume-page {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 1.5rem 0 2.5rem 0;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: var(--res-text-main);
-}
-
-/* Ensure content width matches */
-.page__content {
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-/* Header */
-.resume-header {
-  border-bottom: 1px solid var(--res-border);
-  padding-bottom: 1.1rem;
-  margin-bottom: 1.3rem;
-}
-
-.resume-name {
-  margin: 0;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-.resume-role {
-  margin: 0.2rem 0 0.5rem 0;
-  font-size: 0.96rem;
-  color: var(--res-text-muted);
-}
-
-.resume-contact {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-  font-size: 0.9rem;
-  color: var(--res-text-muted);
-}
-
-.resume-contact a {
-  color: var(--res-accent);
-  text-decoration: none;
-}
-
-.resume-contact a:hover {
-  text-decoration: underline;
-}
-
-.resume-download {
-  margin-top: 0.5rem;
-  font-size: 0.85rem;
-}
-
-.resume-download a {
-  color: var(--res-accent);
-  text-decoration: none;
-}
-
-.resume-download a:hover {
-  text-decoration: underline;
-}
-
-/* Sections */
-.resume-section {
-  margin-top: 1.7rem;
-}
-
-.resume-section__title {
-  font-size: 1.05rem;
-  font-weight: 650;
-  margin: 0 0 0.5rem 0;
-  letter-spacing: -0.01em;
-}
-
-.resume-section__body {
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-/* Items */
-.resume-item {
-  margin-top: 0.7rem;
-}
-
-.resume-item__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 1rem;
-}
-
-.resume-item__title {
-  margin: 0;
-  font-size: 0.97rem;
-  font-weight: 600;
-}
-
-.resume-item__subtitle {
-  margin: 0.05rem 0 0 0;
-  font-size: 0.9rem;
-  color: var(--res-text-muted);
-}
-
-.resume-item__location {
-  font-size: 0.85rem;
-  color: var(--res-text-muted);
-  white-space: nowrap;
-}
-
-.resume-item__detail {
-  margin: 0.2rem 0;
-  font-size: 0.93rem;
-  line-height: 1.5;
-}
-
-.resume-item__list {
-  margin: 0.35rem 0 0 1.1rem;
-  font-size: 0.93rem;
-  line-height: 1.5;
-}
-
-/* Skills rows */
-.resume-skill-row {
-  display: grid;
-  grid-template-columns: 140px minmax(0, 1fr);
-  column-gap: 1rem;
-  margin-top: 0.25rem;
-}
-
-.resume-skill-label {
-  margin: 0;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-.resume-skill-text {
-  margin: 0;
-  font-size: 0.93rem;
-  line-height: 1.5;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .resume-name {
-    font-size: 1.7rem;
-  }
-
-  .resume-item__header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .resume-item__location {
-    white-space: normal;
-  }
-
-  .resume-skill-row {
-    grid-template-columns: 1fr;
-    row-gap: 0.1rem;
-  }
-}
-</style>
