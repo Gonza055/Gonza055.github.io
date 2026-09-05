@@ -1,6 +1,6 @@
 title: "Gonzalo Loayza"
-subtitle: "Machine Learning & Data Science Portfolio"
-description: "Senior Computer Science @ BYU | ML & Predictive Analytics"
+subtitle: "Machine Learning, Data Engineering & Industrial Analytics"
+description: "Senior Computer Science student at BYU applying machine learning, data engineering, and analytics to real-world industrial and engineering systems."
 url: "https://gonza055.github.io"
 baseurl: ""
 
@@ -9,7 +9,7 @@ minimal_mistakes_skin: "default"
 
 author:
   name: "Gonzalo Loayza"
-  bio: "Machine Learning • Data Science • Predictive Analytics • BYU Computer Science"
+  bio: "Computer Science @ BYU • Machine Learning • Data Engineering • Industrial Analytics"
   location: "Provo, Utah"
 
 markdown: kramdown
