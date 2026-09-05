@@ -10,6 +10,7 @@ description: "Industrial analytics case study from Buenaventura: sensor-data con
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/work.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/visual-v2.css' | relative_url }}">
 
 <article class="portfolio-page case-page">
 
@@ -35,6 +36,31 @@ description: "Industrial analytics case study from Buenaventura: sensor-data con
     <div><strong>50k+</strong><span>high-noise sensor time-series processed</span></div>
     <div><strong>15+</strong><span>reliability-focused features engineered</span></div>
     <div><strong>100+</strong><span>assets structured under reliability standards</span></div>
+  </section>
+
+  <section class="case-evidence">
+    <div class="case-evidence__head">
+      <p class="pf-section__label">Visual evidence</p>
+      <h2>From plant context to multivariable reliability analysis.</h2>
+      <p>
+        Selected visuals from the internship show the operating context and the exploratory work used to understand
+        relationships among equipment condition, process variables, and cumulative production.
+      </p>
+    </div>
+    <figure class="case-evidence__hero">
+      <img src="/assets/images/projects/EDA4.png" alt="Industrial plant context for crushing and grinding reliability analytics">
+      <figcaption>Industrial processing context associated with the reliability and maintenance-data work.</figcaption>
+    </figure>
+    <div class="case-evidence__grid">
+      <figure class="case-evidence--contain">
+        <img src="/assets/images/projects/EDA2.png" alt="Correlation heatmap used during exploratory reliability analysis">
+        <figcaption>Multivariable EDA used to identify relationships worth investigating in condition-monitoring workflows.</figcaption>
+      </figure>
+      <figure class="case-evidence--contain">
+        <img src="/assets/images/social/predictive-maintenance-social.jpg" alt="Predictive maintenance and reliability analytics case study summary">
+        <figcaption>Public case-study summary of the end-to-end reliability analytics workflow.</figcaption>
+      </figure>
+    </div>
   </section>
 
   <section class="case-grid">
@@ -87,14 +113,10 @@ description: "Industrial analytics case study from Buenaventura: sensor-data con
         </p>
       </section>
 
-      <section class="case-section case-section--visual-note">
-        <p class="pf-section__label">Portfolio scope</p>
-        <h2>Method and impact, without sensitive operating details.</h2>
-        <p>
-          This public case study focuses on the analytical approach and scale of the work. Vendor-specific comparisons,
-          raw plant visuals, and sensitive operating values are intentionally excluded.
-        </p>
-      </section>
+      <p class="case-public-note">
+        The portfolio shows representative analytical evidence while keeping the written narrative focused on the method,
+        engineering interpretation, and skills demonstrated rather than reproducing internal maintenance records.
+      </p>
     </div>
 
     <aside class="case-sidebar">
