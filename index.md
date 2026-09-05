@@ -76,13 +76,14 @@ permalink: /
           <p class="pf-work-card__kicker">Hatch Digital · 2026</p>
           <h3>Data Engineering &amp; Decision Support</h3>
           <p class="pf-work-card__desc">
-            Contributed to digital and analytics initiatives for mining and industrial operations,
-            including data preparation, operational KPIs, automation, and decision-support workflows.
+            Contributed to tailings-data automation, drone-based measurement concepts, and digital
+            decision-support work for mining and engineering applications.
           </p>
         </div>
         <div class="pf-work-card__footer">
           <span class="pf-tag">Data Engineering</span>
           <span class="pf-tag">Automation</span>
+          <span class="pf-tag">Digital Mining</span>
           <span class="pf-tag">Decision Support</span>
           <span class="pf-card-link">View case study →</span>
         </div>
@@ -140,8 +141,7 @@ permalink: /
         <p class="pf-exp-meta">Peru · Jun 2026 – Aug 2026</p>
         <p>
           Supported digital and analytics initiatives focused on mining and industrial operations,
-          contributing to problem framing, data preparation, operational KPIs, dashboard-oriented analysis,
-          and decision-support workflows.
+          contributing to data automation, measurement concepts, problem framing, and decision-support workflows.
         </p>
       </div>
 
