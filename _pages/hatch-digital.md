@@ -10,6 +10,7 @@ description: "Hatch Digital internship case study: data automation, mining data 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/work.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/visual-pass-2.css' | relative_url }}">
 
 <article class="portfolio-page case-page">
 
@@ -32,9 +33,9 @@ description: "Hatch Digital internship case study: data automation, mining data 
     </div>
   </header>
 
-  <figure style="margin:0 0 2.8rem;overflow:hidden;border:1px solid #e2e8f0;border-radius:16px;background:#fff;">
-    <img src="/assets/images/social/hatch-digital-social.jpg" alt="Hatch Digital data engineering and decision support visual" style="display:block;width:100%;aspect-ratio:16/7;object-fit:cover;margin:0;">
-    <figcaption style="padding:.8rem 1rem .9rem;color:#64748b;font-size:.76rem;line-height:1.5;border-top:1px solid #e2e8f0;">The internship connected data engineering, mining context, and decision support rather than treating analytics as a stand-alone modeling exercise.</figcaption>
+  <figure class="case-media case-media--wide">
+    <img src="/assets/images/social/hatch-digital-social.jpg" alt="Hatch Digital data engineering and decision support visual">
+    <figcaption>The internship connected data engineering, mining context, and decision support rather than treating analytics as a stand-alone modeling exercise.</figcaption>
   </figure>
 
   <section class="case-visual case-visual--flow" aria-label="Data to decision workflow illustration">
@@ -59,7 +60,7 @@ description: "Hatch Digital internship case study: data automation, mining data 
 
       <section class="case-section">
         <p class="pf-section__label">Selected workstreams</p>
-        <h2>Three ways I worked at the intersection of data and operations.</h2>
+        <h2>Four ways I worked at the intersection of data and operations.</h2>
         <div class="case-points">
           <div>
             <span>01</span>
@@ -82,6 +83,16 @@ description: "Hatch Digital internship case study: data automation, mining data 
             <p>Worked with multidisciplinary teams to understand the engineering problem first, then evaluate where data, automation, or analytics could realistically add value.</p>
           </div>
         </div>
+      </section>
+
+      <section class="case-section case-section--visual-note">
+        <p class="pf-section__label">Communication</p>
+        <h2>Presenting the work helped clarify what mattered most.</h2>
+        <p>
+          One of the highlights of the internship was presenting <strong>Digital en práctica</strong> to Hatch's Young Professionals community.
+          Preparing that story forced me to step back from individual tools and explain the bigger pattern: understand the operation,
+          make uncertainty visible, validate with specialists, and connect the analysis to a decision someone actually needs to make.
+        </p>
       </section>
 
       <section class="case-section">
