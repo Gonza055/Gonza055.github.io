@@ -1,0 +1,34 @@
+# Social-preview metadata layered on top of _config.yml during CI/deployment.
+defaults:
+  - scope:
+      path: "index.md"
+    values:
+      image: "/assets/images/social/portfolio-social.jpg"
+  - scope:
+      path: "projects.md"
+    values:
+      image: "/assets/images/social/portfolio-social.jpg"
+  - scope:
+      path: "_pages/resume.md"
+    values:
+      image: "/assets/images/social/portfolio-social.jpg"
+  - scope:
+      path: "_pages/hatch-digital.md"
+    values:
+      image: "/assets/images/social/hatch-digital-social.jpg"
+  - scope:
+      path: "_pages/predictive-maintenance.md"
+    values:
+      image: "/assets/images/social/predictive-maintenance-social.jpg"
+  - scope:
+      path: "_pages/operational-mode-discovery.md"
+    values:
+      image: "/assets/images/social/operational-mode-social.jpg"
+  - scope:
+      path: "_pages/trainops.md"
+    values:
+      image: "/assets/images/social/trainops-social.jpg"
+  - scope:
+      path: "_pages/wildfire-prediction.md"
+    values:
+      image: "/assets/images/social/wildfire-social.jpg"
