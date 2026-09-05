@@ -28,14 +28,14 @@ description: "Selected work by Gonzalo Loayza across machine learning, data engi
         <p class="work-feature__meta">Hatch Digital · 2026 · Mining &amp; Industrial Operations</p>
         <h2>Data Engineering &amp; Decision Support</h2>
         <p>
-          Digital and analytics work focused on structuring operational information, preparing data,
-          supporting KPI-oriented analysis, and exploring how automation and decision-support workflows
-          can create value in engineering environments.
+          Applied digital work spanning tailings-data automation, drone-based measurement concepts,
+          and decision-support workflows — with an emphasis on making engineering information more reliable,
+          interpretable, and useful for operational decisions.
         </p>
         <div class="work-feature__tags">
           <span class="pf-tag">Data Engineering</span>
           <span class="pf-tag">Automation</span>
-          <span class="pf-tag">Operational Analytics</span>
+          <span class="pf-tag">Digital Mining</span>
           <span class="pf-tag">Decision Support</span>
         </div>
         <span class="work-feature__link">Read case study →</span>
