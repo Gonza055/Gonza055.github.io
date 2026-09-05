@@ -29,6 +29,8 @@ jobs:
           python -m pip install --quiet pillow reportlab
           python scripts/generate_social_previews.py
           python scripts/generate_resume_pdf.py
+          mkdir -p assets/images/real
+          unzip -o scripts/portfolio-real-assets.zip -d assets/images/real
 
       - name: Build Site
         run: bundle exec jekyll build -d _site
