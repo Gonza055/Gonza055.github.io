@@ -32,9 +32,9 @@ description: "Industrial analytics case study from Buenaventura: sensor-data con
     </div>
   </header>
 
-  <figure class="case-media case-media--wide">
-    <img src="/assets/images/projects/EDA4.png" alt="Aerial view of the mining and processing operation where the reliability analytics work was performed">
-    <figcaption>Operational context — reliability analytics applied to real crushing and grinding equipment in a mining environment.</figcaption>
+  <figure class="case-media case-media--wide case-media--photo">
+    <img src="/assets/images/real/buenaventura-site.webp" alt="Gonzalo in personal protective equipment at the San Gabriel mining operation">
+    <figcaption>Field context at San Gabriel — the analytics work was grounded in real equipment, operating constraints, and maintenance questions.</figcaption>
   </figure>
 
   <section class="case-metric-strip">
@@ -82,14 +82,18 @@ description: "Industrial analytics case study from Buenaventura: sensor-data con
         </div>
       </section>
 
-      <section class="case-media-grid" aria-label="Reliability analysis visuals">
-        <figure class="case-media">
-          <img src="/assets/images/projects/EDA3.png" alt="Ball mill schematic used to communicate the physical equipment context">
-          <figcaption>Physical-system context — understanding the equipment and wear mechanisms before interpreting signals.</figcaption>
+      <section class="case-media-grid case-media-grid--three" aria-label="Reliability analytics evidence">
+        <figure class="case-media case-media--photo">
+          <img src="/assets/images/real/buenaventura-equipment.webp" alt="Gonzalo in PPE beside industrial processing equipment">
+          <figcaption>Physical-system context — understanding the equipment before interpreting its signals.</figcaption>
         </figure>
-        <figure class="case-media">
-          <img src="/assets/images/projects/EDA2.png" alt="Correlation heatmap used during exploratory reliability analysis">
-          <figcaption>Example EDA output — correlation analysis used to identify relationships worth investigating before moving toward predictive logic.</figcaption>
+        <figure class="case-media case-media--technical">
+          <img src="/assets/images/projects/EDA3.png" alt="Ball mill schematic used to communicate equipment context">
+          <figcaption>Equipment context used to connect wear mechanisms with available operating signals.</figcaption>
+        </figure>
+        <figure class="case-media case-media--technical">
+          <img src="/assets/images/projects/EDA2.png" alt="Correlation heatmap from exploratory reliability analysis">
+          <figcaption>Exploratory analysis used to identify relationships worth investigating before predictive modeling.</figcaption>
         </figure>
       </section>
 
@@ -108,9 +112,8 @@ description: "Industrial analytics case study from Buenaventura: sensor-data con
         <p class="pf-section__label">What this demonstrates</p>
         <h2>Machine learning starts with understanding the equipment and the data.</h2>
         <p>
-          The strongest lesson from the work was that predictive maintenance is not simply a modeling exercise.
-          Signal quality, asset hierarchy, process context, and engineering interpretation determine whether a model
-          can eventually become useful to maintenance and operations teams.
+          Predictive maintenance is not simply a modeling exercise. Signal quality, asset hierarchy, process context,
+          and engineering interpretation determine whether a model can eventually become useful to maintenance and operations teams.
         </p>
       </section>
     </div>
