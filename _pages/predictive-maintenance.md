@@ -31,9 +31,9 @@ description: "Industrial analytics case study from Buenaventura: sensor-data con
     </div>
   </header>
 
-  <figure style="margin:0 0 2.8rem;overflow:hidden;border:1px solid #e2e8f0;border-radius:16px;background:#fff;">
-    <img src="/assets/images/projects/EDA4.png" alt="Aerial view of the mining and processing operation where the reliability analytics work was performed" style="display:block;width:100%;aspect-ratio:16/7;object-fit:cover;object-position:center;margin:0;">
-    <figcaption style="padding:.8rem 1rem .9rem;color:#64748b;font-size:.76rem;line-height:1.5;border-top:1px solid #e2e8f0;">Operational context — reliability analytics applied to real crushing and grinding equipment in a mining environment.</figcaption>
+  <figure class="case-media case-media--wide">
+    <img src="/assets/images/projects/EDA4.png" alt="Aerial view of the mining and processing operation where the reliability analytics work was performed">
+    <figcaption>Operational context — reliability analytics applied to real crushing and grinding equipment in a mining environment.</figcaption>
   </figure>
 
   <section class="case-metric-strip">
@@ -81,10 +81,16 @@ description: "Industrial analytics case study from Buenaventura: sensor-data con
         </div>
       </section>
 
-      <figure style="margin:0 0 2.8rem;overflow:hidden;border:1px solid #e2e8f0;border-radius:16px;background:#fff;">
-        <img src="/assets/images/projects/EDA2.png" alt="Correlation heatmap used during exploratory reliability analysis" style="display:block;width:100%;height:auto;margin:0;background:#fff;">
-        <figcaption style="padding:.8rem 1rem .9rem;color:#64748b;font-size:.76rem;line-height:1.5;border-top:1px solid #e2e8f0;">Example EDA output — correlation analysis used to understand relationships among wear, material, throughput, and operating variables before moving toward predictive logic.</figcaption>
-      </figure>
+      <section class="case-media-grid" aria-label="Reliability analysis visuals">
+        <figure class="case-media">
+          <img src="/assets/images/projects/EDA3.png" alt="Ball mill schematic used to communicate the physical equipment context">
+          <figcaption>Physical-system context — understanding the equipment and wear mechanisms before interpreting signals.</figcaption>
+        </figure>
+        <figure class="case-media">
+          <img src="/assets/images/projects/EDA2.png" alt="Correlation heatmap used during exploratory reliability analysis">
+          <figcaption>Example EDA output — correlation analysis used to identify relationships worth investigating before moving toward predictive logic.</figcaption>
+        </figure>
+      </section>
 
       <section class="case-section">
         <p class="pf-section__label">Outcome</p>
