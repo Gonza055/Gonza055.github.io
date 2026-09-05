@@ -90,8 +90,8 @@ def hatch():
 def predictive():
     img, d = base_card(
         'BUENAVENTURA · 2025',
-        ['Predictive Maintenance', '& Reliability Analytics'],
-        ['50k+ industrial time-series, feature engineering, and', 'condition-monitoring workflows.']
+        ['Predictive', 'Maintenance &', 'Reliability Analytics'],
+        ['50k+ industrial time-series, feature engineering,', 'and condition-monitoring workflows.']
     )
     for x in range(840, 1080, 50): d.line((x, 130, x, 500), fill='#d9e6f2', width=1)
     for y in range(160, 500, 50): d.line((840, y, 1070, y), fill='#d9e6f2', width=1)
@@ -153,7 +153,6 @@ def wildfire():
     for idx,v in enumerate(vals):
         r=idx//4; c=idx%4
         x=x0+c*(s+gap); y=y0+r*(s+gap)
-        # blue risk scale consistent with the portfolio palette
         base=(235,241,255); target=(37,99,235)
         rgb=tuple(int(base[j]+(target[j]-base[j])*v) for j in range(3))
         d.rounded_rectangle((x,y,x+s,y+s), radius=9, fill=rgb, outline='#c8d8ea', width=1)
