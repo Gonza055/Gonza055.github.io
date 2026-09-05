@@ -2,7 +2,7 @@
 layout: single
 title: "Data Engineering & Decision Support"
 permalink: /projects/hatch-digital/
-description: "Hatch Digital internship case study: data engineering, operational analytics, automation, and decision-support workflows for mining and industrial operations."
+description: "Hatch Digital internship case study: data automation, mining data workflows, measurement concepts, and decision-support applications."
 ---
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,16 +17,17 @@ description: "Hatch Digital internship case study: data engineering, operational
 
   <header class="case-hero">
     <p class="pf-eyebrow">Hatch Digital · 2026</p>
-    <h1>From operational data to clearer decisions.</h1>
+    <h1>From mining data to clearer operational decisions.</h1>
     <p class="case-hero__lead">
-      During my internship with Hatch Digital, I contributed to data and analytics initiatives for mining
-      and industrial operations. The work reinforced a practical lesson: digital tools create value when
-      reliable data, operational context, and a real decision come together.
+      During my internship with Hatch Digital, I contributed to data automation, measurement concepts,
+      and decision-support work for mining and engineering applications. The experience reinforced a practical
+      lesson: technology creates value when it starts with a real problem, reliable information, and the people
+      who need to make a better decision.
     </p>
     <div class="case-tags">
       <span class="pf-tag">Data Engineering</span>
       <span class="pf-tag">Automation</span>
-      <span class="pf-tag">Operational Analytics</span>
+      <span class="pf-tag">Digital Mining</span>
       <span class="pf-tag">Decision Support</span>
     </div>
   </header>
@@ -34,7 +35,7 @@ description: "Hatch Digital internship case study: data engineering, operational
   <section class="case-visual case-visual--flow" aria-label="Data to decision workflow illustration">
     <div><span>01</span><strong>Operational data</strong><small>Structure, validate, prepare</small></div>
     <i>→</i>
-    <div><span>02</span><strong>Engineering context</strong><small>KPIs, process, constraints</small></div>
+    <div><span>02</span><strong>Engineering context</strong><small>Process, measurement, constraints</small></div>
     <i>→</i>
     <div><span>03</span><strong>Decision support</strong><small>Clearer information for action</small></div>
   </section>
@@ -45,35 +46,35 @@ description: "Hatch Digital internship case study: data engineering, operational
         <p class="pf-section__label">The challenge</p>
         <h2>Digital work starts before the model.</h2>
         <p>
-          Engineering and mining environments generate large amounts of operational information, but raw data
-          is not automatically useful. Before analytics can support a decision, the data must be structured,
-          validated, connected to the right KPIs, and interpreted in the context of the process.
+          Mining and engineering environments generate large amounts of information, but raw data is not
+          automatically useful. Before analytics can support a decision, the data has to be structured and
+          validated, the physical process has to be understood, and the intended operational use has to be clear.
         </p>
       </section>
 
       <section class="case-section">
-        <p class="pf-section__label">My contribution</p>
-        <h2>Working across data preparation and decision-oriented analysis.</h2>
+        <p class="pf-section__label">Selected workstreams</p>
+        <h2>Three ways I worked at the intersection of data and operations.</h2>
         <div class="case-points">
           <div>
             <span>01</span>
-            <h3>Data preparation</h3>
-            <p>Supported the organization, preparation, and validation of engineering and operational information used in digital workflows.</p>
+            <h3>Tailings data automation</h3>
+            <p>Supported data-processing and validation workflows for Hatch Integrated Tailings Management (HITM), helping turn large engineering datasets into more consistent, usable information.</p>
           </div>
           <div>
             <span>02</span>
-            <h3>Operational analytics</h3>
-            <p>Contributed to KPI-oriented and dashboard-oriented analysis intended to make complex information easier to interpret.</p>
+            <h3>Measurement concepts</h3>
+            <p>Explored drone-based measurement concepts for mining applications, focusing on how better data capture can support practical operational use cases.</p>
           </div>
           <div>
             <span>03</span>
-            <h3>Problem framing</h3>
-            <p>Worked on early-stage framing of operational problems and opportunities before selecting an analytical or digital approach.</p>
+            <h3>Decision-support workflows</h3>
+            <p>Contributed to work focused on translating operational information into clearer actions, including the logic behind KPI- and dashboard-oriented decision support.</p>
           </div>
           <div>
             <span>04</span>
-            <h3>Decision support</h3>
-            <p>Explored how digital workflows can translate operational information into clearer signals for engineers and operators.</p>
+            <h3>Problem framing</h3>
+            <p>Worked with multidisciplinary teams to understand the engineering problem first, then evaluate where data, automation, or analytics could realistically add value.</p>
           </div>
         </div>
       </section>
@@ -90,29 +91,14 @@ description: "Hatch Digital internship case study: data engineering, operational
     </div>
 
     <aside class="case-sidebar">
-      <div class="case-fact">
-        <span>Role</span>
-        <strong>Data Analytics Intern</strong>
-      </div>
-      <div class="case-fact">
-        <span>Organization</span>
-        <strong>Hatch Digital</strong>
-      </div>
-      <div class="case-fact">
-        <span>Location</span>
-        <strong>Peru</strong>
-      </div>
-      <div class="case-fact">
-        <span>Period</span>
-        <strong>Jun – Aug 2026</strong>
-      </div>
-      <div class="case-fact">
-        <span>Focus</span>
-        <strong>Mining &amp; industrial operations</strong>
-      </div>
+      <div class="case-fact"><span>Role</span><strong>Data Analytics Intern</strong></div>
+      <div class="case-fact"><span>Organization</span><strong>Hatch Digital</strong></div>
+      <div class="case-fact"><span>Location</span><strong>Peru</strong></div>
+      <div class="case-fact"><span>Period</span><strong>Jun – Aug 2026</strong></div>
+      <div class="case-fact"><span>Focus</span><strong>Mining &amp; industrial operations</strong></div>
       <div class="case-note">
         <strong>Portfolio note</strong>
-        <p>This case study intentionally describes the work at a non-confidential level and does not include client data, internal architectures, or proprietary materials.</p>
+        <p>This case study intentionally stays at a non-confidential level and does not include client data, internal architectures, source material, or proprietary implementation details.</p>
       </div>
     </aside>
   </section>
