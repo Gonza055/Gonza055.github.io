@@ -8,6 +8,7 @@ permalink: /
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/visual-pass-2.css' | relative_url }}">
 
 <div class="portfolio-page">
 
@@ -32,9 +33,17 @@ permalink: /
       </div>
     </div>
 
-    <div class="pf-hero__signal" aria-hidden="true">
-      <div class="pf-signal-line"></div>
-      <span class="pf-signal-caption">data → signal → decision</span>
+    <div class="pf-hero__evidence" aria-label="Examples of applied industrial analytics work">
+      <figure>
+        <img src="/assets/images/projects/EDA4.png" alt="Mining and processing operation connected to reliability analytics work">
+      </figure>
+      <figure>
+        <img src="/assets/images/projects/trainops-caps-009-2.webp" alt="TrainOps route elevation and speed profile from simulation analysis">
+      </figure>
+      <div class="pf-evidence-tile">
+        <span>Applied computing</span>
+        <strong>Mining · Reliability · Simulation · Decision Support</strong>
+      </div>
     </div>
   </section>
 
@@ -70,8 +79,8 @@ permalink: /
     </div>
 
     <div class="pf-work-grid">
-      <a class="pf-work-card pf-work-card--wide" href="/projects/hatch-digital/" style="overflow:hidden;">
-        <img src="/assets/images/social/hatch-digital-social.jpg" alt="Hatch Digital data engineering and decision support portfolio preview" style="position:absolute;top:0;right:0;width:42%;height:100%;object-fit:cover;border-left:1px solid #e2e8f0;">
+      <a class="pf-work-card pf-work-card--wide" href="/projects/hatch-digital/">
+        <img class="pf-card-image" src="/assets/images/social/hatch-digital-social.jpg" alt="Hatch Digital data engineering and decision support portfolio preview">
         <div>
           <p class="pf-work-card__kicker">Hatch Digital · 2026</p>
           <h3>Data Engineering &amp; Decision Support</h3>
@@ -80,7 +89,7 @@ permalink: /
             decision-support work for mining and engineering applications.
           </p>
         </div>
-        <div class="pf-work-card__footer" style="max-width:56%;">
+        <div class="pf-work-card__footer">
           <span class="pf-tag">Data Engineering</span>
           <span class="pf-tag">Automation</span>
           <span class="pf-tag">Digital Mining</span>
@@ -89,8 +98,8 @@ permalink: /
         </div>
       </a>
 
-      <a class="pf-work-card" href="/projects/predictive-maintenance/" style="overflow:hidden;">
-        <img src="/assets/images/projects/EDA4.png" alt="Mining operation where reliability analytics work was performed" style="position:absolute;top:0;right:0;width:46%;height:48%;object-fit:cover;object-position:center;border-left:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0;">
+      <a class="pf-work-card" href="/projects/predictive-maintenance/">
+        <img class="pf-card-image" src="/assets/images/projects/EDA4.png" alt="Mining operation where reliability analytics work was performed">
         <div>
           <p class="pf-work-card__kicker">Buenaventura · San Gabriel · 2025</p>
           <h3>Predictive Maintenance &amp; Reliability Analytics</h3>
@@ -106,8 +115,8 @@ permalink: /
         </div>
       </a>
 
-      <a class="pf-work-card" href="/projects/operational-mode-discovery/" style="overflow:hidden;">
-        <img src="/assets/images/social/operational-mode-social.jpg" alt="Operational mode discovery and business value analysis portfolio preview" style="position:absolute;top:0;right:0;width:46%;height:48%;object-fit:cover;border-left:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0;">
+      <a class="pf-work-card" href="/projects/operational-mode-discovery/">
+        <img class="pf-card-image" src="/assets/images/social/operational-mode-social.jpg" alt="Operational mode discovery and business value analysis portfolio preview">
         <div>
           <p class="pf-work-card__kicker">BYU Honors · 2025–2026</p>
           <h3>Operational Mode Discovery &amp; Business Value Analysis</h3>
