@@ -70,7 +70,7 @@ permalink: /
     </div>
 
     <div class="pf-work-grid">
-      <a class="pf-work-card pf-work-card--wide" href="/projects/">
+      <a class="pf-work-card pf-work-card--wide" href="/projects/hatch-digital/">
         <div class="pf-work-card__visual pf-work-card__visual--data" aria-hidden="true"></div>
         <div>
           <p class="pf-work-card__kicker">Hatch Digital · 2026</p>
@@ -84,11 +84,11 @@ permalink: /
           <span class="pf-tag">Data Engineering</span>
           <span class="pf-tag">Automation</span>
           <span class="pf-tag">Decision Support</span>
-          <span class="pf-card-link">View work →</span>
+          <span class="pf-card-link">View case study →</span>
         </div>
       </a>
 
-      <a class="pf-work-card" href="/projects/">
+      <a class="pf-work-card" href="/projects/predictive-maintenance/">
         <div class="pf-work-card__visual pf-work-card__visual--reliability" aria-hidden="true"></div>
         <div>
           <p class="pf-work-card__kicker">Buenaventura · 2025</p>
@@ -101,11 +101,11 @@ permalink: /
         <div class="pf-work-card__footer">
           <span class="pf-tag">50k+ time-series</span>
           <span class="pf-tag">15+ features</span>
-          <span class="pf-card-link">View work →</span>
+          <span class="pf-card-link">View case study →</span>
         </div>
       </a>
 
-      <a class="pf-work-card" href="/projects/">
+      <a class="pf-work-card" href="/projects/operational-mode-discovery/">
         <div class="pf-work-card__visual pf-work-card__visual--modes" aria-hidden="true"></div>
         <div>
           <p class="pf-work-card__kicker">BYU Honors · 2025–2026</p>
@@ -119,7 +119,7 @@ permalink: /
           <span class="pf-tag">PCA</span>
           <span class="pf-tag">Clustering</span>
           <span class="pf-tag">Time-Series</span>
-          <span class="pf-card-link">View work →</span>
+          <span class="pf-card-link">View case study →</span>
         </div>
       </a>
     </div>
