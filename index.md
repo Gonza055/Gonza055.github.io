@@ -70,8 +70,8 @@ permalink: /
     </div>
 
     <div class="pf-work-grid">
-      <a class="pf-work-card pf-work-card--wide" href="/projects/hatch-digital/">
-        <div class="pf-work-card__visual pf-work-card__visual--data" aria-hidden="true"></div>
+      <a class="pf-work-card pf-work-card--wide" href="/projects/hatch-digital/" style="overflow:hidden;">
+        <img src="/assets/images/social/hatch-digital-social.jpg" alt="Hatch Digital data engineering and decision support portfolio preview" style="position:absolute;top:0;right:0;width:42%;height:100%;object-fit:cover;border-left:1px solid #e2e8f0;">
         <div>
           <p class="pf-work-card__kicker">Hatch Digital · 2026</p>
           <h3>Data Engineering &amp; Decision Support</h3>
@@ -80,7 +80,7 @@ permalink: /
             decision-support work for mining and engineering applications.
           </p>
         </div>
-        <div class="pf-work-card__footer">
+        <div class="pf-work-card__footer" style="max-width:56%;">
           <span class="pf-tag">Data Engineering</span>
           <span class="pf-tag">Automation</span>
           <span class="pf-tag">Digital Mining</span>
@@ -89,10 +89,10 @@ permalink: /
         </div>
       </a>
 
-      <a class="pf-work-card" href="/projects/predictive-maintenance/">
-        <div class="pf-work-card__visual pf-work-card__visual--reliability" aria-hidden="true"></div>
+      <a class="pf-work-card" href="/projects/predictive-maintenance/" style="overflow:hidden;">
+        <img src="/assets/images/projects/EDA4.png" alt="Mining operation where reliability analytics work was performed" style="position:absolute;top:0;right:0;width:46%;height:48%;object-fit:cover;object-position:center;border-left:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0;">
         <div>
-          <p class="pf-work-card__kicker">Buenaventura · 2025</p>
+          <p class="pf-work-card__kicker">Buenaventura · San Gabriel · 2025</p>
           <h3>Predictive Maintenance &amp; Reliability Analytics</h3>
           <p class="pf-work-card__desc">
             Conditioned noisy industrial time-series, engineered reliability features, and analyzed
@@ -106,8 +106,8 @@ permalink: /
         </div>
       </a>
 
-      <a class="pf-work-card" href="/projects/operational-mode-discovery/">
-        <div class="pf-work-card__visual pf-work-card__visual--modes" aria-hidden="true"></div>
+      <a class="pf-work-card" href="/projects/operational-mode-discovery/" style="overflow:hidden;">
+        <img src="/assets/images/social/operational-mode-social.jpg" alt="Operational mode discovery and business value analysis portfolio preview" style="position:absolute;top:0;right:0;width:46%;height:48%;object-fit:cover;border-left:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0;">
         <div>
           <p class="pf-work-card__kicker">BYU Honors · 2025–2026</p>
           <h3>Operational Mode Discovery &amp; Business Value Analysis</h3>
@@ -148,7 +148,7 @@ permalink: /
       <div class="pf-exp-year">2025</div>
       <div class="pf-exp-item">
         <h3>Maintenance Data Analyst Intern · Compañía de Minas Buenaventura</h3>
-        <p class="pf-exp-meta">Peru · Jun 2025 – Aug 2025</p>
+        <p class="pf-exp-meta">San Gabriel Unit, Peru · Jun 2025 – Aug 2025</p>
         <p>
           Processed 50k+ noisy sensor time-series, engineered 15+ reliability features, and structured
           100+ assets under ISO 14224/17359 to improve analytical usability and support condition-monitoring work.
