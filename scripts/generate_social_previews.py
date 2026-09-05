@@ -47,21 +47,19 @@ def base_card(eyebrow, title_lines, subtitle_lines, image_path=None, footer='GON
     img = Image.new('RGB', (W, H), BG)
     d = ImageDraw.Draw(img)
     rr(d, (70, 58, 1130, 572), radius=28)
-
-    # Text area
     d.text((110, 100), eyebrow, font=font(23, True), fill=BLUE)
     y = draw_multiline(d, (110, 160), title_lines, font(49, True), INK, spacing=6)
     y += 18
     draw_multiline(d, (110, y), subtitle_lines, font(22), TEXT, spacing=4)
     d.text((110, 520), footer, font=font(17, True), fill=MUTED)
-
-    # Real-evidence image panel
     panel = (765, 88, 1095, 542)
     rr(d, panel, radius=22, fill=BLUE_SOFT, outline='#bfd7f0', width=2)
     if image_path and Path(image_path).exists():
-        paste_cover(img, image_path, panel)
-        # Redraw border over the image
-        d.rounded_rectangle(panel, radius=22, outline='#bfd7f0', width=2)
+        try:
+            paste_cover(img, image_path, panel)
+            d.rounded_rectangle(panel, radius=22, outline='#bfd7f0', width=2)
+        except Exception:
+            pass
     return img, d
 
 
@@ -70,62 +68,34 @@ def save(img, name):
 
 
 def portfolio():
-    img, d = base_card(
-        'COMPUTER SCIENCE @ BYU',
-        ['Data, ML, and software', 'for real-world systems'],
-        ['Machine Learning · Data Engineering · Industrial', 'Analytics · Decision Support'],
-        REAL / 'hatch-control-room.webp'
-    )
+    img, _ = base_card('COMPUTER SCIENCE @ BYU', ['Data, ML, and software', 'for real-world systems'], ['Machine Learning · Data Engineering · Industrial', 'Analytics · Decision Support'], REAL / 'hatch-control-room.webp')
     save(img, 'portfolio-social.jpg')
 
 
 def hatch():
-    img, d = base_card(
-        'HATCH DIGITAL · 2026',
-        ['Data Engineering &', 'Decision Support'],
-        ['Drones · HITM · SIC', 'From reliable information to operational action.'],
-        REAL / 'hatch-presentation-hitm.webp'
-    )
+    img, _ = base_card('HATCH DIGITAL · 2026', ['Data Engineering &', 'Decision Support'], ['Drones · HITM · SIC', 'From reliable information to operational action.'], REAL / 'hatch-presentation-hitm.webp')
     save(img, 'hatch-digital-social.jpg')
 
 
 def predictive():
-    img, d = base_card(
-        'BUENAVENTURA · 2025',
-        ['Predictive Maintenance &', 'Reliability Analytics'],
-        ['50k+ industrial time-series · 15+ engineered features', '100+ assets structured for reliability analysis'],
-        REAL / 'buenaventura-site.webp'
-    )
+    img, _ = base_card('BUENAVENTURA · 2025', ['Predictive Maintenance &', 'Reliability Analytics'], ['50k+ industrial time-series · 15+ engineered features', '100+ assets structured for reliability analysis'], REAL / 'buenaventura-site.webp')
     save(img, 'predictive-maintenance-social.jpg')
 
 
 def operational():
-    img, d = base_card(
-        'BYU HONORS · 2025–2026',
-        ['Operational Mode', 'Discovery'],
-        ['Industrial time-series · PCA · DBSCAN', 'Three recurrent operating regimes'],
-        REAL / 'thesis-regimes.webp'
-    )
+    img, d = base_card('BYU HONORS · 2025–2026', ['Operational Mode', 'Discovery'], ['Industrial time-series · PCA · DBSCAN', 'Three recurrent operating regimes'])
+    for x, y, r in [(835,250,13),(865,285,10),(900,235,11),(945,320,12),(980,285,10),(1015,355,11),(880,390,9),(1025,205,9)]:
+        d.ellipse((x-r,y-r,x+r,y+r), fill=BLUE)
     save(img, 'operational-mode-social.jpg')
 
 
 def trainops():
-    img, d = base_card(
-        'HATCH URBAN SOLUTIONS · 2024',
-        ['TrainOps Simulation', 'Data Engineering'],
-        ['Python + C++ · 200k+ simulation records', '~70% reduction in output-processing time'],
-        'assets/images/projects/trainops-caps-009-2.webp'
-    )
+    img, _ = base_card('HATCH URBAN SOLUTIONS · 2024', ['TrainOps Simulation', 'Data Engineering'], ['Python + C++ · 200k+ simulation records', '~70% reduction in output-processing time'], 'assets/images/projects/trainops-caps-009-2.webp')
     save(img, 'trainops-social.jpg')
 
 
 def wildfire():
-    img, d = base_card(
-        'BYU · 2026',
-        ['Wildfire Prediction', 'System'],
-        ['7-day weather histories · XGBoost · Utah risk maps', 'Satellite-image retrieval for prioritized locations'],
-        REAL / 'wildfire-team.webp'
-    )
+    img, _ = base_card('BYU · 2026', ['Wildfire Prediction', 'System'], ['7-day weather histories · XGBoost · Utah risk maps', 'Satellite-image retrieval for prioritized locations'], REAL / 'wildfire-team.webp')
     save(img, 'wildfire-social.jpg')
 
 
