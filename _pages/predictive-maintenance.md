@@ -88,12 +88,11 @@ description: "Industrial analytics case study from Buenaventura: sensor-data con
       </section>
 
       <section class="case-section case-section--visual-note">
-        <p class="pf-section__label">Visual evidence</p>
-        <h2>Real analysis, selectively anonymized.</h2>
+        <p class="pf-section__label">Portfolio scope</p>
+        <h2>Method and impact, without sensitive operating details.</h2>
         <p>
-          The published portfolio intentionally avoids vendor-specific performance comparisons and sensitive operating
-          values. Sanitized EDA and signal visuals can be added here where they demonstrate the analytical method without
-          exposing confidential operational information.
+          This public case study focuses on the analytical approach and scale of the work. Vendor-specific comparisons,
+          raw plant visuals, and sensitive operating values are intentionally excluded.
         </p>
       </section>
     </div>
