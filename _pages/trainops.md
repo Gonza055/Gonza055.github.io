@@ -10,6 +10,7 @@ description: "Hatch Urban Solutions case study: Python and C++ automation for la
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/work.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/visual-v2.css' | relative_url }}">
 
 <article class="portfolio-page case-page">
 
@@ -34,6 +35,31 @@ description: "Hatch Urban Solutions case study: Python and C++ automation for la
     <div><strong>200k+</strong><span>simulation records processed</span></div>
     <div><strong>~70%</strong><span>reduction in output-processing time</span></div>
     <div><strong>2</strong><span>languages used for automation: Python + C++</span></div>
+  </section>
+
+  <section class="case-evidence">
+    <div class="case-evidence__head">
+      <p class="pf-section__label">Visual evidence</p>
+      <h2>Transportation context and real TrainOps outputs.</h2>
+      <p>
+        The project combined software automation with engineering interpretation, so the portfolio now shows both
+        the physical rail context and representative simulation outputs used in scenario analysis.
+      </p>
+    </div>
+    <div class="case-evidence__grid case-evidence__grid--three">
+      <figure>
+        <img src="/assets/images/projects/trainops-caps-004.webp" alt="Passenger rail operations context related to TrainOps simulation work">
+        <figcaption>Rail operations context for the transportation analytics work.</figcaption>
+      </figure>
+      <figure class="case-evidence--contain">
+        <img src="/assets/images/projects/trainops-caps-003-2.webp" alt="TrainOps speed, acceleration, resistance, and elevation simulation output">
+        <figcaption>Representative speed, acceleration, resistance, and elevation output used for engineering interpretation.</figcaption>
+      </figure>
+      <figure class="case-evidence--contain">
+        <img src="/assets/images/projects/trainops-caps-009-2.webp" alt="TrainOps signal design and route simulation interface">
+        <figcaption>Example TrainOps simulation interface used to examine route and operating scenarios.</figcaption>
+      </figure>
+    </div>
   </section>
 
   <section class="case-grid">
@@ -81,11 +107,6 @@ description: "Hatch Urban Solutions case study: Python and C++ automation for la
           The automated workflow reduced simulation-output processing time by about 70% and improved repeatability,
           allowing more attention to shift from data preparation toward interpreting operational scenarios and planning implications.
         </p>
-      </section>
-
-      <section class="case-image-grid" aria-label="Existing TrainOps visual material">
-        <img src="/assets/images/projects/trainops-caps-004.webp" alt="TrainOps acceleration, resistance, and tractive effort curves">
-        <img src="/assets/images/projects/trainops-caps-009-2.webp" alt="TrainOps route elevation and speed profile">
       </section>
     </div>
 

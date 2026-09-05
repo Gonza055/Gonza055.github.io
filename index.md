@@ -8,6 +8,7 @@ permalink: /
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/visual-v2.css' | relative_url }}">
 
 <div class="portfolio-page">
 
@@ -32,9 +33,15 @@ permalink: /
       </div>
     </div>
 
-    <div class="pf-hero__signal" aria-hidden="true">
-      <div class="pf-signal-line"></div>
-      <span class="pf-signal-caption">data → signal → decision</span>
+    <div class="pf-hero__media" aria-label="Selected visual evidence from industrial and simulation work">
+      <img class="pf-hero__media-main" src="/assets/images/projects/EDA4.png" alt="Industrial processing plant context from reliability analytics internship">
+      <div class="pf-hero__media-card pf-hero__media-card--a">
+        <img src="/assets/images/projects/trainops-caps-004.webp" alt="Rail operations context from Hatch TrainOps work">
+      </div>
+      <div class="pf-hero__media-card pf-hero__media-card--b">
+        <img src="/assets/images/social/hatch-digital-social.jpg" alt="Hatch Digital data engineering and decision support portfolio card">
+      </div>
+      <span class="pf-hero__media-label">real systems · real data</span>
     </div>
   </section>
 
@@ -71,7 +78,9 @@ permalink: /
 
     <div class="pf-work-grid">
       <a class="pf-work-card pf-work-card--wide" href="/projects/hatch-digital/">
-        <div class="pf-work-card__visual pf-work-card__visual--data" aria-hidden="true"></div>
+        <div class="pf-work-card__visual pf-work-card__visual--image">
+          <img src="/assets/images/social/hatch-digital-social.jpg" alt="Hatch Digital case study cover">
+        </div>
         <div>
           <p class="pf-work-card__kicker">Hatch Digital · 2026</p>
           <h3>Data Engineering &amp; Decision Support</h3>
@@ -90,7 +99,9 @@ permalink: /
       </a>
 
       <a class="pf-work-card" href="/projects/predictive-maintenance/">
-        <div class="pf-work-card__visual pf-work-card__visual--reliability" aria-hidden="true"></div>
+        <div class="pf-work-card__visual pf-work-card__visual--image">
+          <img src="/assets/images/projects/EDA4.png" alt="Industrial plant context from Buenaventura reliability analytics work">
+        </div>
         <div>
           <p class="pf-work-card__kicker">Buenaventura · 2025</p>
           <h3>Predictive Maintenance &amp; Reliability Analytics</h3>
@@ -107,7 +118,9 @@ permalink: /
       </a>
 
       <a class="pf-work-card" href="/projects/operational-mode-discovery/">
-        <div class="pf-work-card__visual pf-work-card__visual--modes" aria-hidden="true"></div>
+        <div class="pf-work-card__visual pf-work-card__visual--image">
+          <img src="/assets/images/social/operational-mode-social.jpg" alt="Operational mode discovery and industrial time-series analysis case study cover">
+        </div>
         <div>
           <p class="pf-work-card__kicker">BYU Honors · 2025–2026</p>
           <h3>Operational Mode Discovery &amp; Business Value Analysis</h3>

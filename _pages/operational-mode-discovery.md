@@ -10,6 +10,7 @@ description: "BYU Honors thesis case study applying time-series preprocessing, P
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/work.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/visual-v2.css' | relative_url }}">
 
 <article class="portfolio-page case-page">
 
@@ -30,6 +31,13 @@ description: "BYU Honors thesis case study applying time-series preprocessing, P
       <span class="pf-tag">Business Value Analysis</span>
     </div>
   </header>
+
+  <section class="case-evidence">
+    <figure class="case-evidence__hero case-evidence--contain">
+      <img src="/assets/images/social/operational-mode-social.jpg" alt="Operational mode discovery and business value analysis thesis case study cover">
+      <figcaption>Public portfolio view of the BYU Honors research: industrial time-series, dimensionality reduction, clustering, and operational interpretation.</figcaption>
+    </figure>
+  </section>
 
   <section class="case-visual case-visual--modes" aria-label="Illustration of operating modes in reduced-dimensional space">
     <div class="case-cluster case-cluster--a"><i></i><i></i><i></i><i></i><i></i></div>
@@ -87,6 +95,11 @@ description: "BYU Honors thesis case study applying time-series preprocessing, P
           around throughput, recovery stability, energy optimization, and business value.
         </p>
       </section>
+
+      <p class="case-public-note">
+        The portfolio keeps the industrial partner anonymous while showing the research question, analytical methods,
+        and technical contribution of the thesis.
+      </p>
     </div>
 
     <aside class="case-sidebar">
@@ -95,10 +108,6 @@ description: "BYU Honors thesis case study applying time-series preprocessing, P
       <div class="case-fact"><span>Data</span><strong>Industrial process time-series + KPI context</strong></div>
       <div class="case-fact"><span>Methods</span><strong>PCA · Clustering · Performance profiling</strong></div>
       <div class="case-fact"><span>Goal</span><strong>Interpretable operational insight</strong></div>
-      <div class="case-note">
-        <strong>Confidentiality</strong>
-        <p>The industrial partner and identifying process details are intentionally not disclosed in this public portfolio.</p>
-      </div>
     </aside>
   </section>
 

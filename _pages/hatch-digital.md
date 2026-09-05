@@ -10,6 +10,7 @@ description: "Hatch Digital internship case study: data automation, mining data 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/work.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/visual-v2.css' | relative_url }}">
 
 <article class="portfolio-page case-page">
 
@@ -31,6 +32,13 @@ description: "Hatch Digital internship case study: data automation, mining data 
       <span class="pf-tag">Decision Support</span>
     </div>
   </header>
+
+  <section class="case-evidence">
+    <figure class="case-evidence__hero case-evidence--contain">
+      <img src="/assets/images/social/hatch-digital-social.jpg" alt="Hatch Digital internship case study: data engineering and decision support">
+      <figcaption>Hatch Digital internship: data engineering, automation, and decision-support work for mining and industrial applications.</figcaption>
+    </figure>
+  </section>
 
   <section class="case-visual case-visual--flow" aria-label="Data to decision workflow illustration">
     <div><span>01</span><strong>Operational data</strong><small>Structure, validate, prepare</small></div>
@@ -88,6 +96,10 @@ description: "Hatch Digital internship case study: data automation, mining data 
           to support it. That mindset now shapes how I approach machine learning and analytics projects.
         </p>
       </section>
+
+      <p class="case-public-note">
+        This page summarizes the internship at a public level; client data and internal implementation details are not reproduced.
+      </p>
     </div>
 
     <aside class="case-sidebar">
@@ -96,10 +108,6 @@ description: "Hatch Digital internship case study: data automation, mining data 
       <div class="case-fact"><span>Location</span><strong>Peru</strong></div>
       <div class="case-fact"><span>Period</span><strong>Jun – Aug 2026</strong></div>
       <div class="case-fact"><span>Focus</span><strong>Mining &amp; industrial operations</strong></div>
-      <div class="case-note">
-        <strong>Portfolio note</strong>
-        <p>This case study intentionally stays at a non-confidential level and does not include client data, internal architectures, source material, or proprietary implementation details.</p>
-      </div>
     </aside>
   </section>
 
