@@ -18,14 +18,14 @@ INK = colors.HexColor('#111111')
 TEXT = colors.HexColor('#202020')
 
 styles = getSampleStyleSheet()
-name = ParagraphStyle('Name', parent=styles['Normal'], fontName='ResumeSans-Bold', fontSize=16.5, leading=18.5, textColor=INK, spaceAfter=3)
-contact = ParagraphStyle('Contact', parent=styles['Normal'], fontName='ResumeSans', fontSize=8.35, leading=9.6, textColor=TEXT, spaceAfter=7)
-section = ParagraphStyle('Section', parent=styles['Normal'], fontName='ResumeSans-Bold', fontSize=9.6, leading=10.8, textColor=INK, spaceBefore=5.5, spaceAfter=2.2)
-body = ParagraphStyle('Body', parent=styles['Normal'], fontName='ResumeSans', fontSize=8.7, leading=10.45, textColor=TEXT, spaceAfter=2.0)
-role = ParagraphStyle('Role', parent=styles['Normal'], fontName='ResumeSans-Bold', fontSize=8.95, leading=10.2, textColor=INK, spaceAfter=0.5)
-meta = ParagraphStyle('Meta', parent=styles['Normal'], fontName='ResumeSans', fontSize=8.25, leading=9.4, textColor=TEXT, spaceAfter=1.6)
-bullet = ParagraphStyle('Bullet', parent=body, leftIndent=13, firstLineIndent=-7, bulletIndent=2, spaceAfter=1.0)
-small = ParagraphStyle('Small', parent=body, fontSize=8.45, leading=9.95, spaceAfter=1.3)
+name = ParagraphStyle('Name', parent=styles['Normal'], fontName='ResumeSans-Bold', fontSize=17.0, leading=19.0, textColor=INK, spaceAfter=4)
+contact = ParagraphStyle('Contact', parent=styles['Normal'], fontName='ResumeSans', fontSize=8.6, leading=10.0, textColor=TEXT, spaceAfter=9)
+section = ParagraphStyle('Section', parent=styles['Normal'], fontName='ResumeSans-Bold', fontSize=10.1, leading=11.5, textColor=INK, spaceBefore=7.0, spaceAfter=3.0)
+body = ParagraphStyle('Body', parent=styles['Normal'], fontName='ResumeSans', fontSize=9.0, leading=10.9, textColor=TEXT, spaceAfter=2.4)
+role = ParagraphStyle('Role', parent=styles['Normal'], fontName='ResumeSans-Bold', fontSize=9.25, leading=10.6, textColor=INK, spaceAfter=0.7)
+meta = ParagraphStyle('Meta', parent=styles['Normal'], fontName='ResumeSans', fontSize=8.55, leading=9.7, textColor=TEXT, spaceAfter=2.0)
+bullet = ParagraphStyle('Bullet', parent=body, leftIndent=14, firstLineIndent=-7, bulletIndent=2, spaceAfter=1.4)
+small = ParagraphStyle('Small', parent=body, fontSize=8.8, leading=10.4, spaceAfter=1.7)
 
 
 def p(text, style=body):
@@ -45,7 +45,7 @@ def job(title, org, date, items):
         Paragraph(f'{title} | {org}', role),
         Paragraph(date, meta),
         *bullets(items),
-        Spacer(1, 1.8),
+        Spacer(1, 2.8),
     ])
 
 
@@ -54,7 +54,7 @@ def project(title, tech, items):
         Paragraph(title, role),
         Paragraph(tech, meta),
         *bullets(items),
-        Spacer(1, 2.2),
+        Spacer(1, 3),
     ])
 
 
@@ -85,16 +85,11 @@ story.append(Paragraph('Expected Graduation: December 2026', body))
 story.append(Paragraph('<b>Relevant Coursework:</b> Deep Learning, Data Science Capstone, Machine Learning, Algorithms, Data Structures, Computer Systems, Probability & Statistics', small))
 story.append(Paragraph('<b>Honors Thesis:</b> Operational Mode Discovery and Business Value Analysis in Industrial Time-Series Data', small))
 
-story += sec('Technical Skills')
-story.append(p('<b>Languages:</b> Python, SQL, C++, JavaScript', small))
-story.append(p('<b>Data Science & ML:</b> time-series analysis, feature engineering, classification, unsupervised learning, model evaluation, exploratory data analysis, dimensionality reduction, predictive analytics', small))
-story.append(p('<b>Libraries & Tools:</b> scikit-learn, Pandas, NumPy, Jupyter, Git, Linux, SHAP, Power BI', small))
-story.append(p('<b>Business & Industrial Analytics:</b> problem framing, KPI analysis, bottleneck analysis, value-driver identification, operational mode discovery, dashboard-oriented thinking, decision-support analytics', small))
-
 story += sec('Experience')
 story.append(job('Data Analytics Intern', 'Hatch Digital, Peru', 'June 2026 - August 2026', [
-    'Supported digital and analytics initiatives focused on mining and industrial operations, including data automation, measurement concepts, operational KPIs, and decision-support workflows.',
-    'Contributed to early-stage problem framing, data preparation, dashboard-oriented analysis, and identification of opportunities for process improvement and operational value creation.',
+    'Contributed across three applied digital workstreams: tailings-data validation and automation, drone-enabled measurement concepts, and shift-level decision-support workflows for mining and engineering applications.',
+    'Supported problem framing, data preparation, operational KPI logic, and multidisciplinary validation so analytical outputs remained connected to real engineering decisions.',
+    'Presented the internship work and lessons learned to the Hatch Young Professionals community through a technical retrospective focused on measurement, data reliability, and operational decision support.',
 ]))
 story.append(job('Maintenance Data Analyst Intern', 'Compañía de Minas Buenaventura, San Gabriel Unit, Peru', 'Jun 2025 - Aug 2025', [
     'Identified reliability and maintenance-analysis gaps in crushing and grinding equipment data, then processed and cleaned 50k+ noisy sensor time-series to support predictive-maintenance exploration.',
@@ -102,10 +97,6 @@ story.append(job('Maintenance Data Analyst Intern', 'Compañía de Minas Buenave
     'Engineered 15+ features, including temperature deltas, load ratios, and transient-spike indicators, to improve the analytical basis for equipment monitoring workflows.',
     'Structured 100+ assets under ISO 14224/17359 standards, improving maintenance-data traceability, consistency, and analytical usability.',
 ]))
-
-# Preserve the established two-page CV while balancing the page density.
-story.append(PageBreak())
-story += sec('Experience - Continued')
 story.append(job('Data Analytics Intern', 'Hatch Ltd, Urban Solutions Sector, Vermont, USA', 'May 2024 - Aug 2024', [
     'Evaluated operational delay and network-performance challenges across simulation scenarios, then analyzed 200k+ records to identify bottlenecks and support planning decisions.',
     'Built Python and C++ automation workflows that reduced processing time by about 70%, improving analysis speed, repeatability, and scenario-evaluation capacity.',
@@ -113,24 +104,33 @@ story.append(job('Data Analytics Intern', 'Hatch Ltd, Urban Solutions Sector, Ve
     'Supported planning teams through statistical and optimization-based analysis, translating simulation outputs into practical insights for operational decision-making.',
 ]))
 
+story.append(PageBreak())
+
+story += sec('Technical Skills')
+story.append(p('<b>Languages:</b> Python, SQL, C++, JavaScript', small))
+story.append(p('<b>Data Science & ML:</b> time-series analysis, feature engineering, classification, unsupervised learning, model evaluation, exploratory data analysis, dimensionality reduction, predictive analytics', small))
+story.append(p('<b>Libraries & Tools:</b> scikit-learn, Pandas, NumPy, Jupyter, Git, Linux, SHAP, Power BI', small))
+story.append(p('<b>Business & Industrial Analytics:</b> problem framing, KPI analysis, bottleneck analysis, value-driver identification, operational mode discovery, dashboard-oriented thinking, decision-support analytics', small))
+
 story += sec('Projects')
 story.append(project(
     'Honors Thesis - Operational Mode Discovery and Business Value Analysis in Industrial Time-Series Data',
     'Python | Time-Series Analytics | PCA | DBSCAN | Business Value Analysis - BYU Honors Program, 2025 - 2026',
     [
         'Framed an industrial analytics problem around operating variability, recovery losses, throughput pressure, and equipment bottlenecks in a real processing environment.',
-        'Integrated minute-level process data with daily KPI context to evaluate how different operating patterns affect recovery, losses, and production stability.',
-        'Applied preprocessing, feature scaling, PCA, and DBSCAN to identify recurrent operational modes and support interpretable performance profiling.',
+        'Integrated minute-level process data with daily KPI context, standardized process features, and reduced dimensionality with PCA using a 95% explained-variance target.',
+        'Applied DBSCAN and identified three recurrent operating regimes, then profiled them against recovery, production, variability, and equipment-configuration signatures.',
         'Connected data infrastructure, control-loop performance, instrumentation gaps, and ML opportunities to a staged roadmap focused on throughput, recovery stability, energy optimization, and business value.',
     ],
 ))
 story.append(project(
     'Wildfire Prediction System',
-    'Python | XGBoost | Time-Series | API Integration - BYU, 2026',
+    'Python | XGBoost | Time-Series | API Integration | Docker - BYU, 2026',
     [
-        'Built a wildfire-risk prediction prototype using 7-day weather time-series and reported Utah fire data to prioritize high-risk locations.',
-        'Trained and compared XGBoost, Random Forest, and Naive Bayes models on imbalanced wildfire-event data.',
-        'Applied SHAP interpretability and designed a workflow combining weather APIs, satellite imagery retrieval, and dashboard-style risk visualization.',
+        'Built a wildfire-risk prioritization prototype using 7-day weather histories and reported Utah fire data to narrow where satellite-image follow-up should occur first.',
+        'Trained and compared XGBoost, Random Forest, and Naive Bayes models on balanced and imbalanced wildfire-event datasets.',
+        'Selected the unbalanced XGBoost workflow, which achieved 23% precision, 9.7% recall, and PR AUC 0.110 versus a 0.006 random baseline on the evaluated rare-event task.',
+        'Connected model scoring to a browser-based risk map and satellite-image retrieval workflow using a Python backend and containerized services.',
     ],
 ))
 
@@ -150,10 +150,10 @@ story.append(p('English (Fluent) | Spanish (Native) | French (Intermediate)'))
 doc = SimpleDocTemplate(
     str(OUT),
     pagesize=letter,
-    rightMargin=0.40 * inch,
-    leftMargin=0.40 * inch,
-    topMargin=0.32 * inch,
-    bottomMargin=0.32 * inch,
+    rightMargin=0.46 * inch,
+    leftMargin=0.46 * inch,
+    topMargin=0.38 * inch,
+    bottomMargin=0.38 * inch,
     title='Gonzalo Loayza Resume',
     author='Gonzalo Loayza',
 )
