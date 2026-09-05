@@ -3,7 +3,7 @@ from reportlab.lib.pagesizes import letter
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import inch
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, HRFlowable, KeepTogether, PageBreak
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, KeepTogether, PageBreak
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfbase import pdfmetrics
 
@@ -14,20 +14,19 @@ BOLD = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 pdfmetrics.registerFont(TTFont('ResumeSans', REG))
 pdfmetrics.registerFont(TTFont('ResumeSans-Bold', BOLD))
 
-INK = colors.HexColor('#111827')
-TEXT = colors.HexColor('#1f2937')
-MUTED = colors.HexColor('#4b5563')
-RULE = colors.HexColor('#cbd5e1')
+INK = colors.HexColor('#111111')
+TEXT = colors.HexColor('#202020')
+LINK = colors.HexColor('#1a0dab')
 
 styles = getSampleStyleSheet()
-name = ParagraphStyle('Name', parent=styles['Normal'], fontName='ResumeSans-Bold', fontSize=18.5, leading=20.5, textColor=INK, spaceAfter=2)
-contact = ParagraphStyle('Contact', parent=styles['Normal'], fontName='ResumeSans', fontSize=8.4, leading=10, textColor=TEXT, spaceAfter=7)
-section = ParagraphStyle('Section', parent=styles['Heading2'], fontName='ResumeSans-Bold', fontSize=10.2, leading=11.5, textColor=INK, spaceBefore=7, spaceAfter=2.5)
-body = ParagraphStyle('Body', parent=styles['Normal'], fontName='ResumeSans', fontSize=8.8, leading=11.1, textColor=TEXT, spaceAfter=3)
-role = ParagraphStyle('Role', parent=styles['Normal'], fontName='ResumeSans-Bold', fontSize=9.2, leading=10.8, textColor=INK, spaceAfter=0.5)
-meta = ParagraphStyle('Meta', parent=styles['Normal'], fontName='ResumeSans', fontSize=8.2, leading=9.8, textColor=MUTED, spaceAfter=2)
-bullet = ParagraphStyle('Bullet', parent=body, leftIndent=11, firstLineIndent=-6, bulletIndent=0, spaceAfter=1.6)
-small = ParagraphStyle('Small', parent=body, fontSize=8.5, leading=10.7, spaceAfter=2.2)
+name = ParagraphStyle('Name', parent=styles['Normal'], fontName='ResumeSans-Bold', fontSize=16.2, leading=18.2, textColor=INK, spaceAfter=3)
+contact = ParagraphStyle('Contact', parent=styles['Normal'], fontName='ResumeSans', fontSize=8.25, leading=9.4, textColor=TEXT, spaceAfter=7)
+section = ParagraphStyle('Section', parent=styles['Normal'], fontName='ResumeSans-Bold', fontSize=9.4, leading=10.5, textColor=INK, spaceBefore=5.2, spaceAfter=2.0)
+body = ParagraphStyle('Body', parent=styles['Normal'], fontName='ResumeSans', fontSize=8.55, leading=10.25, textColor=TEXT, spaceAfter=2.0)
+role = ParagraphStyle('Role', parent=styles['Normal'], fontName='ResumeSans-Bold', fontSize=8.8, leading=10.0, textColor=INK, spaceAfter=0.4)
+meta = ParagraphStyle('Meta', parent=styles['Normal'], fontName='ResumeSans', fontSize=8.15, leading=9.2, textColor=TEXT, spaceAfter=1.5)
+bullet = ParagraphStyle('Bullet', parent=body, leftIndent=13, firstLineIndent=-7, bulletIndent=2, spaceAfter=0.9)
+small = ParagraphStyle('Small', parent=body, fontSize=8.35, leading=9.8, spaceAfter=1.2)
 
 
 def p(text, style=body):
@@ -35,10 +34,7 @@ def p(text, style=body):
 
 
 def sec(title):
-    return [
-        Paragraph(title.upper(), section),
-        HRFlowable(width='100%', thickness=0.65, color=RULE, spaceBefore=0, spaceAfter=3.5),
-    ]
+    return [Paragraph(title.upper(), section)]
 
 
 def bullets(items):
@@ -50,7 +46,7 @@ def job(title, org, date, items):
         Paragraph(f'{title} | {org}', role),
         Paragraph(date, meta),
         *bullets(items),
-        Spacer(1, 2.5),
+        Spacer(1, 1.5),
     ])
 
 
@@ -59,13 +55,19 @@ def project(title, tech, items):
         Paragraph(title, role),
         Paragraph(tech, meta),
         *bullets(items),
-        Spacer(1, 3),
+        Spacer(1, 2),
     ])
 
 
 story = [
     Paragraph('GONZALO LOAYZA', name),
-    Paragraph('Provo, UT  •  +1 (801) 735-8034  •  gloayza5@byu.edu  •  LinkedIn  •  Portfolio', contact),
+    Paragraph(
+        'Provo, UT  •  +1 (801) 735-8034  •  '
+        '<link href="mailto:gloayza5@byu.edu" color="#1a0dab"><u>gloayza5@byu.edu</u></link>  •  '
+        '<link href="https://www.linkedin.com/in/gonzaloayza" color="#1a0dab"><u>LinkedIn</u></link>  •  '
+        '<link href="https://gonza055.github.io/" color="#1a0dab"><u>Portfolio</u></link>',
+        contact,
+    ),
 ]
 
 story += sec('Summary')
@@ -108,7 +110,7 @@ story.append(job('Data Analytics Intern', 'Hatch Ltd, Urban Solutions Sector, Ve
     'Supported planning teams through statistical and optimization-based analysis, translating simulation outputs into practical insights for operational decision-making.',
 ]))
 
-# Preserve the original two-page CV rhythm: experience closes page 1, projects lead page 2.
+# Keep the same two-page rhythm as the established CV: page 1 ends with Experience.
 story.append(PageBreak())
 
 story += sec('Projects')
@@ -133,7 +135,7 @@ story.append(project(
 ))
 
 story += sec('Certifications')
-story.append(p('<b>AWS Certification - In Progress</b>'))
+story.append(p('<b>AWS Certification in Progress</b>'))
 
 story += sec('Awards')
 story.append(p('Donald Goodyear Doll Sr. Scholarship | Dr. Gerald Hatch Scholarship | BYU Honors Program'))
@@ -145,27 +147,15 @@ story += sec('Languages')
 story.append(p('English (Fluent) | Spanish (Native) | French (Intermediate)'))
 
 
-def footer(canvas, doc):
-    canvas.saveState()
-    canvas.setStrokeColor(RULE)
-    canvas.setLineWidth(0.4)
-    canvas.line(doc.leftMargin, 0.39 * inch, letter[0] - doc.rightMargin, 0.39 * inch)
-    canvas.setFont('ResumeSans', 6.7)
-    canvas.setFillColor(MUTED)
-    canvas.drawString(doc.leftMargin, 0.24 * inch, 'Gonzalo Loayza')
-    canvas.drawRightString(letter[0] - doc.rightMargin, 0.24 * inch, f'Page {doc.page}')
-    canvas.restoreState()
-
-
 doc = SimpleDocTemplate(
     str(OUT),
     pagesize=letter,
-    rightMargin=0.58 * inch,
-    leftMargin=0.58 * inch,
-    topMargin=0.46 * inch,
-    bottomMargin=0.52 * inch,
+    rightMargin=0.38 * inch,
+    leftMargin=0.38 * inch,
+    topMargin=0.30 * inch,
+    bottomMargin=0.30 * inch,
     title='Gonzalo Loayza Resume',
     author='Gonzalo Loayza',
 )
-doc.build(story, onFirstPage=footer, onLaterPages=footer)
+doc.build(story)
 print(f'Generated {OUT}')
