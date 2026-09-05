@@ -32,6 +32,11 @@ description: "Hatch Digital internship case study: data automation, mining data 
     </div>
   </header>
 
+  <figure style="margin:0 0 2.8rem;overflow:hidden;border:1px solid #e2e8f0;border-radius:16px;background:#fff;">
+    <img src="/assets/images/social/hatch-digital-social.jpg" alt="Hatch Digital data engineering and decision support visual" style="display:block;width:100%;aspect-ratio:16/7;object-fit:cover;margin:0;">
+    <figcaption style="padding:.8rem 1rem .9rem;color:#64748b;font-size:.76rem;line-height:1.5;border-top:1px solid #e2e8f0;">The internship connected data engineering, mining context, and decision support rather than treating analytics as a stand-alone modeling exercise.</figcaption>
+  </figure>
+
   <section class="case-visual case-visual--flow" aria-label="Data to decision workflow illustration">
     <div><span>01</span><strong>Operational data</strong><small>Structure, validate, prepare</small></div>
     <i>→</i>
@@ -97,8 +102,8 @@ description: "Hatch Digital internship case study: data automation, mining data 
       <div class="case-fact"><span>Period</span><strong>Jun – Aug 2026</strong></div>
       <div class="case-fact"><span>Focus</span><strong>Mining &amp; industrial operations</strong></div>
       <div class="case-note">
-        <strong>Portfolio note</strong>
-        <p>This case study intentionally stays at a non-confidential level and does not include client data, internal architectures, source material, or proprietary implementation details.</p>
+        <strong>Project scope</strong>
+        <p>Examples focus on Gonzalo's contribution and the digital workflow; client-specific data and proprietary implementation details are not reproduced.</p>
       </div>
     </aside>
   </section>
