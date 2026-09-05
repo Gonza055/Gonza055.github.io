@@ -47,7 +47,7 @@ description: "Hatch Digital internship case study: data automation, mining measu
       </section>
       <figure class="case-media case-media--wide case-media--technical">
         <img src="/assets/images/diagrams/drone-measurement-architecture.svg" alt="Generalized hybrid measurement architecture from fixed capture and aerial reference to a decision per cycle">
-        <figcaption>Public-safe reconstruction of the measurement architecture: fixed capture + independent aerial reference + cycle data + local processing + validation → decision per cycle.</figcaption>
+        <figcaption>Generalized measurement architecture: fixed capture + independent aerial reference + cycle data + local processing + validation → decision per cycle.</figcaption>
       </figure>
 
       <section class="case-section">
@@ -86,7 +86,6 @@ description: "Hatch Digital internship case study: data automation, mining measu
       <div class="case-fact"><span>Period</span><strong>Jun – Aug 2026</strong></div>
       <div class="case-fact"><span>Workstreams</span><strong>Drones · HITM · SIC</strong></div>
       <div class="case-fact"><span>Focus</span><strong>Mining &amp; industrial operations</strong></div>
-      <div class="case-note"><strong>Public case-study scope</strong><p>Authentic internship photos are shown. Underlying client material is used only to ground the narrative; client names, economics, vendor evaluations, and implementation-specific values are not reproduced.</p></div>
     </aside>
   </section>
 
