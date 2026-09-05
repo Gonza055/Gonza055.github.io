@@ -13,58 +13,110 @@ description: "Hatch Digital internship case study: data automation, mining data 
 <link rel="stylesheet" href="{{ '/assets/css/visual-pass-2.css' | relative_url }}">
 
 <article class="portfolio-page case-page">
+
   <a class="case-back" href="/projects/">← Selected work</a>
 
   <header class="case-hero">
     <p class="pf-eyebrow">Hatch Digital · 2026</p>
     <h1>From mining data to clearer operational decisions.</h1>
-    <p class="case-hero__lead">During my internship with Hatch Digital, I contributed to data automation, measurement concepts, and decision-support work for mining and engineering applications. The experience reinforced a practical lesson: technology creates value when it starts with a real problem, reliable information, and the people who need to make a better decision.</p>
-    <div class="case-tags"><span class="pf-tag">Data Engineering</span><span class="pf-tag">Automation</span><span class="pf-tag">Digital Mining</span><span class="pf-tag">Decision Support</span></div>
+    <p class="case-hero__lead">
+      During my internship with Hatch Digital, I worked across data automation, measurement concepts,
+      and decision-support problems for mining and engineering applications. The common lesson was simple:
+      the technology only becomes useful when the data is trustworthy and the operational decision is clear.
+    </p>
+    <div class="case-tags">
+      <span class="pf-tag">Data Engineering</span>
+      <span class="pf-tag">Automation</span>
+      <span class="pf-tag">Digital Mining</span>
+      <span class="pf-tag">Decision Support</span>
+    </div>
   </header>
 
-  <figure class="case-media case-media--wide">
-    <img src="/assets/images/social/hatch-digital-social.jpg" alt="Hatch Digital data engineering and decision support visual">
-    <figcaption>Digital in practice: connect operational context, trustworthy information, and a decision that can actually be improved.</figcaption>
+  <figure class="case-media case-media--wide case-media--photo">
+    <img src="/assets/images/real/hatch-presentation-hitm.webp" alt="Gonzalo presenting a Hatch Digital HITM data-validation workflow to colleagues">
+    <figcaption>Presenting <em>Digital en práctica</em> to colleagues at Hatch — a retrospective on the internship through three applied workstreams: measurement, data automation, and decision support.</figcaption>
   </figure>
-
-  <section style="margin:0 0 2.8rem;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;">
-    <div style="padding:1.25rem;border:1px solid #e2e8f0;border-radius:16px;background:#fff;">
-      <span style="display:block;color:#2563eb;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;">01 · Drones</span>
-      <h3 style="margin:.45rem 0 .45rem;font-size:1.15rem;">The challenge was not flying. It was measuring with confidence.</h3>
-      <p style="margin:0;color:#475569;font-size:.86rem;line-height:1.55;">Evaluate the full measurement chain: sensor, reference, geometry, uncertainty, altitude, GNSS, and energy — then ask whether the result is reliable enough for the intended operational use.</p>
-    </div>
-    <div style="padding:1.25rem;border:1px solid #e2e8f0;border-radius:16px;background:#fff;">
-      <span style="display:block;color:#2563eb;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;">02 · HITM</span>
-      <h3 style="margin:.45rem 0 .45rem;font-size:1.15rem;">Turn engineering data into a reviewable workflow.</h3>
-      <p style="margin:0;color:#475569;font-size:.86rem;line-height:1.55;">Receive, prepare, validate, and generate a structured output that specialists can review — treating data quality as part of the engineering workflow, not an afterthought.</p>
-    </div>
-    <div style="padding:1.25rem;border:1px solid #e2e8f0;border-radius:16px;background:#fff;">
-      <span style="display:block;color:#2563eb;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;">03 · SIC</span>
-      <h3 style="margin:.45rem 0 .45rem;font-size:1.15rem;">Shorten the path from deviation to action.</h3>
-      <p style="margin:0;color:#475569;font-size:.86rem;line-height:1.55;">Detect, evaluate, decide, and close within the shift — framing digital support around the operational decision cycle rather than around a technology catalog.</p>
-    </div>
-  </section>
-
-  <section class="case-visual case-visual--flow" aria-label="Data to decision workflow illustration">
-    <div><span>01</span><strong>Operational context</strong><small>Understand the process and the decision</small></div>
-    <i>→</i><div><span>02</span><strong>Trusted information</strong><small>Capture, structure, validate</small></div>
-    <i>→</i><div><span>03</span><strong>Decision support</strong><small>Make the next action clearer</small></div>
-  </section>
 
   <section class="case-grid">
     <div class="case-main">
-      <section class="case-section"><p class="pf-section__label">The challenge</p><h2>Digital work starts before the model.</h2><p>Mining and engineering environments generate large amounts of information, but raw data is not automatically useful. Before analytics can support a decision, the data has to be structured and validated, the physical process has to be understood, and the intended operational use has to be clear.</p></section>
+      <section class="case-section">
+        <p class="pf-section__label">The challenge</p>
+        <h2>Digital work starts before the model.</h2>
+        <p>
+          Mining and engineering environments generate large amounts of information, but raw data is not
+          automatically useful. Before analytics can support a decision, the physical problem has to be understood,
+          the information has to be structured and validated, and the intended operational use has to be explicit.
+        </p>
+      </section>
 
-      <section class="case-section"><p class="pf-section__label">Selected workstreams</p><h2>Four ways I worked at the intersection of data and operations.</h2><div class="case-points">
-        <div><span>01</span><h3>Tailings data automation</h3><p>Supported data-processing and validation workflows for Hatch Integrated Tailings Management (HITM), helping turn large engineering datasets into more consistent, usable information.</p></div>
-        <div><span>02</span><h3>Measurement concepts</h3><p>Explored drone-based measurement concepts for mining applications, focusing on the full chain required to make a measurement technically trustworthy.</p></div>
-        <div><span>03</span><h3>Decision-support workflows</h3><p>Contributed to work focused on translating operational information into clearer actions, including logic for KPI- and dashboard-oriented decision support.</p></div>
-        <div><span>04</span><h3>Problem framing</h3><p>Worked with multidisciplinary teams to understand the engineering problem first, then evaluate where data, automation, or analytics could realistically add value.</p></div>
-      </div></section>
+      <section class="case-section">
+        <p class="pf-section__label">01 · Measurement</p>
+        <h2>Drones: the problem was not flying — it was measuring with confidence.</h2>
+        <p>
+          I explored drone-based measurement concepts for mining applications. The useful question was not whether
+          an aerial image could be captured, but whether geometry, positioning, reconstruction, and reference checks
+          could turn that capture into a measurement that an engineer could defend.
+        </p>
+      </section>
 
-      <section class="case-section case-section--visual-note"><p class="pf-section__label">Digital en práctica</p><h2>Presenting the experience clarified the pattern behind the projects.</h2><p>For Hatch's Young Professionals community, I structured the story around a simple sequence: <strong>problem → criterion → example → learning</strong>. The three project anchors were Drones, HITM, and Short Interval Control. The common idea was not “use more technology”; it was “define the decision, identify the information required, and validate whether the result is trustworthy.”</p></section>
+      <figure class="case-media case-media--wide case-media--technical">
+        <img src="/assets/images/real/hatch-digital-drones.webp" alt="Drone measurement concept showing capture, reference, reconstruction, and comparison steps">
+        <figcaption>Measurement concept from <em>Digital en práctica</em>: capture → reference → reconstruct → contrast. A useful measurement must also explain when not to trust it.</figcaption>
+      </figure>
 
-      <section class="case-section"><p class="pf-section__label">What I learned</p><h2>Read the operation. Make uncertainty visible. Correct with others.</h2><p>The internship changed how I think about applied computing. The strongest digital solutions come from combining software and data skills with engineering context, specialist review, and a clear understanding of how the output will be used.</p></section>
+      <section class="case-section">
+        <p class="pf-section__label">02 · Data automation</p>
+        <h2>HITM: automation only helps if technical logic survives the pipeline.</h2>
+        <p>
+          I supported data-processing and validation work for Hatch Integrated Tailings Management (HITM),
+          focusing on turning technical source files into more consistent, reviewable information. The work reinforced
+          that automation does not remove engineering validation; it makes the rules, exceptions, and handoffs more explicit.
+        </p>
+      </section>
+
+      <section class="case-media-grid case-media-grid--equal" aria-label="HITM project evidence">
+        <figure class="case-media case-media--technical">
+          <img src="/assets/images/real/hatch-digital-hitm.webp" alt="HITM workflow showing receive, prepare, validate, and generate-output steps">
+          <figcaption>HITM workflow presented during the internship: receive → prepare → validate → generate output.</figcaption>
+        </figure>
+        <figure class="case-media case-media--photo">
+          <img src="/assets/images/real/hatch-presentation-hitm.webp" alt="Gonzalo presenting the HITM workflow">
+          <figcaption>The same workstream presented to the Hatch Young Professionals community.</figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section">
+        <p class="pf-section__label">03 · Decision support</p>
+        <h2>SIC: convert a shift event into a consistent action while there is still time to act.</h2>
+        <p>
+          My decision-support work explored how shift-level deviations can be detected, evaluated, assigned a response,
+          and closed with traceability. Rather than starting from a dashboard, the logic starts with the operating decision:
+          what changed, what matters now, what action is recommended, and who owns it.
+        </p>
+      </section>
+
+      <section class="case-media-grid case-media-grid--equal" aria-label="SIC and operational decision-support context">
+        <figure class="case-media case-media--photo">
+          <img src="/assets/images/real/hatch-control-room.webp" alt="Gonzalo in an operations control room with live industrial dashboards">
+          <figcaption>Operational context matters: decision support has to fit the environment where people actually monitor and act.</figcaption>
+        </figure>
+        <figure class="case-media case-media--technical">
+          <img src="/assets/images/real/hatch-digital-sic.webp" alt="SIC decision cycle showing detect, evaluate, decide, and close">
+          <figcaption>SIC concept from the presentation: detect → evaluate → decide → close, with a clear owner and reason for the action.</figcaption>
+        </figure>
+      </section>
+
+      <div class="case-evidence-note"><strong>What connected all three workstreams:</strong> define the decision first, determine what information it needs, and make validation part of the workflow rather than an afterthought.</div>
+
+      <section class="case-section">
+        <p class="pf-section__label">What I learned</p>
+        <h2>The code is only one part of the work.</h2>
+        <p>
+          The internship changed how I frame technical problems. A useful digital solution sits between the operation,
+          the data, and the software. That means understanding what decision should improve, structuring the data around
+          that decision, and working with specialists to validate whether the result is credible enough to use.
+        </p>
+      </section>
     </div>
 
     <aside class="case-sidebar">
@@ -73,10 +125,17 @@ description: "Hatch Digital internship case study: data automation, mining data 
       <div class="case-fact"><span>Location</span><strong>Peru</strong></div>
       <div class="case-fact"><span>Period</span><strong>Jun – Aug 2026</strong></div>
       <div class="case-fact"><span>Workstreams</span><strong>Drones · HITM · SIC</strong></div>
-      <div class="case-fact"><span>Focus</span><strong>Mining & industrial operations</strong></div>
-      <div class="case-note"><strong>Public scope</strong><p>The portfolio shows Gonzalo's contribution, workflow, and learning. Client-specific data and proprietary implementation details are not reproduced.</p></div>
+      <div class="case-fact"><span>Focus</span><strong>Mining &amp; industrial operations</strong></div>
+      <div class="case-note">
+        <strong>Public case-study scope</strong>
+        <p>The visuals focus on Gonzalo's work and presentation narrative; client-specific data and proprietary implementation details are not reproduced.</p>
+      </div>
     </aside>
   </section>
 
-  <nav class="case-next"><span>Next case study</span><a href="/projects/predictive-maintenance/">Predictive Maintenance & Reliability Analytics →</a></nav>
+  <nav class="case-next">
+    <span>Next case study</span>
+    <a href="/projects/predictive-maintenance/">Predictive Maintenance &amp; Reliability Analytics →</a>
+  </nav>
+
 </article>
