@@ -64,12 +64,35 @@
   text-transform: uppercase;
 }
 
-/* Real imagery inside cards */
+/* Homepage project cards: evidence first, copy second. */
+.pf-work-card {
+  min-height: 0;
+  padding: 0;
+  justify-content: flex-start;
+}
+
 .pf-work-card__visual--image,
 .work-feature__media,
 .work-small-card__media {
   overflow: hidden;
   background: #eef2f7;
+}
+
+.pf-work-card__visual--image {
+  position: relative;
+  top: auto;
+  right: auto;
+  width: 100%;
+  height: 215px;
+  min-height: 215px;
+  flex: 0 0 auto;
+  border-left: 0;
+  border-bottom: 1px solid var(--pf-border);
+}
+
+.pf-work-card--wide .pf-work-card__visual--image {
+  height: 285px;
+  min-height: 285px;
 }
 
 .pf-work-card__visual--image img,
@@ -82,19 +105,32 @@
   transition: transform 220ms ease;
 }
 
+.pf-work-card__visual--image img[src*="/assets/images/social/"] {
+  object-fit: contain;
+  padding: 0.7rem;
+  background: #fff;
+}
+
+.pf-work-card > div:not(.pf-work-card__visual):not(.pf-work-card__footer) {
+  padding: 1.35rem 1.5rem 0;
+}
+
+.pf-work-card h3,
+.pf-work-card--wide h3,
+.pf-work-card__desc {
+  max-width: 100%;
+}
+
+.pf-work-card__footer {
+  width: 100%;
+  margin-top: auto;
+  padding: 1.2rem 1.5rem 1.4rem;
+}
+
 .pf-work-card:hover .pf-work-card__visual--image img,
 .work-feature:hover .work-feature__media img,
 .work-small-card:hover .work-small-card__media img {
   transform: scale(1.018);
-}
-
-.pf-work-card__visual--image {
-  min-height: 195px;
-  border-bottom: 1px solid var(--pf-border);
-}
-
-.pf-work-card--wide .pf-work-card__visual--image {
-  min-height: 245px;
 }
 
 .work-feature__media {
@@ -204,6 +240,21 @@
   font-weight: 500;
 }
 
+@media (min-width: 901px) {
+  .pf-hero {
+    grid-template-columns: minmax(0, 1.25fr) minmax(380px, 0.75fr);
+    gap: 3.5rem;
+  }
+
+  .pf-hero h1 {
+    font-size: clamp(2.65rem, 5vw, 4.35rem);
+  }
+
+  .pf-hero__media {
+    min-height: 390px;
+  }
+}
+
 @media (max-width: 900px) {
   .pf-hero__media {
     min-height: 360px;
@@ -233,6 +284,20 @@
   .pf-hero__media-card--b {
     width: 42%;
     height: 29%;
+  }
+
+  .pf-work-card__visual--image,
+  .pf-work-card--wide .pf-work-card__visual--image {
+    height: 190px;
+    min-height: 190px;
+  }
+
+  .pf-work-card > div:not(.pf-work-card__visual):not(.pf-work-card__footer) {
+    padding: 1.1rem 1.15rem 0;
+  }
+
+  .pf-work-card__footer {
+    padding: 1rem 1.15rem 1.15rem;
   }
 
   .case-evidence__grid {
