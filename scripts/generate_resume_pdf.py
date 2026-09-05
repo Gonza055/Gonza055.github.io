@@ -133,7 +133,7 @@ story.append(project(
 ))
 
 story += sec('Certifications')
-story.append(p('<b>AWS Certification in Progress</b><br/>Expected completion: August 2026'))
+story.append(p('<b>AWS Certification - In Progress</b>'))
 
 story += sec('Awards')
 story.append(p('Donald Goodyear Doll Sr. Scholarship | Dr. Gerald Hatch Scholarship | BYU Honors Program'))
