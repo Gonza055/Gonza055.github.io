@@ -2,7 +2,7 @@
 layout: single
 title: "Operational Mode Discovery & Business Value Analysis"
 permalink: /projects/operational-mode-discovery/
-description: "BYU Honors thesis case study applying time-series preprocessing, PCA, clustering, and business-value analysis to a real industrial processing environment."
+description: "BYU Honors thesis case study applying time-series preprocessing, PCA, DBSCAN clustering, and business-value analysis to a real industrial processing environment."
 ---
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,101 +13,75 @@ description: "BYU Honors thesis case study applying time-series preprocessing, P
 <link rel="stylesheet" href="{{ '/assets/css/visual-pass-2.css' | relative_url }}">
 
 <article class="portfolio-page case-page">
-
   <a class="case-back" href="/projects/">← Selected work</a>
 
   <header class="case-hero">
     <p class="pf-eyebrow">BYU Honors Program · 2025–2026</p>
     <h1>Discovering operating modes and connecting them to business value.</h1>
-    <p class="case-hero__lead">
-      My Honors thesis explores how unsupervised learning can identify recurring operating patterns in a real
-      industrial processing environment and connect those patterns to performance, stability, and value drivers.
-    </p>
-    <div class="case-tags">
-      <span class="pf-tag">Python</span>
-      <span class="pf-tag">Industrial Time-Series</span>
-      <span class="pf-tag">PCA</span>
-      <span class="pf-tag">Clustering</span>
-      <span class="pf-tag">Business Value Analysis</span>
-    </div>
+    <p class="case-hero__lead">My Honors thesis investigates whether minute-level industrial process data can reveal recurring operating regimes that are analytically distinct, operationally interpretable, and meaningfully different in performance.</p>
+    <div class="case-tags"><span class="pf-tag">Python</span><span class="pf-tag">Industrial Time-Series</span><span class="pf-tag">PCA</span><span class="pf-tag">DBSCAN</span><span class="pf-tag">Operational Analytics</span></div>
   </header>
 
-  <figure class="case-media case-media--wide">
-    <img src="/assets/images/social/operational-mode-social.jpg" alt="Operational mode discovery and business value analysis portfolio preview">
-    <figcaption>Honors research focused on making multivariate operating behavior interpretable enough to support engineering and business-value discussions.</figcaption>
+  <figure class="case-media case-media--wide case-media--technical">
+    <img src="/assets/images/diagrams/honors-regimes.svg" alt="Visualization of three retained operating regimes in PCA space">
+    <figcaption>Three recurrent operating regimes emerged from the retained analytical structure rather than one homogeneous operating state.</figcaption>
   </figure>
+
+  <section class="case-metric-strip">
+    <div><strong>95%</strong><span>PCA explained-variance target</span></div>
+    <div><strong>2.5</strong><span>selected DBSCAN epsilon</span></div>
+    <div><strong>3</strong><span>retained operating regimes</span></div>
+  </section>
 
   <section class="case-grid">
     <div class="case-main">
       <section class="case-section">
         <p class="pf-section__label">Research question</p>
-        <h2>Can recurring operating patterns reveal where performance changes?</h2>
-        <p>
-          Industrial processes do not operate at a single steady state. Throughput pressure, recovery losses,
-          equipment constraints, instrumentation quality, and control-loop behavior can all shift how the system
-          behaves. The thesis frames these changes as recurring operational modes that can be discovered and profiled.
-        </p>
-      </section>
-
-      <section class="case-visual case-visual--modes" aria-label="Illustration of operating modes in reduced-dimensional space">
-        <div class="case-cluster case-cluster--a"><i></i><i></i><i></i><i></i><i></i></div>
-        <div class="case-cluster case-cluster--b"><i></i><i></i><i></i><i></i><i></i></div>
-        <div class="case-cluster case-cluster--c"><i></i><i></i><i></i><i></i></div>
-        <span class="case-axis case-axis--x">reduced dimension 1</span>
-        <span class="case-axis case-axis--y">reduced dimension 2</span>
+        <h2>Can noisy process history be reorganized into operating states that engineers can interpret?</h2>
+        <p>Industrial processes rarely behave as one steady state. Feed conditions, equipment configurations, hydraulic behavior, and control conditions shift over time. The thesis asks whether those changes leave recurring multivariate patterns in the process data — and whether those patterns relate to performance.</p>
       </section>
 
       <section class="case-section">
         <p class="pf-section__label">Method</p>
-        <h2>From minute-level process data to interpretable operating modes.</h2>
-        <div class="case-points">
-          <div>
-            <span>01</span>
-            <h3>Preprocess the process data</h3>
-            <p>Align minute-level process information with daily KPI context, scale features, and prepare comparable observations for multivariate analysis.</p>
-          </div>
-          <div>
-            <span>02</span>
-            <h3>Reduce complexity</h3>
-            <p>Use principal component analysis to compress correlated process variables while retaining interpretable patterns in the operating data.</p>
-          </div>
-          <div>
-            <span>03</span>
-            <h3>Discover recurrent modes</h3>
-            <p>Apply clustering to identify recurring operating states and evaluate whether those modes correspond to meaningful process behavior.</p>
-          </div>
-          <div>
-            <span>04</span>
-            <h3>Connect modes to value</h3>
-            <p>Profile operating modes against recovery, losses, throughput, stability, instrumentation gaps, and improvement opportunities.</p>
-          </div>
-        </div>
+        <h2>Separate process behavior from performance context, then reconnect them for interpretation.</h2>
+        <p>Minute-level process observations form the unsupervised-learning feature space, while daily operational and metallurgical KPIs are preserved as interpretive context. The workflow prepares and aligns both layers, standardizes the process features, reduces dimensionality with PCA, applies DBSCAN, and profiles the retained structures against operational evidence.</p>
+      </section>
+
+      <figure class="case-media case-media--wide case-media--technical">
+        <img src="/assets/images/diagrams/honors-method.svg" alt="Analytical workflow from minute-level process data and daily KPI context through scaling, PCA, DBSCAN, and interpretation">
+        <figcaption>Analytical workflow: process data + KPI context → scaling → PCA → DBSCAN → regime profiling and interpretation.</figcaption>
+      </figure>
+
+      <div class="case-points">
+        <div><span>01</span><h3>Prepare and align</h3><p>Merge minute-level process history with daily KPI context while preserving the difference in time scale.</p></div>
+        <div><span>02</span><h3>Reduce dimensionality</h3><p>Use PCA with a 95% explained-variance target to compress correlated industrial variables into a latent feature space.</p></div>
+        <div><span>03</span><h3>Find dense structures</h3><p>Apply DBSCAN so recurring dense regions can emerge without forcing every observation into a cluster.</p></div>
+        <div><span>04</span><h3>Interpret the regimes</h3><p>Compare retained structures against recovery, production, variability, and process signatures to assign operating meaning.</p></div>
+      </div>
+
+      <section class="case-section">
+        <p class="pf-section__label">Result</p>
+        <h2>The three regimes differed in both geometry and operating performance.</h2>
+        <p>The retained result contains one diffuse unstable regime representing about 12% of operating time and two denser recurring regimes representing about 44% each. Within the analyzed period, the stable regime showed the strongest combination of average recovery, recovery consistency, and production, while the unstable regime showed the weakest and most variable profile. A separate dense regime was distinguished by a clear equipment-configuration signature.</p>
       </section>
 
       <section class="case-section">
         <p class="pf-section__label">Why it matters</p>
-        <h2>Analytics is more useful when it connects to an operational roadmap.</h2>
-        <p>
-          The thesis goes beyond clustering for its own sake. Its goal is to connect data infrastructure,
-          control performance, instrumentation quality, and machine-learning opportunities to a staged roadmap
-          around throughput, recovery stability, energy optimization, and business value.
-        </p>
+        <h2>Unsupervised learning becomes useful when the structure can be explained in process terms.</h2>
+        <p>The contribution is not simply finding clusters. It is building a reproducible path from noisy historian data to operating regimes that can be discussed with engineers, compared against performance, and eventually used as a foundation for regime-aware monitoring and process-improvement work.</p>
       </section>
     </div>
 
     <aside class="case-sidebar">
       <div class="case-fact"><span>Program</span><strong>BYU Honors</strong></div>
       <div class="case-fact"><span>Period</span><strong>2025–2026</strong></div>
-      <div class="case-fact"><span>Setting</span><strong>Real industrial concentrator environment</strong></div>
-      <div class="case-fact"><span>Data</span><strong>Process time-series + KPI context</strong></div>
-      <div class="case-fact"><span>Methods</span><strong>PCA · Clustering · Performance profiling</strong></div>
-      <div class="case-fact"><span>Goal</span><strong>Interpretable operational insight</strong></div>
+      <div class="case-fact"><span>Setting</span><strong>Real industrial processing environment</strong></div>
+      <div class="case-fact"><span>Data</span><strong>Minute-level process data + daily KPI context</strong></div>
+      <div class="case-fact"><span>Methods</span><strong>StandardScaler · PCA · DBSCAN · KPI profiling</strong></div>
+      <div class="case-fact"><span>Goal</span><strong>Interpretable operational modes</strong></div>
+      <div class="case-note"><strong>Research context</strong><p>The industrial partner is anonymized here; the analytical methods and result-level regime summaries are preserved.</p></div>
     </aside>
   </section>
 
-  <nav class="case-next">
-    <span>Next project</span>
-    <a href="/projects/trainops/">TrainOps Simulation Data Engineering →</a>
-  </nav>
-
+  <nav class="case-next"><span>Next project</span><a href="/projects/trainops/">TrainOps Simulation Data Engineering →</a></nav>
 </article>

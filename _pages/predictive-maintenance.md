@@ -13,28 +13,18 @@ description: "Industrial analytics case study from Buenaventura: sensor-data con
 <link rel="stylesheet" href="{{ '/assets/css/visual-pass-2.css' | relative_url }}">
 
 <article class="portfolio-page case-page">
-
   <a class="case-back" href="/projects/">← Selected work</a>
 
   <header class="case-hero">
     <p class="pf-eyebrow">Buenaventura · San Gabriel Unit · 2025</p>
     <h1>Turning noisy equipment data into a reliability workflow.</h1>
-    <p class="case-hero__lead">
-      During my maintenance-data internship, I worked across the reliability-data pipeline: cleaning industrial
-      time-series, engineering equipment features, structuring asset information, and analyzing process behavior
-      to support condition-monitoring and predictive-maintenance exploration.
-    </p>
-    <div class="case-tags">
-      <span class="pf-tag">Industrial Time-Series</span>
-      <span class="pf-tag">Feature Engineering</span>
-      <span class="pf-tag">Reliability Analytics</span>
-      <span class="pf-tag">Condition Monitoring</span>
-    </div>
+    <p class="case-hero__lead">During my maintenance-data internship, I worked across the reliability-data pipeline: cleaning industrial time-series, engineering equipment features, structuring asset information, and analyzing process behavior to support condition-monitoring and predictive-maintenance exploration.</p>
+    <div class="case-tags"><span class="pf-tag">Industrial Time-Series</span><span class="pf-tag">Feature Engineering</span><span class="pf-tag">Reliability Analytics</span><span class="pf-tag">Condition Monitoring</span></div>
   </header>
 
-  <figure class="case-media case-media--wide">
-    <img src="/assets/images/projects/EDA4.png" alt="Aerial view of the mining and processing operation where the reliability analytics work was performed">
-    <figcaption>Operational context — reliability analytics applied to real crushing and grinding equipment in a mining environment.</figcaption>
+  <figure class="case-media case-media--wide case-media--photo">
+    <img src="/assets/images/real/buenaventura-site.webp" alt="Gonzalo in personal protective equipment at a mining operation">
+    <figcaption>Field context — the analytics work was grounded in real equipment, operating constraints, and maintenance questions.</figcaption>
   </figure>
 
   <section class="case-metric-strip">
@@ -48,70 +38,35 @@ description: "Industrial analytics case study from Buenaventura: sensor-data con
       <section class="case-section">
         <p class="pf-section__label">The problem</p>
         <h2>The data existed, but it was not yet analysis-ready.</h2>
-        <p>
-          Equipment and process signals from crushing and grinding systems contained noise, inconsistent behavior,
-          outliers, and limited structure. The first challenge was to create a reliable analytical foundation before
-          attempting more advanced maintenance models.
-        </p>
+        <p>Equipment and process signals from crushing and grinding systems contained noise, inconsistent behavior, outliers, and limited structure. The first challenge was to create a reliable analytical foundation before attempting more advanced maintenance models.</p>
       </section>
+
+      <figure class="case-media case-media--wide case-media--technical">
+        <img src="/assets/images/diagrams/reliability-workflow.svg" alt="Reliability analytics workflow from raw signals through conditioning and feature engineering to monitoring candidates">
+        <figcaption>The work moved from signal quality and asset context toward variables that could support future condition-monitoring and predictive-maintenance applications.</figcaption>
+      </figure>
 
       <section class="case-section">
         <p class="pf-section__label">Approach</p>
         <h2>An end-to-end reliability analytics workflow.</h2>
         <div class="case-points">
-          <div>
-            <span>01</span>
-            <h3>Condition the signals</h3>
-            <p>Applied smoothing, outlier handling, reconstruction, and preprocessing steps to make noisy time-series more stable and interpretable.</p>
-          </div>
-          <div>
-            <span>02</span>
-            <h3>Engineer useful features</h3>
-            <p>Created reliability-focused variables including temperature deltas, load ratios, and transient-spike indicators for equipment monitoring.</p>
-          </div>
-          <div>
-            <span>03</span>
-            <h3>Connect process and wear behavior</h3>
-            <p>Analyzed operating signals linked to equipment wear, ore variability, and process behavior to identify variables worth monitoring.</p>
-          </div>
-          <div>
-            <span>04</span>
-            <h3>Structure the asset context</h3>
-            <p>Organized 100+ assets using ISO 14224/17359-oriented structures to improve traceability, consistency, and analytical usability.</p>
-          </div>
+          <div><span>01</span><h3>Condition the signals</h3><p>Applied smoothing, outlier handling, reconstruction, and preprocessing to make noisy time-series more stable and interpretable.</p></div>
+          <div><span>02</span><h3>Engineer useful features</h3><p>Created reliability-focused variables including temperature deltas, load ratios, and transient-spike indicators.</p></div>
+          <div><span>03</span><h3>Connect process and wear behavior</h3><p>Analyzed operating signals linked to equipment wear, ore variability, and process behavior to identify variables worth monitoring.</p></div>
+          <div><span>04</span><h3>Structure the asset context</h3><p>Organized 100+ assets using ISO 14224/17359-oriented structures to improve traceability, consistency, and analytical usability.</p></div>
         </div>
-      </section>
-
-      <section class="case-media-grid" aria-label="Reliability analysis visuals">
-        <figure class="case-media">
-          <img src="/assets/images/projects/EDA3.png" alt="Ball mill schematic used to communicate the physical equipment context">
-          <figcaption>Physical-system context — understanding the equipment and wear mechanisms before interpreting signals.</figcaption>
-        </figure>
-        <figure class="case-media">
-          <img src="/assets/images/projects/EDA2.png" alt="Correlation heatmap used during exploratory reliability analysis">
-          <figcaption>Example EDA output — correlation analysis used to identify relationships worth investigating before moving toward predictive logic.</figcaption>
-        </figure>
       </section>
 
       <section class="case-section">
         <p class="pf-section__label">Outcome</p>
         <h2>A stronger basis for condition monitoring and future ML.</h2>
-        <p>
-          The work produced cleaner datasets, a reusable set of reliability features, clearer relationships between
-          process behavior and equipment condition, and a more structured asset context for future monitoring workflows.
-          The emphasis was not on claiming a production-ready failure model, but on building the data and engineering
-          foundation needed for one.
-        </p>
+        <p>The work produced cleaner datasets, a reusable set of reliability features, clearer relationships between process behavior and equipment condition, and a more structured asset context for future monitoring workflows. The emphasis was not on claiming a production-ready failure model, but on building the data and engineering foundation needed for one.</p>
       </section>
 
       <section class="case-section case-section--visual-note">
         <p class="pf-section__label">What this demonstrates</p>
         <h2>Machine learning starts with understanding the equipment and the data.</h2>
-        <p>
-          The strongest lesson from the work was that predictive maintenance is not simply a modeling exercise.
-          Signal quality, asset hierarchy, process context, and engineering interpretation determine whether a model
-          can eventually become useful to maintenance and operations teams.
-        </p>
+        <p>Predictive maintenance is not simply a modeling exercise. Signal quality, asset hierarchy, process context, and engineering interpretation determine whether a model can eventually become useful to maintenance and operations teams.</p>
       </section>
     </div>
 
@@ -126,9 +81,5 @@ description: "Industrial analytics case study from Buenaventura: sensor-data con
     </aside>
   </section>
 
-  <nav class="case-next">
-    <span>Next case study</span>
-    <a href="/projects/operational-mode-discovery/">Operational Mode Discovery &amp; Business Value Analysis →</a>
-  </nav>
-
+  <nav class="case-next"><span>Next case study</span><a href="/projects/operational-mode-discovery/">Operational Mode Discovery &amp; Business Value Analysis →</a></nav>
 </article>

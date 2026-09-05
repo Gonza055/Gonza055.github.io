@@ -1,0 +1,1 @@
+Portfolio build-time assets are stored directly under assets/images/real. This placeholder prevents use of the previous invalid ZIP bundle.
