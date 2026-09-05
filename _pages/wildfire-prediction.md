@@ -2,7 +2,7 @@
 layout: single
 title: "Wildfire Prediction System"
 permalink: /projects/wildfire-prediction/
-description: "BYU applied machine-learning project using weather time-series, XGBoost, SHAP interpretability, APIs, and dashboard-style risk visualization."
+description: "BYU applied machine-learning project combining seven-day weather histories, XGBoost risk scoring, Utah maps, and satellite-image retrieval."
 ---
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,50 +17,98 @@ description: "BYU applied machine-learning project using weather time-series, XG
 
   <header class="case-hero">
     <p class="pf-eyebrow">BYU · 2026</p>
-    <h1>Predicting wildfire risk with time-series data and interpretable ML.</h1>
-    <p class="case-hero__lead">A prototype risk-scoring workflow combining recent weather conditions, reported wildfire data, model comparison, SHAP interpretability, and API-driven data retrieval to prioritize high-risk locations.</p>
-    <div class="case-tags"><span class="pf-tag">XGBoost</span><span class="pf-tag">Time-Series</span><span class="pf-tag">SHAP</span><span class="pf-tag">API Integration</span></div>
+    <h1>Prioritizing where to look for wildfires before scanning everywhere.</h1>
+    <p class="case-hero__lead">
+      A team prototype that combines recent weather data, machine learning, Utah risk maps, and satellite-image
+      retrieval to narrow a large search area into locations that deserve attention first.
+    </p>
+    <div class="case-tags"><span class="pf-tag">XGBoost</span><span class="pf-tag">Time-Series</span><span class="pf-tag">API Integration</span><span class="pf-tag">Docker</span></div>
   </header>
 
-  <figure class="case-media case-media--wide">
-    <img src="/assets/images/social/wildfire-social.jpg" alt="Wildfire prediction system portfolio preview">
-    <figcaption>A complete data-to-decision prototype: weather history → risk model → interpretable drivers → priority locations → satellite-image retrieval.</figcaption>
+  <figure class="case-media case-media--wide case-media--photo">
+    <img src="/assets/images/real/wildfire-team.webp" alt="Gonzalo and two teammates presenting the Wildfire Prediction project at BYU">
+    <figcaption>Project showcase at BYU — Gonzalo and teammates with the original physical Wildfire Prediction poster.</figcaption>
   </figure>
 
   <section class="case-metric-strip">
-    <div><strong>968</strong><span>reported Utah wildfires in the historical dataset</span></div>
-    <div><strong>100k</strong><span>random date-location examples for comparison</span></div>
-    <div><strong>18×</strong><span>PR-AUC improvement over the random baseline</span></div>
-  </section>
-
-  <section style="margin:0 0 2.8rem;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;">
-    <div style="padding:1.2rem;border:1px solid #e2e8f0;border-radius:14px;background:#fff;"><span style="display:block;color:#64748b;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;">Precision</span><strong style="display:block;font-size:1.9rem;color:#0f172a;margin:.2rem 0;">23%</strong><p style="margin:0;font-size:.82rem;color:#475569;">When the model predicts a fire, about 23% of those alerts correspond to an actual event.</p></div>
-    <div style="padding:1.2rem;border:1px solid #e2e8f0;border-radius:14px;background:#fff;"><span style="display:block;color:#64748b;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;">Recall</span><strong style="display:block;font-size:1.9rem;color:#0f172a;margin:.2rem 0;">9.7%</strong><p style="margin:0;font-size:.82rem;color:#475569;">The prototype detects a small but measurable share of true events in a highly imbalanced dataset.</p></div>
-    <div style="padding:1.2rem;border:1px solid #e2e8f0;border-radius:14px;background:#fff;"><span style="display:block;color:#64748b;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;">PR AUC</span><strong style="display:block;font-size:1.9rem;color:#0f172a;margin:.2rem 0;">0.110</strong><p style="margin:0;font-size:.82rem;color:#475569;">Versus a baseline of 0.006, indicating meaningful lift despite the difficulty of the prediction problem.</p></div>
+    <div><strong>7 days</strong><span>of weather history used for each example</span></div>
+    <div><strong>3</strong><span>model families compared</span></div>
+    <div><strong>18×</strong><span>PR-AUC lift over the random baseline</span></div>
   </section>
 
   <section class="case-grid">
     <div class="case-main">
-      <section class="case-section"><p class="pf-section__label">The problem</p><h2>Risk prediction needs both performance and interpretability.</h2><p>Wildfire-event data is highly imbalanced, and a useful risk system has to do more than produce a score. It should combine current environmental context with a model whose drivers can be inspected and communicated.</p></section>
+      <section class="case-section">
+        <p class="pf-section__label">The problem</p>
+        <h2>Satellite monitoring becomes more useful when the search area is prioritized.</h2>
+        <p>
+          Continuously inspecting satellite imagery across a large region is expensive and inefficient. The project
+          reframed early wildfire detection as a prioritization problem: use recent weather conditions to estimate
+          which Utah locations are most likely to need visual follow-up, then retrieve imagery for those locations first.
+        </p>
+      </section>
 
-      <section class="case-section"><p class="pf-section__label">Data</p><h2>Seven days of weather history around both fire and non-fire examples.</h2><p>The project used reported Utah wildfire locations from June 2020 through October 2025 and paired each event with the previous seven days of weather. A much larger set of randomly sampled Utah dates and locations provided comparison cases. Weather variables included temperature, dewpoint, humidity, precipitation, snow, wind direction, wind speed, wind gust, and air pressure.</p></section>
+      <section class="case-section">
+        <p class="pf-section__label">Data &amp; modeling</p>
+        <h2>Build weather histories around both fire and non-fire examples.</h2>
+        <p>
+          The pipeline starts from historical Utah fire dates and locations and retrieves the previous seven days of
+          weather using Meteostat. Comparison examples are sampled from non-fire dates and locations. XGBoost,
+          Naive Bayes, and Random Forest models were trained on balanced and unbalanced datasets; the unbalanced
+          XGBoost model was selected for deployment.
+        </p>
+      </section>
 
-      <section class="case-section"><p class="pf-section__label">Approach</p><h2>Compare models, explain predictions, and connect live data.</h2><div class="case-points">
-        <div><span>01</span><h3>Build the feature context</h3><p>Construct seven-day weather histories for reported fires and comparison locations.</p></div>
-        <div><span>02</span><h3>Compare models</h3><p>Train and compare XGBoost, Random Forest, and Naive Bayes on the imbalanced event data.</p></div>
-        <div><span>03</span><h3>Explain the model</h3><p>Use SHAP to inspect the weather variables contributing most strongly to risk estimates.</p></div>
-        <div><span>04</span><h3>Connect the workflow</h3><p>Combine weather APIs, priority-location mapping, satellite-image retrieval, and dashboard-style presentation.</p></div>
-      </div></section>
+      <section class="case-media-grid case-media-grid--equal" aria-label="Wildfire model results">
+        <figure class="case-media case-media--technical">
+          <img src="/assets/images/real/wildfire-risk-map.webp" alt="Utah weather-station locations and wildfire-risk heat map">
+          <figcaption>Real project output: weather-station coverage and a Utah risk heat map used to narrow attention to concentrated hotspots.</figcaption>
+        </figure>
+        <figure class="case-media case-media--technical">
+          <img src="/assets/images/real/wildfire-pr-curve.webp" alt="Precision-recall curve for the selected unbalanced XGBoost model">
+          <figcaption>Precision-recall curve for the selected unbalanced XGBoost model.</figcaption>
+        </figure>
+      </section>
 
-      <section class="case-section"><p class="pf-section__label">What the result says</p><h2>A useful prototype can show lift without pretending the problem is solved.</h2><p>The model's precision and recall remain limited, which is important to state plainly. At the same time, a PR AUC of 0.110 versus a random baseline near 0.006 shows that the feature set carries predictive signal. The project is therefore best presented as an interpretable prototype and a foundation for better data, spatial features, remote-sensing inputs, and model calibration.</p></section>
+      <section class="case-section">
+        <p class="pf-section__label">Results</p>
+        <h2>The prototype shows predictive lift, with important limitations stated plainly.</h2>
+        <p>
+          The selected model reached 23% precision, 9.7% recall, and a PR AUC of 0.110 compared with a random
+          baseline of 0.006 — about an 18× improvement over random on this rare-event problem. The recall remains
+          low, so the result is best understood as a prioritization prototype rather than a complete wildfire detector.
+        </p>
+      </section>
+
+      <section class="case-section">
+        <p class="pf-section__label">Product workflow</p>
+        <h2>Connect the model to something a user can actually inspect.</h2>
+        <div class="case-points">
+          <div><span>01</span><h3>Collect current weather</h3><p>Query active Utah weather stations and prepare recent conditions for model scoring.</p></div>
+          <div><span>02</span><h3>Rank high-risk locations</h3><p>Apply the deployed XGBoost model and prioritize locations by predicted wildfire risk.</p></div>
+          <div><span>03</span><h3>Map the result</h3><p>Display high-risk areas in a browser-based dashboard so users can compare locations and inspect details.</p></div>
+          <div><span>04</span><h3>Retrieve imagery</h3><p>Request satellite imagery for prioritized areas as a visual follow-up step rather than scanning the entire region indiscriminately.</p></div>
+        </div>
+      </section>
+
+      <div class="case-evidence-note"><strong>Implementation:</strong> the final prototype used a Python backend and web-client frontend, with both services containerized for deployment.</div>
+
+      <section class="case-section">
+        <p class="pf-section__label">Why it belongs here</p>
+        <h2>The same data-to-decision pattern in a different domain.</h2>
+        <p>
+          Wildfire Prediction broadens the portfolio beyond industrial analytics while preserving the same core idea:
+          use imperfect real-world data to reduce a decision space, expose uncertainty, and connect a model to a practical workflow.
+        </p>
+      </section>
     </div>
 
     <aside class="case-sidebar">
-      <div class="case-fact"><span>Context</span><strong>BYU applied ML project</strong></div>
+      <div class="case-fact"><span>Context</span><strong>BYU applied ML team project</strong></div>
       <div class="case-fact"><span>Year</span><strong>2026</strong></div>
       <div class="case-fact"><span>Models</span><strong>XGBoost · Random Forest · Naive Bayes</strong></div>
-      <div class="case-fact"><span>Interpretability</span><strong>SHAP</strong></div>
-      <div class="case-fact"><span>Data workflow</span><strong>Weather history · APIs · maps · satellite imagery</strong></div>
+      <div class="case-fact"><span>Weather data</span><strong>Meteostat + current weather APIs</strong></div>
+      <div class="case-fact"><span>Product</span><strong>Python backend · web dashboard · Docker</strong></div>
       <div class="case-fact"><span>Decision output</span><strong>Prioritized high-risk locations</strong></div>
     </aside>
   </section>
