@@ -107,7 +107,7 @@ description: "BYU applied machine-learning project combining seven-day weather h
       <div class="case-fact"><span>Context</span><strong>BYU applied ML team project</strong></div>
       <div class="case-fact"><span>Year</span><strong>2026</strong></div>
       <div class="case-fact"><span>Models</span><strong>XGBoost · Random Forest · Naive Bayes</strong></div>
-      <div class="case-fact"><span>Weather data</span><strong>Meteostat + current weather APIs</strong></div>
+      <div class="case-fact"><span>Weather workflow</span><strong>Meteostat history + current station data</strong></div>
       <div class="case-fact"><span>Product</span><strong>Python backend · web dashboard · Docker</strong></div>
       <div class="case-fact"><span>Decision output</span><strong>Prioritized high-risk locations</strong></div>
     </aside>
