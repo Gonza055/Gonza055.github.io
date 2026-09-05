@@ -1,0 +1,245 @@
+.resume2026 {
+  max-width: var(--pf-max);
+  margin: 0 auto;
+  padding: 2.8rem 0 4rem;
+}
+
+.resume2026__header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem;
+  align-items: end;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--pf-border);
+}
+
+.resume2026__header h1 {
+  margin: 0;
+  font-size: clamp(2.3rem, 4vw, 3.8rem);
+  line-height: 1;
+  font-weight: 780;
+  letter-spacing: -0.045em;
+}
+
+.resume2026__headline {
+  max-width: 720px;
+  margin: 0.75rem 0 0;
+  color: var(--pf-text);
+  font-size: 0.98rem !important;
+}
+
+.resume2026__contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.9rem;
+  margin-top: 1rem;
+  color: var(--pf-muted);
+  font-size: 0.78rem;
+}
+
+.resume2026__contact a {
+  color: var(--pf-blue) !important;
+  text-decoration: none !important;
+}
+
+.resume2026__status {
+  min-width: 215px;
+  padding: 1rem;
+  border: 1px solid var(--pf-border);
+  border-radius: var(--pf-radius-sm);
+  background: var(--pf-surface);
+}
+
+.resume2026__status span {
+  display: block;
+  color: var(--pf-muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.resume2026__status strong {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--pf-ink);
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.resume2026__summary {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--pf-border);
+}
+
+.resume2026__label {
+  margin: 0;
+  color: var(--pf-blue);
+  font-size: 0.72rem !important;
+  font-weight: 750;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.resume2026__summary p:last-child {
+  max-width: 780px;
+  margin: 0;
+  color: var(--pf-text);
+  font-size: 0.93rem !important;
+  line-height: 1.7 !important;
+}
+
+.resume2026__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 285px;
+  gap: 4rem;
+  align-items: start;
+  padding-top: 2.5rem;
+}
+
+.resume2026__section {
+  padding-bottom: 2.7rem;
+}
+
+.resume2026__section + .resume2026__section {
+  padding-top: 2.7rem;
+  border-top: 1px solid var(--pf-border);
+}
+
+.resume2026__section h2 {
+  margin: 0 0 1.2rem;
+  font-size: 1.28rem;
+}
+
+.resume2026__item {
+  padding: 0 0 1.4rem;
+}
+
+.resume2026__item + .resume2026__item {
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--pf-border);
+}
+
+.resume2026__item-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: start;
+}
+
+.resume2026__item h3 {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.35;
+}
+
+.resume2026__org {
+  margin: 0.18rem 0 0;
+  color: var(--pf-muted);
+  font-size: 0.79rem !important;
+}
+
+.resume2026__date {
+  color: var(--pf-muted);
+  font-size: 0.76rem;
+  white-space: nowrap;
+}
+
+.resume2026__item ul {
+  margin: 0.75rem 0 0 1.05rem;
+  padding: 0;
+}
+
+.resume2026__item li {
+  margin-bottom: 0.3rem;
+  color: var(--pf-text);
+  font-size: 0.82rem !important;
+  line-height: 1.55 !important;
+}
+
+.resume2026__side {
+  position: sticky;
+  top: 5.8rem;
+}
+
+.resume2026__side-block {
+  padding: 1rem 0;
+  border-top: 1px solid var(--pf-border);
+}
+
+.resume2026__side-block:first-child {
+  border-top: 2px solid var(--pf-blue);
+}
+
+.resume2026__side-block h3 {
+  margin: 0 0 0.6rem;
+  font-size: 0.82rem;
+}
+
+.resume2026__side-block p {
+  margin: 0;
+  color: var(--pf-muted);
+  font-size: 0.75rem !important;
+  line-height: 1.55 !important;
+}
+
+.resume2026__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.resume2026__education {
+  padding: 1rem;
+  border: 1px solid var(--pf-border);
+  border-radius: var(--pf-radius-sm);
+  background: var(--pf-surface);
+}
+
+.resume2026__education strong {
+  display: block;
+  color: var(--pf-ink);
+  font-size: 0.86rem;
+}
+
+.resume2026__education span {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--pf-muted);
+  font-size: 0.74rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .resume2026__header,
+  .resume2026__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .resume2026__status {
+    max-width: 340px;
+  }
+
+  .resume2026__side {
+    position: static;
+  }
+}
+
+@media (max-width: 650px) {
+  .resume2026__summary {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  .resume2026__item-head {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .resume2026__date {
+    white-space: normal;
+  }
+}
