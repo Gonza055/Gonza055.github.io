@@ -36,7 +36,7 @@ description: "Hatch Digital internship case study: data automation, mining data 
   <section class="case-evidence">
     <figure class="case-evidence__hero case-evidence--contain">
       <img src="/assets/images/social/hatch-digital-social.jpg" alt="Hatch Digital internship case study: data engineering and decision support">
-      <figcaption>Hatch Digital internship portfolio cover. A professional internship photo can replace this image when selected for public use.</figcaption>
+      <figcaption>Hatch Digital internship: data engineering, automation, and decision-support work for mining and industrial applications.</figcaption>
     </figure>
   </section>
 
