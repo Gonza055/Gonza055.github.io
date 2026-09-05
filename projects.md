@@ -30,8 +30,8 @@ description: "Selected work by Gonzalo Loayza across machine learning, data engi
         <h2>Data Engineering &amp; Decision Support</h2>
         <p>
           Applied digital work spanning tailings-data automation, drone-based measurement concepts,
-          and decision-support workflows — with an emphasis on making engineering information more reliable,
-          interpretable, and useful for operational decisions.
+          and shift-level decision support — with an emphasis on making engineering information reliable,
+          interpretable, and useful for action.
         </p>
         <div class="work-feature__tags">
           <span class="pf-tag">Data Engineering</span>
@@ -41,11 +41,11 @@ description: "Selected work by Gonzalo Loayza across machine learning, data engi
         </div>
         <span class="work-feature__link">Read case study →</span>
       </div>
-      <img class="work-feature__media" src="/assets/images/social/hatch-digital-social.jpg" alt="Hatch Digital data engineering and decision support portfolio preview">
+      <img class="work-feature__media" src="/assets/images/real/hatch-presentation-hitm.webp" alt="Gonzalo presenting a Hatch Digital data-validation workflow">
     </a>
 
     <a class="work-feature" href="/projects/predictive-maintenance/">
-      <img class="work-feature__media" src="/assets/images/projects/EDA4.png" alt="Mining operation where reliability analytics work was performed">
+      <img class="work-feature__media" src="/assets/images/real/buenaventura-site.webp" alt="Gonzalo at the mining operation where reliability analytics work was performed">
       <div class="work-feature__content">
         <p class="work-feature__meta">Buenaventura · San Gabriel · 2025 · Reliability Analytics</p>
         <h2>Predictive Maintenance &amp; Reliability Analytics</h2>
@@ -63,19 +63,19 @@ description: "Selected work by Gonzalo Loayza across machine learning, data engi
     </a>
 
     <a class="work-feature" href="/projects/operational-mode-discovery/">
-      <img class="work-feature__media" src="/assets/images/social/operational-mode-social.jpg" alt="Operational mode discovery and business value analysis portfolio preview">
+      <img class="work-feature__media" src="/assets/images/real/thesis-regimes.webp" alt="PCA operating-regime visualization from the BYU Honors thesis">
       <div class="work-feature__content">
         <p class="work-feature__meta">BYU Honors · 2025–2026 · Industrial Time-Series</p>
         <h2>Operational Mode Discovery &amp; Business Value Analysis</h2>
         <p>
-          Honors research using time-series preprocessing, PCA, clustering, and performance context
+          Honors research using minute-level process data, PCA, DBSCAN, and KPI context
           to identify recurrent operating modes in a real industrial processing environment.
         </p>
         <div class="work-feature__tags">
           <span class="pf-tag">Python</span>
           <span class="pf-tag">PCA</span>
-          <span class="pf-tag">Clustering</span>
-          <span class="pf-tag">Business Value</span>
+          <span class="pf-tag">DBSCAN</span>
+          <span class="pf-tag">Operational Analytics</span>
         </div>
         <span class="work-feature__link">Read case study →</span>
       </div>
@@ -106,15 +106,15 @@ description: "Selected work by Gonzalo Loayza across machine learning, data engi
       </a>
 
       <a class="work-small-card" href="/projects/wildfire-prediction/">
-        <img class="work-small-card__media" src="/assets/images/social/wildfire-social.jpg" alt="Wildfire prediction system portfolio preview">
+        <img class="work-small-card__media" src="/assets/images/real/wildfire-team.webp" alt="Gonzalo and teammates presenting the Wildfire Prediction project">
         <div class="work-small-card__top">
           <p class="work-feature__meta">BYU · 2026</p>
           <span class="work-small-card__number">02</span>
         </div>
         <h3>Wildfire Prediction System</h3>
         <p>
-          A wildfire-risk prototype using weather time-series, XGBoost, model comparison, SHAP interpretability,
-          APIs, and dashboard-oriented visualization.
+          A wildfire-risk prototype using seven-day weather histories, model comparison,
+          XGBoost, maps, and satellite-image retrieval to prioritize high-risk locations.
         </p>
         <span class="work-feature__link">View project →</span>
       </a>
