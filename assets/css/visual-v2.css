@@ -1,0 +1,245 @@
+/* Portfolio visual v2: authentic evidence + restrained product styling */
+
+/* Homepage hero collage */
+.pf-hero__media {
+  position: relative;
+  min-height: 330px;
+  overflow: hidden;
+  border: 1px solid var(--pf-border);
+  border-radius: var(--pf-radius-lg);
+  background: #eef3f8;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+.pf-hero__media-main {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pf-hero__media-card {
+  position: absolute;
+  overflow: hidden;
+  border: 4px solid #fff;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
+}
+
+.pf-hero__media-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.pf-hero__media-card--a {
+  width: 48%;
+  height: 38%;
+  right: 4%;
+  bottom: 5%;
+}
+
+.pf-hero__media-card--b {
+  width: 39%;
+  height: 31%;
+  left: 4%;
+  top: 5%;
+}
+
+.pf-hero__media-label {
+  position: absolute;
+  left: 1rem;
+  bottom: 0.9rem;
+  z-index: 3;
+  padding: 0.42rem 0.62rem;
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.86);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Real imagery inside cards */
+.pf-work-card__visual--image,
+.work-feature__media,
+.work-small-card__media {
+  overflow: hidden;
+  background: #eef2f7;
+}
+
+.pf-work-card__visual--image img,
+.work-feature__media img,
+.work-small-card__media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 220ms ease;
+}
+
+.pf-work-card:hover .pf-work-card__visual--image img,
+.work-feature:hover .work-feature__media img,
+.work-small-card:hover .work-small-card__media img {
+  transform: scale(1.018);
+}
+
+.pf-work-card__visual--image {
+  min-height: 195px;
+  border-bottom: 1px solid var(--pf-border);
+}
+
+.pf-work-card--wide .pf-work-card__visual--image {
+  min-height: 245px;
+}
+
+.work-feature__media {
+  min-height: 235px;
+  border-bottom: 1px solid var(--pf-border);
+}
+
+.work-feature--hero .work-feature__media {
+  min-height: 100%;
+  border-left: 1px solid var(--pf-border);
+  border-bottom: 0;
+}
+
+.work-feature__media--contain img {
+  object-fit: contain;
+  padding: 0.6rem;
+  background: #fff;
+}
+
+.work-small-card__media {
+  height: 150px;
+  margin: -1.4rem -1.4rem 1rem;
+  border-bottom: 1px solid var(--pf-border);
+}
+
+/* Evidence galleries in case studies */
+.case-evidence {
+  margin: 2.4rem 0 3.2rem;
+}
+
+.case-evidence__head {
+  max-width: 760px;
+  margin-bottom: 1rem;
+}
+
+.case-evidence__head h2 {
+  margin: 0.25rem 0 0;
+}
+
+.case-evidence__head p {
+  margin: 0.55rem 0 0;
+  color: var(--pf-muted);
+}
+
+.case-evidence figure {
+  margin: 0;
+}
+
+.case-evidence img {
+  width: 100%;
+  display: block;
+  border: 1px solid var(--pf-border);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.case-evidence__hero img {
+  max-height: 560px;
+  object-fit: cover;
+}
+
+.case-evidence__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.case-evidence__grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.case-evidence__grid img {
+  height: 100%;
+  min-height: 240px;
+  object-fit: cover;
+}
+
+.case-evidence__grid .case-evidence--contain img,
+.case-evidence--contain img {
+  object-fit: contain;
+  background: #fff;
+  padding: 0.45rem;
+}
+
+.case-evidence figcaption {
+  margin-top: 0.45rem;
+  color: var(--pf-muted);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.case-public-note {
+  margin-top: 1.2rem;
+  padding: 0.85rem 1rem;
+  border-left: 3px solid #bfdbfe;
+  background: #f8fafc;
+  color: var(--pf-muted);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+/* Resume: make the full-document download explicit */
+.resume2026__actions .pf-btn::after {
+  content: ' · 2 pages';
+  opacity: 0.72;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .pf-hero__media {
+    min-height: 360px;
+  }
+
+  .work-feature--hero .work-feature__media {
+    min-height: 260px;
+    border-left: 0;
+    border-bottom: 1px solid var(--pf-border);
+  }
+
+  .case-evidence__grid--three {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .pf-hero__media {
+    min-height: 280px;
+  }
+
+  .pf-hero__media-card--a {
+    width: 50%;
+    height: 34%;
+  }
+
+  .pf-hero__media-card--b {
+    width: 42%;
+    height: 29%;
+  }
+
+  .case-evidence__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-evidence__grid img {
+    min-height: 0;
+  }
+}
