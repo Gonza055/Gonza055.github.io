@@ -33,17 +33,16 @@ permalink: /
       </div>
     </div>
 
-    <div class="pf-hero__evidence" aria-label="Examples of applied industrial analytics work">
+    <div class="pf-hero__evidence" aria-label="Gonzalo working across digital operations and industrial analytics">
       <figure>
-        <img src="/assets/images/projects/EDA4.png" alt="Mining and processing operation connected to reliability analytics work">
+        <img src="/assets/images/real/hatch-control-room.webp" alt="Gonzalo in an operations control room with live industrial dashboards">
       </figure>
       <figure>
-        <img src="/assets/images/projects/trainops-caps-009-2.webp" alt="TrainOps route elevation and speed profile from simulation analysis">
+        <img src="/assets/images/real/hatch-presentation-hitm.webp" alt="Gonzalo presenting a Hatch Digital data-validation workflow">
       </figure>
-      <div class="pf-evidence-tile">
-        <span>Applied computing</span>
-        <strong>Mining · Reliability · Simulation · Decision Support</strong>
-      </div>
+      <figure>
+        <img src="/assets/images/real/buenaventura-site.webp" alt="Gonzalo on site in personal protective equipment at a mining operation">
+      </figure>
     </div>
   </section>
 
@@ -80,13 +79,13 @@ permalink: /
 
     <div class="pf-work-grid">
       <a class="pf-work-card pf-work-card--wide" href="/projects/hatch-digital/">
-        <img class="pf-card-image" src="/assets/images/social/hatch-digital-social.jpg" alt="Hatch Digital data engineering and decision support portfolio preview">
+        <img class="pf-card-image" src="/assets/images/real/hatch-presentation-hitm.webp" alt="Gonzalo presenting his Hatch Digital work">
         <div>
           <p class="pf-work-card__kicker">Hatch Digital · 2026</p>
           <h3>Data Engineering &amp; Decision Support</h3>
           <p class="pf-work-card__desc">
-            Contributed to tailings-data automation, drone-based measurement concepts, and digital
-            decision-support work for mining and engineering applications.
+            Worked across tailings-data automation, drone-based measurement concepts, and shift-level
+            decision-support thinking for mining and engineering applications.
           </p>
         </div>
         <div class="pf-work-card__footer">
@@ -99,7 +98,7 @@ permalink: /
       </a>
 
       <a class="pf-work-card" href="/projects/predictive-maintenance/">
-        <img class="pf-card-image" src="/assets/images/projects/EDA4.png" alt="Mining operation where reliability analytics work was performed">
+        <img class="pf-card-image" src="/assets/images/real/buenaventura-site.webp" alt="Gonzalo at the industrial site where reliability analytics work was performed">
         <div>
           <p class="pf-work-card__kicker">Buenaventura · San Gabriel · 2025</p>
           <h3>Predictive Maintenance &amp; Reliability Analytics</h3>
@@ -116,18 +115,18 @@ permalink: /
       </a>
 
       <a class="pf-work-card" href="/projects/operational-mode-discovery/">
-        <img class="pf-card-image" src="/assets/images/social/operational-mode-social.jpg" alt="Operational mode discovery and business value analysis portfolio preview">
+        <img class="pf-card-image" src="/assets/images/real/thesis-regimes.webp" alt="PCA operating-regime visualization from Gonzalo's BYU Honors thesis">
         <div>
           <p class="pf-work-card__kicker">BYU Honors · 2025–2026</p>
           <h3>Operational Mode Discovery &amp; Business Value Analysis</h3>
           <p class="pf-work-card__desc">
-            Applying PCA, clustering, and time-series analysis to identify recurrent operating modes
-            and connect process behavior with performance and business value.
+            Applied PCA, DBSCAN, and KPI profiling to identify recurrent operating regimes in noisy
+            industrial process data and connect those regimes to performance.
           </p>
         </div>
         <div class="pf-work-card__footer">
           <span class="pf-tag">PCA</span>
-          <span class="pf-tag">Clustering</span>
+          <span class="pf-tag">DBSCAN</span>
           <span class="pf-tag">Time-Series</span>
           <span class="pf-card-link">View case study →</span>
         </div>
