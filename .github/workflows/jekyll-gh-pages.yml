@@ -31,7 +31,7 @@ jobs:
           python scripts/generate_resume_pdf.py
 
       - name: Build Site
-        run: bundle exec jekyll build -d _site --config _config.yml,_config_social.yml
+        run: bundle exec jekyll build -d _site
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
