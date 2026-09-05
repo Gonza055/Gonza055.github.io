@@ -10,6 +10,7 @@ description: "BYU Honors thesis case study applying time-series preprocessing, P
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/work.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/visual-pass-2.css' | relative_url }}">
 
 <article class="portfolio-page case-page">
 
@@ -31,13 +32,10 @@ description: "BYU Honors thesis case study applying time-series preprocessing, P
     </div>
   </header>
 
-  <section class="case-visual case-visual--modes" aria-label="Illustration of operating modes in reduced-dimensional space">
-    <div class="case-cluster case-cluster--a"><i></i><i></i><i></i><i></i><i></i></div>
-    <div class="case-cluster case-cluster--b"><i></i><i></i><i></i><i></i><i></i></div>
-    <div class="case-cluster case-cluster--c"><i></i><i></i><i></i><i></i></div>
-    <span class="case-axis case-axis--x">reduced dimension 1</span>
-    <span class="case-axis case-axis--y">reduced dimension 2</span>
-  </section>
+  <figure class="case-media case-media--wide">
+    <img src="/assets/images/social/operational-mode-social.jpg" alt="Operational mode discovery and business value analysis portfolio preview">
+    <figcaption>Honors research focused on making multivariate operating behavior interpretable enough to support engineering and business-value discussions.</figcaption>
+  </figure>
 
   <section class="case-grid">
     <div class="case-main">
@@ -49,6 +47,14 @@ description: "BYU Honors thesis case study applying time-series preprocessing, P
           equipment constraints, instrumentation quality, and control-loop behavior can all shift how the system
           behaves. The thesis frames these changes as recurring operational modes that can be discovered and profiled.
         </p>
+      </section>
+
+      <section class="case-visual case-visual--modes" aria-label="Illustration of operating modes in reduced-dimensional space">
+        <div class="case-cluster case-cluster--a"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="case-cluster case-cluster--b"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="case-cluster case-cluster--c"><i></i><i></i><i></i><i></i></div>
+        <span class="case-axis case-axis--x">reduced dimension 1</span>
+        <span class="case-axis case-axis--y">reduced dimension 2</span>
       </section>
 
       <section class="case-section">
@@ -92,13 +98,10 @@ description: "BYU Honors thesis case study applying time-series preprocessing, P
     <aside class="case-sidebar">
       <div class="case-fact"><span>Program</span><strong>BYU Honors</strong></div>
       <div class="case-fact"><span>Period</span><strong>2025–2026</strong></div>
-      <div class="case-fact"><span>Data</span><strong>Industrial process time-series + KPI context</strong></div>
+      <div class="case-fact"><span>Setting</span><strong>Real industrial concentrator environment</strong></div>
+      <div class="case-fact"><span>Data</span><strong>Process time-series + KPI context</strong></div>
       <div class="case-fact"><span>Methods</span><strong>PCA · Clustering · Performance profiling</strong></div>
       <div class="case-fact"><span>Goal</span><strong>Interpretable operational insight</strong></div>
-      <div class="case-note">
-        <strong>Confidentiality</strong>
-        <p>The industrial partner and identifying process details are intentionally not disclosed in this public portfolio.</p>
-      </div>
     </aside>
   </section>
 
