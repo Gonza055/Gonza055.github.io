@@ -10,6 +10,7 @@ description: "Industrial analytics case study from Buenaventura: sensor-data con
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/work.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/visual-pass-2.css' | relative_url }}">
 
 <article class="portfolio-page case-page">
 
