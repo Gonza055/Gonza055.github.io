@@ -28,6 +28,9 @@ description: "Resume of Gonzalo Loayza, BYU Computer Science student focused on 
         <a href="https://github.com/Gonza055" target="_blank" rel="noopener">GitHub</a>
         <a href="/projects/">Selected Work</a>
       </div>
+      <div class="pf-actions resume2026__actions">
+        <a class="pf-btn pf-btn--primary" href="/assets/resume/Gonzalo_Loayza_Resume.pdf" target="_blank" rel="noopener">Download PDF</a>
+      </div>
     </div>
     <div class="resume2026__status">
       <span>Education status</span>
@@ -59,8 +62,8 @@ description: "Resume of Gonzalo Loayza, BYU Computer Science student focused on 
             <span class="resume2026__date">Jun 2026 – Aug 2026</span>
           </div>
           <ul>
-            <li>Supported digital and analytics initiatives focused on mining and industrial operations, including operational KPIs and decision-support workflows.</li>
-            <li>Contributed to early-stage problem framing, data preparation, dashboard-oriented analysis, and identification of opportunities for process improvement and operational value creation.</li>
+            <li>Supported digital and analytics initiatives for mining and industrial operations, including tailings-data automation, operational KPIs, measurement concepts, and decision-support workflows.</li>
+            <li>Contributed to problem framing, data preparation, dashboard-oriented analysis, and identification of opportunities for process improvement and operational value creation.</li>
           </ul>
         </article>
 
