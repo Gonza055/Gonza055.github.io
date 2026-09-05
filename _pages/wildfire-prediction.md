@@ -10,6 +10,7 @@ description: "BYU applied machine-learning project using weather time-series, XG
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/work.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/visual-v2.css' | relative_url }}">
 
 <article class="portfolio-page case-page">
 
@@ -29,6 +30,13 @@ description: "BYU applied machine-learning project using weather time-series, XG
       <span class="pf-tag">API Integration</span>
     </div>
   </header>
+
+  <section class="case-evidence">
+    <figure class="case-evidence__hero case-evidence--contain">
+      <img src="/assets/images/social/wildfire-social.jpg" alt="Wildfire prediction system project cover">
+      <figcaption>Project summary: weather time-series, model comparison, SHAP interpretability, and API-connected risk visualization.</figcaption>
+    </figure>
+  </section>
 
   <section class="case-grid">
     <div class="case-main">
