@@ -28,7 +28,7 @@ description: "Buenaventura San Gabriel case study: industrial sensor conditionin
         </div>
       </div>
       <div class="case3-hero__image case3-hero__image--field">
-        <img src="/assets/images/real/buenaventura-field-real.webp" alt="Gonzalo Loayza at the Buenaventura San Gabriel mining operation">
+        <img src="/assets/images/real/bnv-san-gabriel-hero.webp" alt="Gonzalo Loayza at Buenaventura San Gabriel">
       </div>
     </div>
 
@@ -153,17 +153,17 @@ description: "Buenaventura San Gabriel case study: industrial sensor conditionin
     <div class="case3-section__head">
       <p class="case3-label">Field Context</p>
       <h2>The analysis was connected to real equipment and operations.</h2>
-      <p>Field exposure and operations-room context helped connect sensor behavior with the physical systems and maintenance questions behind the data.</p>
+      <p>Field exposure at San Gabriel and the broader Buenaventura work environment helped connect the data with the physical systems, maintenance questions, and organization behind the analysis.</p>
     </div>
 
     <div class="case3-gallery">
       <figure class="case3-gallery__item">
-        <img src="/assets/images/real/buenaventura-field-real.webp" alt="Gonzalo Loayza at the San Gabriel mine site">
-        <figcaption>San Gabriel field context — the analysis was grounded in real crushing, grinding, and maintenance environments.</figcaption>
+        <img src="/assets/images/real/bnv-san-gabriel-field.webp" alt="Gonzalo Loayza in field PPE at the San Gabriel operation">
+        <figcaption>San Gabriel field context — the analysis was grounded in a real mining and maintenance environment.</figcaption>
       </figure>
       <figure class="case3-gallery__item">
-        <img src="/assets/images/real/buenaventura-operations-center.webp" alt="Gonzalo Loayza in an operations center reviewing industrial monitoring displays">
-        <figcaption>Operations context — monitoring information only becomes useful when it can be interpreted against how the equipment and process are actually operating.</figcaption>
+        <img src="/assets/images/real/bnv-lima-reception.webp" alt="Gonzalo Loayza at Buenaventura’s Lima office">
+        <figcaption>Buenaventura context — connecting the technical work at San Gabriel with the broader organization and professional environment.</figcaption>
       </figure>
     </div>
   </section>
