@@ -11,7 +11,7 @@ description: "BYU Honors thesis case study applying preprocessing, PCA, DBSCAN, 
 <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/case-v3.css' | relative_url }}">
 
-<article class="case3" style="--case-accent:#60a5fa; --case-accent-soft:#eff6ff;">
+<article class="case3 case3-honors-hero" style="--case-accent:#60a5fa; --case-accent-soft:#eff6ff;">
   <a class="case3-back" href="/projects/">← Selected Work</a>
 
   <header class="case3-hero">
@@ -19,7 +19,7 @@ description: "BYU Honors thesis case study applying preprocessing, PCA, DBSCAN, 
       <div class="case3-hero__copy">
         <p class="case3-eyebrow" style="color:#93c5fd!important;">BYU Honors · Computer Science · 2025–2026</p>
         <h1>Process Data to Operating Modes.</h1>
-        <p class="case3-hero__lead">My Honors thesis investigates whether minute-level historian data from Line 1 of the Miski Mayo phosphate concentrator can reveal recurrent operating regimes that are analytically separable, operationally interpretable, and meaningfully different in performance.</p>
+        <p class="case3-hero__lead">Using minute-level historian data from Line 1 of the Miski Mayo phosphate concentrator, I investigated whether recurring operating regimes could be discovered without supervision and then explained in operational terms.</p>
         <div class="case3-tags">
           <span class="case3-tag">Industrial Time-Series</span>
           <span class="case3-tag">PCA</span>
@@ -27,8 +27,8 @@ description: "BYU Honors thesis case study applying preprocessing, PCA, DBSCAN, 
           <span class="case3-tag">Operational Analytics</span>
         </div>
       </div>
-      <div class="case3-hero__image" style="background:#f8fafc;display:grid;place-items:center;">
-        <img src="/assets/images/diagrams/honors-regimes.svg" alt="Three retained operating regimes in PCA space" style="object-fit:contain;padding:2rem;min-height:420px;">
+      <div class="case3-hero__image">
+        <img src="/assets/images/diagrams/honors-regimes.svg" alt="Three retained operating regimes in PCA space">
       </div>
     </div>
 
@@ -45,16 +45,16 @@ description: "BYU Honors thesis case study applying preprocessing, PCA, DBSCAN, 
     <div class="case3-section__head">
       <p class="case3-label">Research Question</p>
       <h2>Does the plant operate as one state — or as several recurring modes?</h2>
-      <p>Industrial mineral-processing plants operate under persistent variability. Changes in ore characteristics, feed composition, equipment behavior, and operating conditions can create recurrent patterns that disappear when the process is viewed only through averages.</p>
+      <p>The thesis tests whether process history can reveal distinct operating regimes and whether those regimes differ meaningfully in recovery, production, variability, and process behavior.</p>
     </div>
 
     <div class="case3-problem">
       <div class="case3-copybox">
-        <p>The thesis asks whether <strong>minute-level process data can be reorganized into recurring operating regimes</strong> and whether those regimes can then be interpreted using recovery, production, tailings behavior, and underlying process signatures.</p>
+        <p><strong>Core question:</strong> can unsupervised learning reorganize high-dimensional process data into recurring states that engineers can recognize and discuss?</p>
       </div>
       <div class="case3-insight" style="border-color:#bfdbfe;">
-        <strong>Important distinction</strong>
-        <p>This is an unsupervised structure-discovery problem, not a supervised prediction problem. The goal is to discover and interpret recurrent behavior without using performance KPIs to define the clusters.</p>
+        <strong>Why the distinction matters</strong>
+        <p>Recovery and production were used to interpret the clusters after discovery — not to define them.</p>
       </div>
     </div>
   </section>
@@ -63,19 +63,18 @@ description: "BYU Honors thesis case study applying preprocessing, PCA, DBSCAN, 
     <div class="case3-section__head">
       <p class="case3-label">Method</p>
       <h2>Discover structure first. Interpret performance second.</h2>
-      <p>The methodology keeps process behavior and KPI context conceptually separate during regime discovery, then reconnects them afterward to determine whether the retained structures have operational meaning.</p>
     </div>
 
     <figure class="case3-photo" style="background:#f8fafc;">
-      <img src="/assets/images/diagrams/honors-method.svg" alt="Honors thesis analytical workflow from process data through scaling PCA DBSCAN and KPI interpretation" style="object-fit:contain;padding:1.6rem;min-height:300px;">
-      <figcaption>Minute-level process data → preprocessing and scaling → PCA → DBSCAN → retained structures → KPI and process-signature interpretation.</figcaption>
+      <img src="/assets/images/diagrams/honors-method.svg" alt="Honors thesis workflow from process data through preprocessing PCA DBSCAN and KPI interpretation" style="object-fit:contain;padding:1.6rem;min-height:285px;">
+      <figcaption>Process data → preprocessing and scaling → PCA → DBSCAN → retained regimes → KPI and process-signature interpretation.</figcaption>
     </figure>
 
     <div class="case3-process" style="margin-top:1rem;">
-      <div class="case3-step"><strong>01 · Prepare & align</strong><span>Organize process history and preserve daily metallurgical and operational KPI context for later interpretation.</span></div>
-      <div class="case3-step"><strong>02 · Reduce dimensionality</strong><span>Use PCA to retain enough components to explain 95% of variance while compressing correlated process variables.</span></div>
-      <div class="case3-step"><strong>03 · Discover dense structures</strong><span>Apply DBSCAN with a k-distance-supported epsilon of 2.5 and a neighborhood rule tied to retained PCA dimensions.</span></div>
-      <div class="case3-step"><strong>04 · Interpret the regimes</strong><span>Compare retained structures against recovery, production, tailings behavior, and process signatures.</span></div>
+      <div class="case3-step"><strong>01 · Prepare</strong><span>Clean, align, and scale multivariate process data.</span></div>
+      <div class="case3-step"><strong>02 · Reduce</strong><span>Use PCA to retain components explaining 95% of variance.</span></div>
+      <div class="case3-step"><strong>03 · Discover</strong><span>Apply DBSCAN using a k-distance-supported ε = 2.5.</span></div>
+      <div class="case3-step"><strong>04 · Interpret</strong><span>Compare regimes against KPIs and underlying process signatures.</span></div>
     </div>
   </section>
 
@@ -83,78 +82,80 @@ description: "BYU Honors thesis case study applying preprocessing, PCA, DBSCAN, 
     <div class="case3-section__head">
       <p class="case3-label">Results</p>
       <h2>Three recurrent regimes emerged.</h2>
-      <p>The final retained analytical structure showed that Line 1 did not behave as one homogeneous operating state.</p>
     </div>
 
-    <div class="case3-results">
-      <article class="case3-result"><strong>12% · Unstable</strong><p>Diffuse, less coherent behavior with the lowest average recovery and the highest recovery variability.</p></article>
-      <article class="case3-result"><strong>44% · Drum Bypass</strong><p>A coherent recurrent condition distinguished by drum-speed values near zero.</p></article>
-      <article class="case3-result"><strong>44% · Stable</strong><p>The strongest combination of average recovery, recovery consistency, and production performance.</p></article>
-      <article class="case3-result"><strong>3 regimes</strong><p>Operational meaning was assigned after examining PCA geometry, KPIs, and underlying process signatures together.</p></article>
+    <div class="case3-honors-summary">
+      <div class="case3-honors-summary__main">
+        <strong>Stable became the strongest reference state.</strong>
+        <p>It combined the highest average recovery, the lowest recovery variability, and the strongest average production among the retained regimes.</p>
+      </div>
+      <div class="case3-honors-summary__metric">
+        <div><strong>3</strong><span>retained operating regimes</span></div>
+        <div><strong>44%</strong><span>time in the stable regime</span></div>
+        <div><strong>86.86%</strong><span>stable average recovery</span></div>
+        <div><strong>1.85%</strong><span>stable recovery standard deviation</span></div>
+      </div>
+    </div>
+
+    <div class="case3-results" style="margin-top:1rem;">
+      <article class="case3-result"><strong>12% · Unstable</strong><p>Diffuse behavior, lowest average recovery, and highest recovery variability.</p></article>
+      <article class="case3-result"><strong>44% · Drum Bypass</strong><p>A coherent recurrent condition with drum-speed values near zero.</p></article>
+      <article class="case3-result"><strong>44% · Stable</strong><p>Highest average recovery and production with the lowest recovery variability.</p></article>
+      <article class="case3-result"><strong>Operational meaning</strong><p>Labels were assigned only after geometry, KPIs, and process signatures agreed.</p></article>
     </div>
   </section>
 
   <section class="case3-section">
     <div class="case3-section__head">
-      <p class="case3-label">Performance Contrast</p>
-      <h2>The regimes were different in more than geometry.</h2>
-      <p>Recovery and production profiles provided evidence that the retained clusters corresponded to materially different operating behavior.</p>
+      <p class="case3-label">Operating-Regime Comparison</p>
+      <h2>The clusters were different in both process signature and performance.</h2>
     </div>
 
-    <div class="case3-results">
-      <article class="case3-result"><strong>84.89%</strong><p>Average recovery in the unstable regime.</p></article>
-      <article class="case3-result"><strong>85.96%</strong><p>Average recovery in the drum-bypass regime.</p></article>
-      <article class="case3-result"><strong>86.86%</strong><p>Average recovery in the stable operating regime.</p></article>
-      <article class="case3-result"><strong>1.85%</strong><p>Recovery standard deviation in the stable regime — the lowest of the three retained regimes.</p></article>
-    </div>
+    <table class="case3-regime-table">
+      <thead>
+        <tr>
+          <th>Regime</th>
+          <th>Share of Time</th>
+          <th>Recovery (avg)</th>
+          <th>Process Interpretation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong style="color:#ef4444;"><span class="case3-regime-dot"></span>Unstable</strong></td>
+          <td>12%</td>
+          <td>84.89%</td>
+          <td>Diffuse, variable operating behavior.</td>
+        </tr>
+        <tr>
+          <td><strong style="color:#2563eb;"><span class="case3-regime-dot"></span>Drum Bypass</strong></td>
+          <td>44%</td>
+          <td>85.96%</td>
+          <td>Distinct condition associated with drum speed near zero.</td>
+        </tr>
+        <tr>
+          <td><strong style="color:#10b981;"><span class="case3-regime-dot"></span>Stable</strong></td>
+          <td>44%</td>
+          <td>86.86%</td>
+          <td>Highest recovery, lowest variability, and strongest production.</td>
+        </tr>
+      </tbody>
+    </table>
 
-    <div class="case3-callout" style="background:#eff6ff;border-color:#bfdbfe;color:#1e40af;">These KPI differences were used for interpretation after clustering. They were not used to create the regimes themselves.</div>
-  </section>
-
-  <section class="case3-section">
-    <div class="case3-section__head">
-      <p class="case3-label">Operational Interpretation</p>
-      <h2>Clusters become useful only when engineers can explain them.</h2>
-      <p>The analysis moved from mathematical separation to process meaning by checking whether each regime had a coherent operational signature.</p>
-    </div>
-
-    <div class="case3-streams">
-      <article class="case3-stream">
-        <div class="case3-stream__body">
-          <span class="case3-stream__num">01 · Unstable Regime</span>
-          <h3>Diffuse and variable.</h3>
-          <p>Lower recovery, higher recovery variability, and weaker production performance were consistent with a less coherent operating condition.</p>
-        </div>
-      </article>
-      <article class="case3-stream">
-        <div class="case3-stream__body">
-          <span class="case3-stream__num">02 · Drum Bypass Regime</span>
-          <h3>A distinct equipment configuration.</h3>
-          <p>Drum-speed values near zero provided a direct process signature supporting interpretation of this dense regime as a recurrent bypass-related condition.</p>
-        </div>
-      </article>
-      <article class="case3-stream">
-        <div class="case3-stream__body">
-          <span class="case3-stream__num">03 · Stable Regime</span>
-          <h3>The strongest reference state.</h3>
-          <p>This regime combined the highest average recovery, the lowest recovery variability, and the highest average production among the retained structures.</p>
-        </div>
-      </article>
-    </div>
+    <div class="case3-callout" style="background:#eff6ff;border-color:#bfdbfe;color:#1e40af;">The KPI comparison comes after clustering. The regimes were discovered from process behavior, then interpreted using recovery, production, variability, and equipment signatures.</div>
   </section>
 
   <section class="case3-section">
     <div class="case3-section__head">
       <p class="case3-label">Why It Matters</p>
-      <h2>From historian data to a more structured understanding of plant behavior.</h2>
-      <p>The contribution is not simply that DBSCAN found clusters. The contribution is the reproducible path from noisy high-dimensional process history to regimes that can be discussed in operational terms and compared against metallurgical performance.</p>
+      <h2>Historian data becomes more useful when operating states are explicit.</h2>
     </div>
 
     <div class="case3-results">
-      <article class="case3-result"><strong>Reproducible workflow</strong><p>Stored PCA outputs, cluster labels, summary tables, and KPI artifacts make the analysis auditable and repeatable.</p></article>
-      <article class="case3-result"><strong>Process interpretability</strong><p>Regime labels emerge from geometry plus underlying process signatures rather than from arbitrary naming.</p></article>
-      <article class="case3-result"><strong>Performance context</strong><p>Recovery, variability, production, and tailings behavior make the analytical structures operationally meaningful.</p></article>
-      <article class="case3-result"><strong>Future monitoring basis</strong><p>The regime framework can support later regime-aware monitoring and process-improvement analysis.</p></article>
+      <article class="case3-result"><strong>Reproducible</strong><p>PCA outputs, cluster labels, summaries, and KPI comparisons can be regenerated and audited.</p></article>
+      <article class="case3-result"><strong>Interpretable</strong><p>Regimes are tied back to physical process signatures rather than arbitrary cluster names.</p></article>
+      <article class="case3-result"><strong>Comparable</strong><p>Recovery, variability, and production can be evaluated by operating state instead of only by global averages.</p></article>
+      <article class="case3-result"><strong>Actionable later</strong><p>The framework can support future regime-aware monitoring and process-improvement analysis.</p></article>
     </div>
   </section>
 
@@ -169,14 +170,14 @@ description: "BYU Honors thesis case study applying preprocessing, PCA, DBSCAN, 
       <div class="case3-tech__item"><strong>StandardScaler</strong><span>Comparable multivariate feature space</span></div>
       <div class="case3-tech__item"><strong>PCA</strong><span>95% variance target</span></div>
       <div class="case3-tech__item"><strong>DBSCAN</strong><span>Density-based regime discovery</span></div>
-      <div class="case3-tech__item"><strong>KPI Profiling</strong><span>Recovery, production, tailings, variability</span></div>
+      <div class="case3-tech__item"><strong>KPI Profiling</strong><span>Recovery, production, and variability</span></div>
     </div>
   </section>
 
   <section class="case3-learn" style="background:linear-gradient(135deg,#082f49,#0c4a6e);">
     <p class="case3-label" style="color:#93c5fd!important;">What I Learned</p>
     <h2>A cluster is not an insight until it has operational meaning.</h2>
-    <p>The most important part of the thesis was not choosing PCA or DBSCAN. It was connecting the mathematical structure back to the process — asking whether the regimes were recurrent, whether their signatures made physical sense, and whether their performance differences were meaningful enough to help engineers understand how the plant operates.</p>
+    <p>The value came from connecting mathematical structure back to the process: recurring states had to make sense in the underlying variables and show meaningful differences in metallurgical and production performance.</p>
   </section>
 
   <nav class="case3-next">
