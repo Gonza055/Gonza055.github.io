@@ -1,85 +1,161 @@
 ---
 layout: single
-title: "Predictive Maintenance & Reliability Analytics"
+title: "Sensor Data to Reliability"
 permalink: /projects/predictive-maintenance/
-description: "Industrial analytics case study from Buenaventura: sensor-data conditioning, feature engineering, reliability analysis, and condition-monitoring exploration."
+description: "Buenaventura San Gabriel case study: industrial sensor conditioning, reliability feature engineering, asset structuring, and condition-monitoring analysis."
 ---
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/work.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/visual-pass-2.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/case-v3.css' | relative_url }}">
 
-<article class="portfolio-page case-page">
-  <a class="case-back" href="/projects/">← Selected work</a>
+<article class="case3" style="--case-accent:#10b981; --case-accent-soft:#ecfdf5;">
+  <a class="case3-back" href="/projects/">← Selected Work</a>
 
-  <header class="case-hero">
-    <p class="pf-eyebrow">Buenaventura · San Gabriel Unit · 2025</p>
-    <h1>Turning noisy equipment data into a reliability workflow.</h1>
-    <p class="case-hero__lead">During my maintenance-data internship, I worked across the reliability-data pipeline: cleaning industrial time-series, engineering equipment features, structuring asset information, and analyzing process behavior to support condition-monitoring and predictive-maintenance exploration.</p>
-    <div class="case-tags"><span class="pf-tag">Industrial Time-Series</span><span class="pf-tag">Feature Engineering</span><span class="pf-tag">Reliability Analytics</span><span class="pf-tag">Condition Monitoring</span></div>
-  </header>
-
-  <figure class="case-media case-media--wide case-media--photo">
-    <img src="/assets/images/real/buenaventura-site.webp" alt="Gonzalo in personal protective equipment at a mining operation">
-    <figcaption>Field context — the analytics work was grounded in real equipment, operating constraints, and maintenance questions.</figcaption>
-  </figure>
-
-  <section class="case-metric-strip">
-    <div><strong>50k+</strong><span>high-noise sensor time-series processed</span></div>
-    <div><strong>15+</strong><span>reliability-focused features engineered</span></div>
-    <div><strong>100+</strong><span>assets structured under reliability standards</span></div>
-  </section>
-
-  <section class="case-grid">
-    <div class="case-main">
-      <section class="case-section">
-        <p class="pf-section__label">The problem</p>
-        <h2>The data existed, but it was not yet analysis-ready.</h2>
-        <p>Equipment and process signals from crushing and grinding systems contained noise, inconsistent behavior, outliers, and limited structure. The first challenge was to create a reliable analytical foundation before attempting more advanced maintenance models.</p>
-      </section>
-
-      <figure class="case-media case-media--wide case-media--technical">
-        <img src="/assets/images/diagrams/reliability-workflow.svg" alt="Reliability analytics workflow from raw signals through conditioning and feature engineering to monitoring candidates">
-        <figcaption>The work moved from signal quality and asset context toward variables that could support future condition-monitoring and predictive-maintenance applications.</figcaption>
-      </figure>
-
-      <section class="case-section">
-        <p class="pf-section__label">Approach</p>
-        <h2>An end-to-end reliability analytics workflow.</h2>
-        <div class="case-points">
-          <div><span>01</span><h3>Condition the signals</h3><p>Applied smoothing, outlier handling, reconstruction, and preprocessing to make noisy time-series more stable and interpretable.</p></div>
-          <div><span>02</span><h3>Engineer useful features</h3><p>Created reliability-focused variables including temperature deltas, load ratios, and transient-spike indicators.</p></div>
-          <div><span>03</span><h3>Connect process and wear behavior</h3><p>Analyzed operating signals linked to equipment wear, ore variability, and process behavior to identify variables worth monitoring.</p></div>
-          <div><span>04</span><h3>Structure the asset context</h3><p>Organized 100+ assets using ISO 14224/17359-oriented structures to improve traceability, consistency, and analytical usability.</p></div>
+  <header class="case3-hero">
+    <div class="case3-hero__top">
+      <div class="case3-hero__copy">
+        <p class="case3-eyebrow" style="color:#6ee7b7!important;">Buenaventura · San Gabriel Unit · 2025</p>
+        <h1>From noisy sensor data to a reliability foundation.</h1>
+        <p class="case3-hero__lead">I worked with crushing and grinding equipment data to build a cleaner, more structured analytical foundation for condition monitoring and future predictive-maintenance workflows.</p>
+        <div class="case3-tags">
+          <span class="case3-tag">Industrial Time-Series</span>
+          <span class="case3-tag">Feature Engineering</span>
+          <span class="case3-tag">Reliability Analytics</span>
+          <span class="case3-tag">Asset Structure</span>
         </div>
-      </section>
-
-      <section class="case-section">
-        <p class="pf-section__label">Outcome</p>
-        <h2>A stronger basis for condition monitoring and future ML.</h2>
-        <p>The work produced cleaner datasets, a reusable set of reliability features, clearer relationships between process behavior and equipment condition, and a more structured asset context for future monitoring workflows. The emphasis was not on claiming a production-ready failure model, but on building the data and engineering foundation needed for one.</p>
-      </section>
-
-      <section class="case-section case-section--visual-note">
-        <p class="pf-section__label">What this demonstrates</p>
-        <h2>Machine learning starts with understanding the equipment and the data.</h2>
-        <p>Predictive maintenance is not simply a modeling exercise. Signal quality, asset hierarchy, process context, and engineering interpretation determine whether a model can eventually become useful to maintenance and operations teams.</p>
-      </section>
+      </div>
+      <div class="case3-hero__image">
+        <img src="/assets/images/real/buenaventura-site.webp" alt="Gonzalo Loayza at Buenaventura San Gabriel">
+      </div>
     </div>
 
-    <aside class="case-sidebar">
-      <div class="case-fact"><span>Role</span><strong>Maintenance Data Analyst Intern</strong></div>
-      <div class="case-fact"><span>Organization</span><strong>Compañía de Minas Buenaventura</strong></div>
-      <div class="case-fact"><span>Unit</span><strong>San Gabriel</strong></div>
-      <div class="case-fact"><span>Period</span><strong>Jun – Aug 2025</strong></div>
-      <div class="case-fact"><span>Domain</span><strong>Crushing &amp; grinding reliability</strong></div>
-      <div class="case-fact"><span>Standards</span><strong>ISO 14224 / 17359</strong></div>
-      <div class="case-fact"><span>Tools</span><strong>Python · Pandas · NumPy · EDA</strong></div>
-    </aside>
+    <div class="case3-facts">
+      <div class="case3-fact"><span>Role</span><strong>Maintenance Data Analyst Intern</strong></div>
+      <div class="case3-fact"><span>Organization</span><strong>Compañía de Minas Buenaventura</strong></div>
+      <div class="case3-fact"><span>Unit</span><strong>San Gabriel · Peru</strong></div>
+      <div class="case3-fact"><span>Period</span><strong>Jun – Aug 2025</strong></div>
+      <div class="case3-fact"><span>Domain</span><strong>Crushing &amp; grinding reliability</strong></div>
+    </div>
+  </header>
+
+  <section class="case3-section">
+    <div class="case3-section__head">
+      <p class="case3-label">The Problem</p>
+      <h2>The data existed. The analytical foundation did not.</h2>
+      <p>Equipment and process signals were noisy, irregular, and difficult to use directly for maintenance analysis. Before building any predictive model, the first job was to make the signals more reliable, give them engineering context, and structure the assets consistently.</p>
+    </div>
+
+    <div class="case3-problem">
+      <div class="case3-copybox">
+        <p>The work focused on <strong>building the data foundation</strong> required for predictive maintenance: conditioning sensor histories, engineering reliability-oriented variables, interpreting operating patterns, and organizing asset information so future analysis could be repeatable.</p>
+      </div>
+      <div class="case3-insight" style="border-color:#a7f3d0;">
+        <strong>Important distinction</strong>
+        <p>This was not a claim of a production-ready failure-prediction model. It was the engineering and analytical work needed before one could be developed responsibly.</p>
+      </div>
+    </div>
   </section>
 
-  <nav class="case-next"><span>Next case study</span><a href="/projects/operational-mode-discovery/">Operational Mode Discovery &amp; Business Value Analysis →</a></nav>
+  <section class="case3-section">
+    <div class="case3-section__head">
+      <p class="case3-label">Evidence at a Glance</p>
+      <h2>Industrial scale, grounded in reliability.</h2>
+    </div>
+
+    <div class="case3-results">
+      <article class="case3-result"><strong>50k+</strong><p>noisy industrial sensor time-series processed and conditioned.</p></article>
+      <article class="case3-result"><strong>15+</strong><p>reliability-focused features engineered for analysis.</p></article>
+      <article class="case3-result"><strong>100+</strong><p>assets structured for improved traceability and analytical usability.</p></article>
+      <article class="case3-result"><strong>ISO 14224 / 17359</strong><p>standards used to organize asset and condition-monitoring context.</p></article>
+    </div>
+  </section>
+
+  <section class="case3-section">
+    <div class="case3-section__head">
+      <p class="case3-label">Approach</p>
+      <h2>An end-to-end reliability analytics workflow.</h2>
+      <p>Instead of jumping directly to modeling, I worked through four layers that made the data progressively more useful.</p>
+    </div>
+
+    <div class="case3-process">
+      <div class="case3-step"><strong>Condition the signals</strong><span>Smoothing, outlier capping, and signal reconstruction to reduce noise and stabilize the histories.</span></div>
+      <div class="case3-step"><strong>Engineer reliability features</strong><span>Temperature deltas, load ratios, and transient-spike indicators designed around equipment behavior.</span></div>
+      <div class="case3-step"><strong>Interpret operating patterns</strong><span>EDA on crushing and grinding signals to investigate wear behavior, ore variability, and early-warning candidates.</span></div>
+      <div class="case3-step"><strong>Structure the assets</strong><span>Organize 100+ assets under reliability-oriented standards to improve consistency and traceability.</span></div>
+    </div>
+  </section>
+
+  <section class="case3-section">
+    <div class="case3-section__head">
+      <p class="case3-label">Technical Workflow</p>
+      <h2>Raw signals → trustworthy monitoring variables.</h2>
+      <p>The core technical idea was simple: every modeling decision downstream depends on signal quality and context upstream.</p>
+    </div>
+
+    <figure class="case3-photo" style="background:#f8fafc;">
+      <img src="/assets/images/diagrams/reliability-workflow.svg" alt="Reliability workflow from raw industrial signals through conditioning, feature engineering, and monitoring candidates" style="object-fit:contain;padding:1.5rem;min-height:280px;">
+      <figcaption>Reliability workflow from raw equipment signals through conditioning, feature engineering, asset context, and monitoring candidates.</figcaption>
+    </figure>
+  </section>
+
+  <section class="case3-section">
+    <div class="case3-section__head">
+      <p class="case3-label">What the Analysis Looked For</p>
+      <h2>Signals that might matter before failure.</h2>
+      <p>The objective was not merely to describe the data, but to identify variables and relationships that could later support more useful condition-monitoring logic.</p>
+    </div>
+
+    <div class="case3-streams">
+      <article class="case3-stream">
+        <div class="case3-stream__body">
+          <span class="case3-stream__num">01 · Signal Quality</span>
+          <h3>Separate noise from behavior.</h3>
+          <p>Condition raw histories so that transient noise, outliers, and missing or unstable behavior do not dominate the analysis.</p>
+        </div>
+      </article>
+      <article class="case3-stream">
+        <div class="case3-stream__body">
+          <span class="case3-stream__num">02 · Equipment Behavior</span>
+          <h3>Create interpretable indicators.</h3>
+          <p>Build variables that reflect temperature change, relative loading, transient spikes, and other patterns with possible reliability meaning.</p>
+        </div>
+      </article>
+      <article class="case3-stream">
+        <div class="case3-stream__body">
+          <span class="case3-stream__num">03 · Process Context</span>
+          <h3>Relate equipment signals to operation.</h3>
+          <p>Use EDA to connect wear-related signals with process behavior and ore variability instead of treating sensors in isolation.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="case3-section">
+    <div class="case3-section__head">
+      <p class="case3-label">Outcome</p>
+      <h2>A stronger basis for condition monitoring and future ML.</h2>
+      <p>The internship produced cleaner data, reusable reliability features, more structured asset information, and a clearer analytical basis for early-warning and predictive-maintenance exploration.</p>
+    </div>
+
+    <div class="case3-results">
+      <article class="case3-result"><strong>Cleaner time-series</strong><p>Sensor histories became more stable and usable for systematic analysis.</p></article>
+      <article class="case3-result"><strong>Reusable features</strong><p>Reliability-focused variables created a more consistent basis for comparing equipment behavior.</p></article>
+      <article class="case3-result"><strong>Better traceability</strong><p>Asset structuring improved consistency across maintenance and monitoring data.</p></article>
+      <article class="case3-result"><strong>Future-ready foundation</strong><p>Prepared datasets and engineering context for later predictive-maintenance prototyping.</p></article>
+    </div>
+  </section>
+
+  <section class="case3-learn" style="background:linear-gradient(135deg,#052e2b,#064e3b);">
+    <p class="case3-label" style="color:#6ee7b7!important;">What I Learned</p>
+    <h2>Predictive maintenance starts before the prediction.</h2>
+    <p>Good ML for equipment reliability depends on much more than choosing a model. Signal conditioning, asset hierarchy, process context, and engineering interpretation determine whether a prediction can eventually become useful to maintenance and operations teams.</p>
+  </section>
+
+  <nav class="case3-next">
+    <span>Next Case Study</span>
+    <a href="/projects/operational-mode-discovery/">BYU Honors · Process Data → Operating Modes →</a>
+  </nav>
 </article>
