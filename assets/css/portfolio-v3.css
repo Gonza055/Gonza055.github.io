@@ -278,6 +278,7 @@
 }
 
 .home3-card--honors .home3-card__media img { object-fit: contain; background: #f8fafc; }
+.home3-card--urban .home3-card__media img { object-fit: contain; padding: .65rem; background: #f8fafc; }
 
 .home3-card__body {
   padding: 1.25rem 1.3rem 1.35rem;
