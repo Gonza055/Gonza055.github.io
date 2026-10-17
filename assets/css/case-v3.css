@@ -509,14 +509,13 @@
 
 /* Honors research refinements */
 .case3-honors-hero .case3-hero__image {
-  background:
-    radial-gradient(circle at 70% 28%, rgba(96,165,250,.12), transparent 36%),
-    #f8fafc;
-  padding: 1.2rem;
+  background:#0c2a4d;
+  padding:0;
 }
 .case3-honors-hero .case3-hero__image img {
-  object-fit: contain;
-  padding: .65rem;
+  object-fit:cover;
+  object-position:50% 46%;
+  padding:0;
 }
 .case3-honors-summary {
   display:grid;
