@@ -52,6 +52,11 @@ description: "BYU applied machine-learning project combining seven-day weather h
         <figcaption>Source-backed reconstruction of the final project: recent weather + historical examples → model comparison → ranked high-risk locations → map and imagery follow-up.</figcaption>
       </figure>
 
+      <figure class="case-media case-media--wide case-media--technical">
+        <img src="/assets/images/real/wildfire-poster.webp" alt="Original Wildfire Prediction project poster">
+        <figcaption>Original Wildfire Prediction project poster summarizing the problem, weather-data pipeline, spatial risk output, model importance, and project result.</figcaption>
+      </figure>
+
       <section class="case-section">
         <p class="pf-section__label">Results</p>
         <h2>The prototype shows predictive lift, with important limitations stated plainly.</h2>
