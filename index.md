@@ -31,7 +31,7 @@ permalink: /
     <div class="home3-hero__visual" aria-label="Gonzalo working across industrial analytics environments">
       <figure><img src="/assets/images/real/hatch-control-room.webp" alt="Gonzalo in an industrial operations environment"></figure>
       <figure><img src="/assets/images/real/hatch-presentation-hitm.webp" alt="Gonzalo presenting applied digital work"></figure>
-      <figure><img src="/assets/images/real/buenaventura-site.webp" alt="Gonzalo at a mining site"></figure>
+      <figure><img src="/assets/images/real/bnv-san-gabriel-hero.webp" alt="Gonzalo at a mining site"></figure>
     </div>
   </section>
 
@@ -85,7 +85,7 @@ permalink: /
         </div>
       </a>
 
-      <a class="home3-card" href="/projects/trainops/">
+      <a class="home3-card home3-card--urban" href="/projects/trainops/">
         <div class="home3-card__media"><img src="/assets/images/projects/trainops-caps-009-2.webp" alt="TrainOps simulation output"></div>
         <div class="home3-card__body">
           <p class="home3-card__meta">Hatch Urban Solutions · 2024</p>
