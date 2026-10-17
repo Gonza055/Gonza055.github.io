@@ -28,7 +28,7 @@ description: "Hatch Urban Solutions case study: Python and C++ automation for la
         </div>
       </div>
       <div class="case3-hero__image" style="background:#f8fafc;display:grid;place-items:center;">
-        <img src="/assets/images/projects/trainops-caps-009-2.webp" alt="TrainOps simulation interface showing rail operations and performance profiles" style="object-fit:contain;padding:1rem;min-height:420px;">
+        <img src="/assets/images/projects/trainops-caps-009-2.webp" alt="TrainOps simulation interface showing rail operations and performance profiles" style="object-fit:contain;padding:1rem;">
       </div>
     </div>
 
@@ -97,11 +97,11 @@ description: "Hatch Urban Solutions case study: Python and C++ automation for la
 
     <div class="case3-gallery">
       <figure class="case3-gallery__item">
-        <img src="/assets/images/projects/trainops-caps-003-2.webp" alt="Train speed acceleration resistance and elevation profile from TrainOps">
+        <img src="/assets/images/projects/trainops-caps-003-2.webp" alt="Train speed acceleration resistance and elevation profile from TrainOps" style="object-fit:contain;background:#f8fafc;padding:.5rem;">
         <figcaption>Speed, acceleration, resistance, and route elevation profiles used to understand train behavior across the simulated corridor.</figcaption>
       </figure>
       <figure class="case3-gallery__item">
-        <img src="/assets/images/projects/trainops-caps-009-2.webp" alt="TrainOps signal design and performance interface">
+        <img src="/assets/images/projects/trainops-caps-009-2.webp" alt="TrainOps signal design and performance interface" style="object-fit:contain;background:#f8fafc;padding:.5rem;">
         <figcaption>TrainOps simulation environment — scenario assumptions and operational behavior remain visible alongside the analytical outputs.</figcaption>
       </figure>
     </div>
