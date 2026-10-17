@@ -51,7 +51,7 @@ description: "Selected work by Gonzalo Loayza across industrial analytics, data 
 
       <a class="work3-card" href="/projects/predictive-maintenance/">
         <div class="work3-card__media">
-          <img src="/assets/images/real/buenaventura-site.webp" alt="Gonzalo Loayza at Buenaventura San Gabriel">
+          <img src="/assets/images/real/bnv-san-gabriel-hero.webp" alt="Gonzalo Loayza at Buenaventura San Gabriel">
           <span class="work3-card__tone"></span>
         </div>
         <div class="work3-card__body">
