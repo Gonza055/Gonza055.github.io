@@ -158,12 +158,12 @@ description: "Buenaventura San Gabriel case study: industrial sensor conditionin
 
     <div class="case3-gallery">
       <figure class="case3-gallery__item">
-        <img src="/assets/images/real/bnv-san-gabriel-field.webp" alt="Gonzalo Loayza in field PPE at the San Gabriel operation">
+        <img src="/assets/images/real/buenaventura-field-real.webp" alt="Gonzalo Loayza in field PPE at the San Gabriel operation">
         <figcaption>San Gabriel field context — the analysis was grounded in a real mining and maintenance environment.</figcaption>
       </figure>
       <figure class="case3-gallery__item">
-        <img src="/assets/images/real/bnv-lima-reception.webp" alt="Gonzalo Loayza in a Buenaventura office environment">
-        <figcaption>Buenaventura context — connecting the technical work at San Gabriel with the broader organization and professional environment.</figcaption>
+        <img src="/assets/images/real/buenaventura-site.webp" alt="San Gabriel mining site context">
+        <figcaption>San Gabriel site context — connecting the reliability analysis with the physical mining environment behind the data.</figcaption>
       </figure>
     </div>
   </section>
