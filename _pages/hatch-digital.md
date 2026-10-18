@@ -180,23 +180,23 @@ description: "Hatch Digital case study: drone measurement concepts, HITM data pr
 
       <div class="hd-gallery">
         <figure>
-          <img src="/assets/images/real/hatch-digital-hitm-presentation.webp" alt="Gonzalo presenting HITM work">
+          <img src="/assets/images/real/hatch-hitm-presentation-hd.webp" alt="Gonzalo Loayza presenting HITM work to the Hatch Digital team">
           <figcaption>Presenting HITM results</figcaption>
         </figure>
         <figure>
-          <img src="/assets/images/real/hatch-digital-practice-team.webp" alt="Hatch Digital team">
-          <figcaption>Hatch Digital team</figcaption>
+          <img src="/assets/images/real/hatch-team-digital-en-practica-hd.webp" alt="Hatch Digital team after the Digital en práctica presentation">
+          <figcaption>Hatch Digital team — Digital en práctica</figcaption>
         </figure>
         <figure>
-          <img src="/assets/images/real/hatch-control-room.webp" alt="Digital operations environment">
-          <figcaption>Desk-based development</figcaption>
-        </figure>
-        <figure class="hd-gallery__pending">
-          <div><b>PHOTO SLOT 07</b><span>Workshop / discussion</span></div>
+          <img src="/assets/images/real/hatch-workshop-discussion-hd.webp" alt="Workshop discussion during the Digital en práctica session">
           <figcaption>Workshop and discussion</figcaption>
         </figure>
-        <figure class="hd-gallery__pending">
-          <div><b>PHOTO SLOT 08</b><span>Team culture / wider group</span></div>
+        <figure>
+          <img src="/assets/images/real/hatch-desk-development-hd.webp" alt="Gonzalo Loayza working at his desk">
+          <figcaption>Desk-based development</figcaption>
+        </figure>
+        <figure>
+          <img src="/assets/images/real/hatch-team-culture-hd.webp" alt="Digital and Mineral Processing team dinner">
           <figcaption>Team culture — Digital &amp; Mineral Processing</figcaption>
         </figure>
       </div>
