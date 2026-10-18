@@ -24,3 +24,70 @@
 .bvn-next{display:grid;grid-template-columns:1fr 1fr;margin-top:0;background:linear-gradient(135deg,#061F35,#0A3956)}.bvn-next a{display:flex;flex-direction:column;gap:3px;padding:18px 24px;color:#fff!important;text-decoration:none!important}.bvn-next a+a{border-left:1px solid rgba(255,255,255,.3)}.bvn-next a:last-child{text-align:right;align-items:flex-end}.bvn-next small{color:#BBD0D7;font-size:.55rem}.bvn-next strong{font-size:.8rem}.bvn-next span{color:#D9E7EA;font-size:.61rem}
 @media(max-width:1000px){.bvn-hero{min-height:350px}.bvn-hero__content{width:75%;padding:40px 34px}.bvn-context__grid,.bvn-grid-two,.bvn-bottom,.bvn-evidence-main{grid-template-columns:1fr}.bvn-facts{grid-template-columns:repeat(5,1fr)}.bvn-approach--five{grid-template-columns:1fr 18px 1fr 18px 1fr 18px 1fr 18px 1fr}.bvn-evidence-main__copy{padding:2px 8px 9px}.bvn-gallery img{height:230px}.bvn-gallery__wide img{height:310px}}
 @media(max-width:760px){.bvncase{padding:0 7px 18px}.bvn-hero{min-height:400px;background:linear-gradient(90deg,rgba(5,37,64,.94),rgba(5,37,64,.72)),url('/assets/images/real/buenaventura-site.webp') center/cover no-repeat}.bvn-hero__content{width:100%;padding:34px 24px}.bvn-brand{gap:8px}.bvn-brand__name{font-size:.67rem}.bvn-brand__unit{font-size:.64rem}.bvn-sheet>section{padding:18px 10px}.bvn-source-strip,.bvn-facts,.bvn-metrics,.bvn-evidence-grid,.bvn-gallery--editorial,.bvn-bottom{grid-template-columns:1fr}.bvn-facts div{border-top:1px solid var(--bvn-line)}.bvn-approach--five,.bvn-framework__flow{grid-template-columns:1fr}.bvn-approach>b,.bvn-framework__flow>b{transform:rotate(90deg);height:23px}.bvn-framework__message{flex-direction:column;align-items:flex-start}.bvn-quality-card{grid-template-columns:1fr}.bvn-gallery__wide{grid-column:auto}.bvn-gallery img,.bvn-gallery__wide img{height:auto;max-height:520px;object-fit:contain}.bvn-tech{grid-template-columns:repeat(2,1fr)}.bvn-next{grid-template-columns:1fr}.bvn-next a+a{border-left:0;border-top:1px solid rgba(255,255,255,.3)}.bvn-next a:last-child{text-align:left;align-items:flex-start}}
+
+/* Approved Buenaventura evidence visuals */
+.bvn-problem-evidence{display:block!important}
+.bvn-problem-top{display:grid;grid-template-columns:.82fr 1.18fr;gap:26px;align-items:start}
+.bvn-problem-visual{margin:14px 0 0}
+.bvn-problem-visual img,
+.bvn-framework-visual img{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--bvn-line);
+  border-radius:10px;
+  background:#fff;
+}
+.bvn-problem-visual figcaption,
+.bvn-framework-visual figcaption{
+  padding-top:6px;
+  color:#71838F;
+  text-align:right;
+  font-size:.54rem;
+}
+.bvn-evidence-main{grid-template-columns:1fr!important}
+.bvn-evidence-main__copy{
+  padding:10px 12px 5px!important;
+  border-top:1px solid var(--bvn-line);
+}
+.bvn-evidence-main img,
+.bvn-evidence-grid img{
+  border-radius:8px;
+  object-fit:contain!important;
+}
+.bvn-framework-visual{margin:12px 0 0}
+.bvn-gallery--editorial{
+  grid-template-columns:repeat(6,minmax(0,1fr))!important;
+  gap:12px!important;
+}
+.bvn-gallery--editorial .bvn-gallery__wide{grid-column:span 4}
+.bvn-gallery--editorial figure:nth-child(2){grid-column:span 2}
+.bvn-gallery--editorial figure:nth-child(3),
+.bvn-gallery--editorial figure:nth-child(4){grid-column:span 3}
+.bvn-gallery--editorial .bvn-gallery__wide img{height:360px}
+.bvn-gallery--editorial figure:nth-child(2) img{height:360px}
+.bvn-gallery--editorial figure:nth-child(3) img,
+.bvn-gallery--editorial figure:nth-child(4) img{height:300px}
+@media(max-width:1000px){
+  .bvn-problem-top{grid-template-columns:1fr}
+  .bvn-gallery--editorial{grid-template-columns:repeat(2,1fr)!important}
+  .bvn-gallery--editorial .bvn-gallery__wide,
+  .bvn-gallery--editorial figure:nth-child(2),
+  .bvn-gallery--editorial figure:nth-child(3),
+  .bvn-gallery--editorial figure:nth-child(4){grid-column:auto}
+  .bvn-gallery--editorial img,
+  .bvn-gallery--editorial .bvn-gallery__wide img,
+  .bvn-gallery--editorial figure:nth-child(2) img,
+  .bvn-gallery--editorial figure:nth-child(3) img,
+  .bvn-gallery--editorial figure:nth-child(4) img{height:300px}
+}
+@media(max-width:760px){
+  .bvn-gallery--editorial{grid-template-columns:1fr!important}
+  .bvn-gallery--editorial img,
+  .bvn-gallery--editorial .bvn-gallery__wide img,
+  .bvn-gallery--editorial figure:nth-child(2) img,
+  .bvn-gallery--editorial figure:nth-child(3) img,
+  .bvn-gallery--editorial figure:nth-child(4) img{height:auto;max-height:520px}
+  .bvn-problem-visual figcaption,
+  .bvn-framework-visual figcaption{text-align:left}
+}
