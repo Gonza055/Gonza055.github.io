@@ -97,28 +97,44 @@ description: "Hatch Digital case study: drone measurement concepts, HITM data pr
       </div>
     </section>
 
-    <section class="hd-section" id="approach">
+    <section class="hd-section hd-section--approach" id="approach">
       <div class="hd-section__title"><span>3.</span><h2>Approach</h2><p>Three workstreams.</p></div>
-      <div class="hd-three">
-        <article class="hd-workcard hd-workcard--approach">
-          <header><span class="hd-workcard__icon">⌁</span><h3>Drones &amp; Measurement Concepts</h3></header>
-          <div class="hd-approach-visual"><img src="/assets/images/diagrams/drone-measurement-architecture.svg" alt="Drone measurement workflow"></div>
-          <p>Investigated alternatives, compared capture and reconstruction approaches, and defined structured criteria to assess feasibility, accuracy, and operational value.</p>
-          <div class="hd-chiprow"><span>Aerial Capture</span><span>3D Reconstruction</span><span>Evaluation Criteria</span></div>
+
+      <div class="hd-approach-stack">
+        <article class="hd-approach-row">
+          <div class="hd-approach-row__visual">
+            <img src="/assets/images/generated/hatch-digital-approach-drones.webp" alt="Drones and measurement workflow from aerial capture through 3D reconstruction to evaluation criteria">
+          </div>
+          <div class="hd-approach-row__copy">
+            <span class="hd-approach-row__eyebrow">WORKSTREAM 01</span>
+            <h3>Drones &amp; Measurement Concepts</h3>
+            <p>Investigated alternatives, compared capture and reconstruction approaches, and defined structured criteria to assess feasibility, accuracy, and operational value.</p>
+            <div class="hd-chiprow"><span>Aerial Capture</span><span>3D Reconstruction</span><span>Evaluation Criteria</span></div>
+          </div>
         </article>
 
-        <article class="hd-workcard hd-workcard--approach">
-          <header><span class="hd-workcard__icon">▤</span><h3>HITM Workflow &amp; Validation</h3></header>
-          <div class="hd-approach-visual"><img src="/assets/images/diagrams/hitm-data-workflow.svg" alt="HITM data preparation and validation workflow"></div>
-          <p>Prepared, adjusted, and validated technical data before upload so automated outputs remained reviewable and technically consistent.</p>
-          <div class="hd-chiprow"><span>Data Pipelines</span><span>Validation</span><span>Automation</span><span>HITM</span></div>
+        <article class="hd-approach-row hd-approach-row--reverse">
+          <div class="hd-approach-row__visual">
+            <img src="/assets/images/generated/hatch-digital-approach-hitm.webp" alt="HITM workflow from technical inputs through preparation and validation to review-ready output">
+          </div>
+          <div class="hd-approach-row__copy">
+            <span class="hd-approach-row__eyebrow">WORKSTREAM 02</span>
+            <h3>HITM Workflow &amp; Validation</h3>
+            <p>Prepared, adjusted, and validated technical data before upload so automated outputs remained reviewable and technically consistent.</p>
+            <div class="hd-chiprow"><span>Data Pipelines</span><span>Validation</span><span>Automation</span><span>HITM</span></div>
+          </div>
         </article>
 
-        <article class="hd-workcard hd-workcard--approach">
-          <header><span class="hd-workcard__icon">◎</span><h3>SIC — Operational Decision Support</h3></header>
-          <div class="hd-approach-visual"><img src="/assets/images/diagrams/sic-operating-cycle.svg" alt="SIC decision-support cycle"></div>
-          <p>Mapped a structured decision cycle for shift deviations and explored how digital support could improve response quality and traceability.</p>
-          <div class="hd-chiprow"><span>Decision Support</span><span>Deviation Flow</span><span>Operational Context</span></div>
+        <article class="hd-approach-row">
+          <div class="hd-approach-row__visual">
+            <img src="/assets/images/generated/hatch-digital-approach-sic.webp" alt="SIC operational decision-support workflow from deviation detection through structured decisions to operational outcome">
+          </div>
+          <div class="hd-approach-row__copy">
+            <span class="hd-approach-row__eyebrow">WORKSTREAM 03</span>
+            <h3>SIC — Operational Decision Support</h3>
+            <p>Mapped a structured decision cycle for shift deviations and explored how digital support could improve response quality and traceability.</p>
+            <div class="hd-chiprow"><span>Decision Support</span><span>Deviation Flow</span><span>Operational Context</span></div>
+          </div>
         </article>
       </div>
     </section>
