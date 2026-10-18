@@ -91,3 +91,232 @@
   .bvn-problem-visual figcaption,
   .bvn-framework-visual figcaption{text-align:left}
 }
+
+
+/* Buenaventura editorial differentiation */
+.bvn-sheet>section{
+  position:relative;
+  padding:24px 22px;
+}
+.bvn-sheet>section:nth-of-type(even){
+  background:linear-gradient(180deg,#FBFDFD,#F6FAF9);
+}
+.bvn-section-head{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:12px;
+  padding-bottom:8px;
+  border-bottom:1px solid var(--bvn-line);
+}
+.bvn-section-head>span{
+  width:26px!important;
+  height:3px!important;
+  border-radius:3px!important;
+  background:var(--bvn-teal)!important;
+  flex:0 0 26px;
+}
+.bvn-section-head h2{
+  font-size:1.12rem!important;
+  letter-spacing:-.02em;
+}
+.bvn-section-head p{
+  margin-left:auto!important;
+  max-width:52%;
+  text-align:right;
+  font-size:.64rem!important;
+}
+
+/* Full-width field photograph used as a narrative transition, not a gallery duplicate. */
+.bvn-field-break{
+  position:relative;
+  margin:0;
+  height:390px;
+  overflow:hidden;
+  background:#122E43;
+}
+.bvn-field-break img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 48%;
+}
+.bvn-field-break:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(6,36,57,.82) 0%,rgba(6,36,57,.38) 37%,rgba(6,36,57,.04) 70%);
+  pointer-events:none;
+}
+.bvn-field-break figcaption{
+  position:absolute;
+  z-index:2;
+  left:34px;
+  bottom:30px;
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  max-width:410px;
+  color:#fff;
+}
+.bvn-field-break figcaption strong{
+  color:#fff;
+  font-size:1.2rem;
+  letter-spacing:-.02em;
+}
+.bvn-field-break figcaption span{
+  color:#E7F3F1;
+  font-size:.7rem;
+  line-height:1.4;
+}
+
+/* Gallery becomes a spacious editorial people section — no repeated solo portrait. */
+.bvn-gallery--people{
+  display:grid!important;
+  grid-template-columns:1.1fr .9fr!important;
+  gap:16px!important;
+  margin-top:14px!important;
+}
+.bvn-gallery--people figure{
+  margin:0;
+  min-width:0;
+}
+.bvn-gallery--people img{
+  display:block;
+  width:100%;
+  height:340px!important;
+  object-fit:cover!important;
+  object-position:center!important;
+  border:1px solid var(--bvn-line);
+  border-radius:8px;
+  background:#EDF3F3;
+}
+.bvn-gallery--people figure:first-child img{object-position:center 42%!important}
+.bvn-gallery--people figcaption{
+  display:flex;
+  justify-content:space-between;
+  gap:14px;
+  padding:9px 2px 0!important;
+  text-align:left!important;
+}
+.bvn-gallery--people figcaption strong{
+  color:var(--bvn-navy);
+  font-size:.63rem;
+}
+.bvn-gallery--people figcaption span{
+  color:#71838F;
+  font-size:.56rem;
+  text-align:right;
+}
+
+/* Lighter project-to-project navigation: deliberately unlike Hatch's dark split footer. */
+.bvn-next{
+  display:grid!important;
+  grid-template-columns:1fr auto 1fr!important;
+  align-items:center;
+  margin:0!important;
+  padding:16px 20px!important;
+  background:#fff!important;
+  border-top:1px solid var(--bvn-line)!important;
+}
+.bvn-next:before{
+  content:"PROJECTS";
+  grid-column:2;
+  grid-row:1;
+  align-self:center;
+  color:var(--bvn-teal-dark);
+  font-size:.52rem;
+  font-weight:900;
+  letter-spacing:.16em;
+}
+.bvn-next a{
+  grid-row:1;
+  display:grid!important;
+  grid-template-columns:auto 1fr;
+  column-gap:9px;
+  row-gap:2px;
+  padding:0!important;
+  color:var(--bvn-navy)!important;
+  background:transparent!important;
+  text-decoration:none!important;
+}
+.bvn-next a:first-of-type{
+  grid-column:1;
+  justify-self:start;
+}
+.bvn-next a:last-of-type{
+  grid-column:3;
+  justify-self:end;
+  text-align:right!important;
+  align-items:initial!important;
+}
+.bvn-next a:first-of-type:before{
+  content:"←";
+  grid-row:1 / span 3;
+  align-self:center;
+  display:grid;
+  place-items:center;
+  width:32px;height:32px;
+  border:1px solid var(--bvn-teal);
+  border-radius:50%;
+  color:var(--bvn-teal-dark);
+  font-size:1rem;
+}
+.bvn-next a:last-of-type:after{
+  content:"→";
+  grid-column:2;
+  grid-row:1 / span 3;
+  align-self:center;
+  display:grid;
+  place-items:center;
+  width:32px;height:32px;
+  border:1px solid var(--bvn-teal);
+  border-radius:50%;
+  color:var(--bvn-teal-dark);
+  font-size:1rem;
+}
+.bvn-next a:last-of-type small,
+.bvn-next a:last-of-type strong,
+.bvn-next a:last-of-type span{grid-column:1}
+.bvn-next small{
+  color:#7B8E98!important;
+  font-size:.5rem!important;
+}
+.bvn-next strong{
+  color:var(--bvn-navy)!important;
+  font-size:.72rem!important;
+}
+.bvn-next span{
+  color:#667C8A!important;
+  font-size:.54rem!important;
+}
+.bvn-next a+a{border:0!important}
+
+@media(max-width:900px){
+  .bvn-section-head{flex-wrap:wrap}
+  .bvn-section-head p{
+    width:100%;
+    max-width:none;
+    margin-left:36px!important;
+    text-align:left;
+  }
+  .bvn-field-break{height:340px}
+  .bvn-gallery--people{grid-template-columns:1fr!important}
+  .bvn-gallery--people img{height:auto!important;max-height:520px;object-fit:contain!important}
+  .bvn-next{
+    grid-template-columns:1fr 1fr!important;
+    gap:18px;
+  }
+  .bvn-next:before{display:none}
+  .bvn-next a:first-of-type{grid-column:1}
+  .bvn-next a:last-of-type{grid-column:2}
+}
+@media(max-width:620px){
+  .bvn-field-break{height:300px}
+  .bvn-field-break figcaption{left:20px;right:20px;bottom:20px}
+  .bvn-next{grid-template-columns:1fr!important}
+  .bvn-next a:first-of-type,
+  .bvn-next a:last-of-type{grid-column:1;justify-self:stretch}
+  .bvn-next a:last-of-type{margin-top:8px}
+}
