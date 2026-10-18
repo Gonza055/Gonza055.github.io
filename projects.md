@@ -68,7 +68,7 @@ description: "Selected work by Gonzalo Loayza across industrial analytics, data 
 
       <a class="work3-card work3-card--honors" href="/projects/operational-mode-discovery/">
         <div class="work3-card__media">
-          <img src="/assets/images/real/honors-advisor.webp" alt="Gonzalo Loayza with his Honors thesis advisor in Lima">
+          <img src="/assets/images/real/honors-advisor-v2.webp" alt="Gonzalo Loayza with his Honors thesis advisor in Lima">
         </div>
         <div class="work3-card__body">
           <p class="work3-card__meta">BYU Honors · 2025–2026</p>
@@ -84,7 +84,7 @@ description: "Selected work by Gonzalo Loayza across industrial analytics, data 
 
       <a class="work3-card work3-card--urban" href="/projects/trainops/">
         <div class="work3-card__media">
-          <img src="/assets/images/real/urban-hatch-banner.webp" alt="Gonzalo Loayza at Hatch Urban Solutions">
+          <img src="/assets/images/real/urban-hatch-banner-v2.webp" alt="Gonzalo Loayza at Hatch Urban Solutions">
         </div>
         <div class="work3-card__body">
           <p class="work3-card__meta">Hatch Urban Solutions · 2024</p>
@@ -107,7 +107,7 @@ description: "Selected work by Gonzalo Loayza across industrial analytics, data 
     </div>
 
     <a class="work3-more-card" href="/projects/wildfire-prediction/">
-      <img src="/assets/images/real/wildfire-team.webp" alt="Gonzalo Loayza and teammates presenting the Wildfire Prediction project">
+      <img src="/assets/images/real/wildfire-team-v2.webp" alt="Gonzalo Loayza and teammates presenting the Wildfire Prediction project">
       <div class="work3-more-card__copy">
         <p class="work3-kicker">BYU · Applied ML · 2026</p>
         <h3>Wildfire Prediction System</h3>
