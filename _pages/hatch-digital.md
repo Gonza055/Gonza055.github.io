@@ -82,7 +82,7 @@ description: "Hatch Digital case study: drone measurement concepts, HITM data pr
         <article class="hd-workcard">
           <header><span class="hd-workcard__icon">▤</span><h3>HITM Data Preparation</h3></header>
           <div class="hd-problem-visual">
-            <img src="/assets/images/generated/hatch-digital-hitm-problem.webp" alt="Concept visualization of HITM data preparation from technical inputs through validation to engineering-ready data">
+            <img src="/assets/images/generated/hatch-digital-hitm-problem.svg" alt="Concept visualization of HITM data preparation from technical inputs through validation to engineering-ready data">
           </div>
           <p>How can technical spreadsheets become consistent, review-ready inputs without losing engineering logic?</p>
         </article>
@@ -90,7 +90,7 @@ description: "Hatch Digital case study: drone measurement concepts, HITM data pr
         <article class="hd-workcard">
           <header><span class="hd-workcard__icon">◎</span><h3>SIC Decision Support</h3></header>
           <div class="hd-problem-visual">
-            <img src="/assets/images/generated/hatch-digital-sic-problem.webp" alt="Concept visualization of SIC decision support from shift deviation through role-based workflow to implemented action">
+            <img src="/assets/images/generated/hatch-digital-sic-problem.svg" alt="Concept visualization of SIC decision support from shift deviation through role-based workflow to implemented action">
           </div>
           <p>How can shift deviations be handled through clearer, more traceable, and role-based decision workflows?</p>
         </article>
