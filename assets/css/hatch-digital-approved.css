@@ -266,7 +266,7 @@
   width:100%;
   height:100%;
   object-fit:cover;
-  object-position:72% center;
+  object-position:center;
 }
 
 /* Give each technical visual enough room to be understood */
@@ -341,7 +341,7 @@
   .hd-hero__meta{font-size:.72rem!important}
   .hd-tags span{font-size:.5rem;padding:3px 6px}
   .hd-hero__visual{min-height:285px}
-  .hd-hero__visual img{object-position:74% center}
+  .hd-hero__visual img{object-position:center}
 }
 
 /* Once space is genuinely narrow, stack instead of destroying the composition */
@@ -351,7 +351,7 @@
   .hd-hero h1{font-size:2rem}
   .hd-hero__lead{font-size:.78rem!important}
   .hd-hero__visual{min-height:235px}
-  .hd-hero__visual img{object-position:70% center}
+  .hd-hero__visual img{object-position:center}
 }
 
 @media(max-width:700px){
