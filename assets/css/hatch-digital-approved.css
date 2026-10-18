@@ -360,3 +360,59 @@
   .hd-evidence-slot__visual,
   .hd-gallery img{aspect-ratio:16/9}
 }
+
+
+/* Full-frame preservation — no destructive cropping */
+.hd-hero{
+  align-items:stretch;
+  min-height:0;
+}
+.hd-hero__visual{
+  min-height:0;
+  aspect-ratio:8/3;
+  background:var(--hatch-charcoal);
+}
+.hd-hero__visual img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  background:var(--hatch-charcoal);
+}
+
+/* Preserve complete gallery photographs; allow letterboxing rather than cropping people */
+.hd-gallery figure{
+  display:flex;
+  flex-direction:column;
+}
+.hd-gallery img{
+  width:100%;
+  height:auto;
+  aspect-ratio:16/9;
+  object-fit:contain;
+  object-position:center;
+  background:#F2F2F2;
+}
+
+/* Preserve complete technical evidence */
+.hd-problem-visual>img,
+.hd-approach-visual img,
+.hd-evidence-slot__visual img,
+.hd-evidence-slot__visual--field-photo img{
+  object-fit:contain!important;
+  object-position:center!important;
+}
+
+/* Do not force visual blocks into short fixed heights */
+.hd-problem-visual,
+.hd-workcard--approach .hd-approach-visual,
+.hd-evidence-slot__visual{
+  height:auto!important;
+  aspect-ratio:16/9;
+}
+@media(max-width:1000px){
+  .hd-hero__visual{aspect-ratio:8/3;min-height:0}
+}
+@media(max-width:780px){
+  .hd-hero__visual{aspect-ratio:8/3;min-height:0}
+}
