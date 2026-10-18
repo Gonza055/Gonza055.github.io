@@ -9,7 +9,7 @@ description: "Buenaventura San Gabriel case study: HPGR wear analysis, data qual
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/buenaventura-approved.css' | relative_url }}?v=20261018-bvn-approved-visuals">
+<link rel="stylesheet" href="{{ '/assets/css/buenaventura-approved.css' | relative_url }}?v=20261018-bvn-editorial2">
 
 <article class="bvncase">
   <header class="bvn-hero">
@@ -96,6 +96,11 @@ description: "Buenaventura San Gabriel case study: HPGR wear analysis, data qual
       </div>
     </section>
 
+    <figure class="bvn-field-break">
+      <img src="/assets/images/real/bvn-gonzalo-field-wide.webp" alt="Gonzalo Loayza at the San Gabriel operation">
+      <figcaption><strong>San Gabriel · field context</strong><span>Connecting the analytical work to the operating environment behind the data.</span></figcaption>
+    </figure>
+
     <section class="bvn-evidence-section">
       <div class="bvn-section-head"><span></span><h2>Technical Evidence</h2><p>Rebuilt directly from the HPGR workbook and report findings.</p></div>
       <article class="bvn-evidence-main">
@@ -136,13 +141,17 @@ description: "Buenaventura San Gabriel case study: HPGR wear analysis, data qual
       </aside>
     </section>
 
-    <section>
-      <div class="bvn-section-head"><span></span><h2>Gallery</h2><p>Original internship photographs — no generated substitutes.</p></div>
-      <div class="bvn-gallery bvn-gallery--editorial">
-        <figure class="bvn-gallery__wide"><img src="/assets/images/real/bvn-gonzalo-field-wide.webp" alt="Gonzalo Loayza at the San Gabriel site"><figcaption>San Gabriel — field context</figcaption></figure>
-        <figure><img src="/assets/images/real/bvn-gonzalo-field-portrait.webp" alt="Gonzalo Loayza wearing Buenaventura San Gabriel PPE"><figcaption>Buenaventura San Gabriel — field PPE</figcaption></figure>
-        <figure><img src="/assets/images/real/bvn-gonzalo-percy.webp" alt="Gonzalo Loayza with a Buenaventura colleague"><figcaption>Mentorship &amp; collaboration</figcaption></figure>
-        <figure><img src="/assets/images/real/bvn-team-culture.webp" alt="Buenaventura team gathering"><figcaption>Team culture</figcaption></figure>
+    <section class="bvn-gallery-section">
+      <div class="bvn-section-head"><span></span><h2>People &amp; Experience</h2><p>Collaboration and team moments from the internship.</p></div>
+      <div class="bvn-gallery bvn-gallery--people">
+        <figure>
+          <img src="/assets/images/real/bvn-gonzalo-percy.webp" alt="Gonzalo Loayza with a Buenaventura colleague">
+          <figcaption><strong>Mentorship &amp; collaboration</strong><span>Buenaventura Lima</span></figcaption>
+        </figure>
+        <figure>
+          <img src="/assets/images/real/bvn-team-culture.webp" alt="Buenaventura team gathering">
+          <figcaption><strong>Team culture</strong><span>Internship experience beyond the analysis</span></figcaption>
+        </figure>
       </div>
     </section>
 
