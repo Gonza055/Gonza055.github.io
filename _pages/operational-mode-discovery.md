@@ -28,7 +28,7 @@ description: "BYU Honors thesis case study applying preprocessing, PCA, DBSCAN, 
         </div>
       </div>
       <div class="case3-hero__image">
-        <img src="/assets/images/real/honors-advisor.webp" alt="Gonzalo Loayza with his Honors thesis advisor in Lima">
+        <img src="/assets/images/real/honors-advisor-v2.webp" alt="Gonzalo Loayza with his Honors thesis advisor in Lima">
       </div>
     </div>
 
