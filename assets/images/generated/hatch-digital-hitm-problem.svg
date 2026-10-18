@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">HITM data preparation workflow</title>
+<desc id="desc">Technical inputs are standardized, validated, reconciled and transformed into engineering-ready HITM data.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#F7F8F9"/><stop offset="1" stop-color="#D6DEE3"/>
+  </linearGradient>
+  <linearGradient id="mine" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#B1BCC8" stop-opacity=".55"/><stop offset="1" stop-color="#839BAC" stop-opacity=".18"/>
+  </linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#212A31" flood-opacity=".12"/>
+  </filter>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<path d="M0 270L115 228 220 247 330 207 430 235 540 190 655 230 760 205 875 238 990 205 1200 250V675H0Z" fill="url(#mine)"/>
+<path d="M0 355c140-38 222-20 345 8 125 29 234 42 380 15 171-31 286-25 475 18" fill="none" stroke="#FFFFFF" stroke-opacity=".45" stroke-width="3"/>
+<text x="52" y="58" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="800" fill="#E84B37">HITM</text>
+<text x="128" y="58" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="800" fill="#212A31">DATA PREPARATION</text>
+
+<!-- Inputs -->
+<g filter="url(#shadow)">
+  <rect x="48" y="102" width="285" height="470" rx="18" fill="#FFFFFF" stroke="#D6DEE3"/>
+</g>
+<text x="72" y="137" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="800" fill="#31404A">TECHNICAL INPUTS</text>
+
+<g font-family="Inter,Arial,sans-serif">
+  <rect x="72" y="166" width="236" height="86" rx="12" fill="#F2F2F2" stroke="#B1BCC8"/>
+  <rect x="88" y="183" width="34" height="42" rx="4" fill="#1F8F55"/>
+  <path d="M96 192h18M96 202h18M96 212h18" stroke="#fff" stroke-width="3"/>
+  <text x="140" y="197" font-size="17" font-weight="700" fill="#212A31">Spreadsheets</text>
+  <text x="140" y="220" font-size="14" fill="#425563">Survey · geotech · operations</text>
+
+  <rect x="72" y="272" width="236" height="86" rx="12" fill="#F2F2F2" stroke="#B1BCC8"/>
+  <circle cx="105" cy="314" r="20" fill="#425563"/>
+  <path d="M95 316l8-9 8 6 8-13" fill="none" stroke="#fff" stroke-width="3"/>
+  <text x="140" y="303" font-size="17" font-weight="700" fill="#212A31">Monitoring data</text>
+  <text x="140" y="326" font-size="14" fill="#425563">Levels · flows · pressures</text>
+
+  <rect x="72" y="378" width="236" height="86" rx="12" fill="#F2F2F2" stroke="#B1BCC8"/>
+  <ellipse cx="105" cy="406" rx="20" ry="8" fill="#31404A"/>
+  <rect x="85" y="406" width="40" height="23" fill="#31404A"/>
+  <ellipse cx="105" cy="429" rx="20" ry="8" fill="#425563"/>
+  <text x="140" y="409" font-size="17" font-weight="700" fill="#212A31">Facility readings</text>
+  <text x="140" y="432" font-size="14" fill="#425563">TSF · water · deposition</text>
+
+  <rect x="72" y="484" width="236" height="62" rx="12" fill="#FFF7F5" stroke="#E84B37"/>
+  <text x="92" y="510" font-size="16" font-weight="700" fill="#E84B37">Engineering context</text>
+  <text x="92" y="532" font-size="13" fill="#425563">Units · notes · assumptions</text>
+</g>
+
+<!-- Flow arrows -->
+<path d="M334 337H391" stroke="#E84B37" stroke-width="8" stroke-linecap="round"/>
+<path d="M382 323l18 14-18 14" fill="none" stroke="#E84B37" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M790 337H845" stroke="#E84B37" stroke-width="8" stroke-linecap="round"/>
+<path d="M836 323l18 14-18 14" fill="none" stroke="#E84B37" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+<!-- Processing -->
+<g filter="url(#shadow)">
+  <rect x="404" y="102" width="375" height="470" rx="18" fill="#FFFFFF" stroke="#D6DEE3"/>
+</g>
+<text x="430" y="137" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="800" fill="#31404A">ENGINEERING DATA PIPELINE</text>
+
+<g font-family="Inter,Arial,sans-serif">
+  <circle cx="458" cy="190" r="26" fill="#425563"/><text x="449" y="198" font-size="22" font-weight="800" fill="#fff">1</text>
+  <text x="500" y="184" font-size="19" font-weight="800" fill="#212A31">Standardize &amp; map</text>
+  <text x="500" y="207" font-size="14" fill="#425563">Units · formats · nomenclature</text>
+
+  <line x1="458" y1="222" x2="458" y2="246" stroke="#839BAC" stroke-width="4"/>
+  <path d="M450 239l8 10 8-10" fill="none" stroke="#839BAC" stroke-width="4"/>
+
+  <circle cx="458" cy="284" r="26" fill="#E84B37"/><text x="449" y="292" font-size="22" font-weight="800" fill="#fff">2</text>
+  <text x="500" y="278" font-size="19" font-weight="800" fill="#212A31">Validate &amp; QA/QC</text>
+  <text x="500" y="301" font-size="14" fill="#425563">Completeness · ranges · consistency</text>
+
+  <line x1="458" y1="316" x2="458" y2="340" stroke="#839BAC" stroke-width="4"/>
+  <path d="M450 333l8 10 8-10" fill="none" stroke="#839BAC" stroke-width="4"/>
+
+  <circle cx="458" cy="378" r="26" fill="#425563"/><text x="449" y="386" font-size="22" font-weight="800" fill="#fff">3</text>
+  <text x="500" y="372" font-size="19" font-weight="800" fill="#212A31">Reconcile &amp; integrate</text>
+  <text x="500" y="395" font-size="14" fill="#425563">Cross-source alignment · engineering logic</text>
+
+  <line x1="458" y1="410" x2="458" y2="434" stroke="#839BAC" stroke-width="4"/>
+  <path d="M450 427l8 10 8-10" fill="none" stroke="#839BAC" stroke-width="4"/>
+
+  <circle cx="458" cy="472" r="26" fill="#425563"/><text x="449" y="480" font-size="22" font-weight="800" fill="#fff">4</text>
+  <text x="500" y="466" font-size="19" font-weight="800" fill="#212A31">Transform &amp; structure</text>
+  <text x="500" y="489" font-size="14" fill="#425563">Curated · traceable · review-ready</text>
+
+  <rect x="430" y="520" width="320" height="30" rx="15" fill="#F2F2F2"/>
+  <circle cx="451" cy="535" r="8" fill="#1F9D55"/>
+  <path d="M447 535l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.5"/>
+  <text x="468" y="541" font-size="14" font-weight="700" fill="#425563">Engineering logic preserved</text>
+</g>
+
+<!-- Output dashboard -->
+<g filter="url(#shadow)">
+  <rect x="858" y="102" width="294" height="470" rx="18" fill="#FFFFFF" stroke="#D6DEE3"/>
+</g>
+<text x="882" y="137" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="800" fill="#31404A">ENGINEERING-READY DATA</text>
+<rect x="882" y="165" width="246" height="128" rx="12" fill="#F2F2F2" stroke="#D6DEE3"/>
+<text x="900" y="192" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#425563">Facility monitoring</text>
+<path d="M900 258L932 239 964 247 996 214 1028 227 1060 198 1108 210" fill="none" stroke="#E84B37" stroke-width="4"/>
+<line x1="900" y1="267" x2="1110" y2="267" stroke="#B1BCC8"/>
+<g fill="#425563">
+  <rect x="902" y="224" width="10" height="28"/><rect x="920" y="216" width="10" height="36"/>
+  <rect x="1080" y="235" width="10" height="17"/><rect x="1098" y="220" width="10" height="32"/>
+</g>
+
+<g font-family="Inter,Arial,sans-serif">
+  <rect x="882" y="314" width="118" height="78" rx="10" fill="#F2F2F2"/>
+  <text x="896" y="340" font-size="13" fill="#425563">Valid records</text>
+  <text x="896" y="370" font-size="27" font-weight="800" fill="#212A31">92.4%</text>
+  <circle cx="980" cy="352" r="12" fill="#1F9D55"/><path d="M974 352l4 4 8-10" fill="none" stroke="#fff" stroke-width="3"/>
+
+  <rect x="1010" y="314" width="118" height="78" rx="10" fill="#F2F2F2"/>
+  <text x="1024" y="340" font-size="13" fill="#425563">QC issues</text>
+  <text x="1024" y="370" font-size="27" font-weight="800" fill="#E84B37">245</text>
+
+  <rect x="882" y="408" width="246" height="58" rx="10" fill="#F2F2F2"/>
+  <text x="900" y="433" font-size="14" font-weight="700" fill="#212A31">Validated HITM dataset</text>
+  <text x="900" y="454" font-size="13" fill="#425563">Consistent · traceable · documented</text>
+  <circle cx="1102" cy="437" r="14" fill="#1F9D55"/><path d="M1095 437l5 5 9-12" fill="none" stroke="#fff" stroke-width="3"/>
+
+  <rect x="882" y="482" width="246" height="58" rx="10" fill="#FFF7F5" stroke="#E84B37"/>
+  <text x="900" y="508" font-size="14" font-weight="700" fill="#E84B37">Ready for review / upload</text>
+  <text x="900" y="529" font-size="13" fill="#425563">No engineering logic lost</text>
+</g>
+</svg>
