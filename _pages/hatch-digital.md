@@ -31,10 +31,16 @@ description: "Hatch Digital case study: drone measurement concepts, HITM data pr
       </div>
     </div>
 
-    <div class="hd-hero__visual">
-      <img src="/assets/images/real/hatch-control-room.webp" alt="Hatch Digital operational environment">
-      <div class="hd-hero__visual-shade"></div>
-      <div class="hd-hero__caption">Temporary visual · final HD mining/drone image will replace this</div>
+    <div class="hd-photo-slot hd-photo-slot--hero">
+      <div class="hd-photo-slot__mine"></div>
+      <div class="hd-photo-slot__drone">✣</div>
+      <div class="hd-photo-slot__scan"></div>
+      <div class="hd-photo-slot__truck">CAEX</div>
+      <div class="hd-photo-slot__label">
+        <b>PHOTO SLOT 01</b>
+        <span>Hero — drone + CAEX / mine</span>
+        <small>Replace with original HD photo</small>
+      </div>
     </div>
   </header>
 
@@ -48,18 +54,10 @@ description: "Hatch Digital case study: drone measurement concepts, HITM data pr
 
   <div class="hd-sheet">
     <section class="hd-section" id="overview">
-      <div class="hd-section__title">
-        <span>1.</span>
-        <h2>Overview</h2>
-      </div>
-
+      <div class="hd-section__title"><span>1.</span><h2>Overview</h2></div>
       <div class="hd-overview">
         <div class="hd-overview__intro">
-          <p>
-            At Hatch Digital, I worked on data engineering and analytics solutions to support mining operations in Peru.
-            The experience combined operational data, geospatial information, digital workflows, and human validation
-            to improve how information is prepared and used for decision-making.
-          </p>
+          <p>At Hatch Digital, I worked on data engineering and analytics solutions to support mining operations in Peru. The experience combined operational data, geospatial information, digital workflows, and human validation to improve how information is prepared and used for decision-making.</p>
         </div>
         <aside class="hd-org-card">
           <strong>Hatch Digital</strong>
@@ -76,24 +74,23 @@ description: "Hatch Digital case study: drone measurement concepts, HITM data pr
     </section>
 
     <section class="hd-section" id="problem">
-      <div class="hd-section__title">
-        <span>2.</span><h2>Problem</h2>
-        <p>Three key challenges in mining operations that motivated this work.</p>
-      </div>
+      <div class="hd-section__title"><span>2.</span><h2>Problem</h2><p>Three key challenges in mining operations that motivated this work.</p></div>
 
       <div class="hd-three">
         <article class="hd-workcard">
           <header><span class="hd-workcard__icon">⌁</span><h3>Drones &amp; Measurement</h3></header>
-          <div class="hd-problem-visual hd-problem-visual--drone">
-            <div class="hd-drone">✣</div>
-            <div class="hd-scan"></div>
-            <div class="hd-truck">CAEX</div>
+          <div class="hd-photo-slot hd-photo-slot--problem">
+            <div class="hd-photo-slot__mine"></div>
+            <div class="hd-photo-slot__drone">✣</div>
+            <div class="hd-photo-slot__scan"></div>
+            <div class="hd-photo-slot__truck">CAEX</div>
+            <div class="hd-photo-slot__label hd-photo-slot__label--small"><b>PHOTO SLOT 02</b><span>Drone / CAEX field image</span></div>
           </div>
           <p>Could drone-based capture support a defensible estimate of CAEX load volume and indicate where confidence is insufficient?</p>
         </article>
 
         <article class="hd-workcard">
-          <header><span class="hd-workcard__icon">▤</span><h3>Hatch Integrated Tailings Management (HITM)</h3></header>
+          <header><span class="hd-workcard__icon">▤</span><h3>HITM Data Preparation</h3></header>
           <div class="hd-problem-visual hd-problem-visual--hitm">
             <div class="hd-mini-dashboard">
               <div class="hd-mini-dashboard__head">Data &amp; Facility Monitoring</div>
@@ -119,10 +116,7 @@ description: "Hatch Digital case study: drone measurement concepts, HITM data pr
     </section>
 
     <section class="hd-section" id="approach">
-      <div class="hd-section__title">
-        <span>3.</span><h2>Approach</h2><p>Three workstreams.</p>
-      </div>
-
+      <div class="hd-section__title"><span>3.</span><h2>Approach</h2><p>Three workstreams.</p></div>
       <div class="hd-three">
         <article class="hd-workcard hd-workcard--approach">
           <header><span class="hd-workcard__icon">⌁</span><h3>Drones &amp; Measurement Concepts</h3></header>
@@ -132,10 +126,10 @@ description: "Hatch Digital case study: drone measurement concepts, HITM data pr
         </article>
 
         <article class="hd-workcard hd-workcard--approach">
-          <header><span class="hd-workcard__icon">▤</span><h3>Hatch Integrated Tailings Management (HITM)</h3></header>
+          <header><span class="hd-workcard__icon">▤</span><h3>HITM Workflow &amp; Validation</h3></header>
           <div class="hd-approach-visual"><img src="/assets/images/diagrams/hitm-data-workflow.svg" alt="HITM data preparation and validation workflow"></div>
           <p>Prepared, adjusted, and validated technical data before upload so automated outputs remained reviewable and technically consistent.</p>
-          <div class="hd-chiprow"><span>Data Pipelines</span><span>Validation</span><span>Automation</span></div>
+          <div class="hd-chiprow"><span>Data Pipelines</span><span>Validation</span><span>Automation</span><span>HITM</span></div>
         </article>
 
         <article class="hd-workcard hd-workcard--approach">
@@ -148,8 +142,7 @@ description: "Hatch Digital case study: drone measurement concepts, HITM data pr
     </section>
 
     <section class="hd-section" id="results">
-      <div class="hd-section__title"><span>4.</span><h2>Results</h2></div>
-
+      <div class="hd-section__title"><span>4.</span><h2>Results</h2><p>Key outcomes and learnings.</p></div>
       <div class="hd-results">
         <div class="hd-result"><span>▥</span><div><strong>Clearer evaluation framework</strong><small>Turned a drone concept into a structured assessment problem.</small></div></div>
         <div class="hd-result"><span>▤</span><div><strong>More reliable data workflows</strong><small>Improved the clarity and reviewability of HITM preparation.</small></div></div>
@@ -160,24 +153,24 @@ description: "Hatch Digital case study: drone measurement concepts, HITM data pr
       <h3 class="hd-subtitle">Selected Evidence</h3>
       <div class="hd-evidence">
         <div class="hd-evidence-slot">
-          <div class="hd-evidence-slot__visual hd-evidence-slot__visual--terrain"></div>
+          <div class="hd-evidence-slot__visual hd-evidence-slot__visual--terrain"><span>PHOTO SLOT 03</span></div>
           <strong>Drone orthomosaic and volume analysis</strong>
-          <small>HD original to insert</small>
+          <small>Original HD technical evidence</small>
         </div>
         <div class="hd-evidence-slot">
-          <div class="hd-evidence-slot__visual hd-evidence-slot__visual--hitm"></div>
+          <div class="hd-evidence-slot__visual hd-evidence-slot__visual--hitm"><span>PHOTO SLOT 04</span></div>
           <strong>HITM validation dashboard</strong>
-          <small>HD original to insert</small>
+          <small>Original HD technical evidence</small>
         </div>
         <div class="hd-evidence-slot">
-          <div class="hd-evidence-slot__visual hd-evidence-slot__visual--sic"></div>
+          <div class="hd-evidence-slot__visual hd-evidence-slot__visual--sic"><span>PHOTO SLOT 05</span></div>
           <strong>SIC operational dashboard</strong>
-          <small>HD original to insert</small>
+          <small>Original HD technical evidence</small>
         </div>
         <div class="hd-evidence-slot">
-          <div class="hd-evidence-slot__visual hd-evidence-slot__visual--field"></div>
+          <div class="hd-evidence-slot__visual hd-evidence-slot__visual--field"><span>PHOTO SLOT 06</span></div>
           <strong>Field work and operational context</strong>
-          <small>HD original to insert</small>
+          <small>Original HD field image</small>
         </div>
       </div>
     </section>
@@ -195,23 +188,23 @@ description: "Hatch Digital case study: drone measurement concepts, HITM data pr
           <figcaption>Hatch Digital team</figcaption>
         </figure>
         <figure>
-          <img src="/assets/images/social/hatch-digital-social.jpg" alt="Hatch Digital data and decision-support summary">
-          <figcaption>Digital workstream summary</figcaption>
+          <img src="/assets/images/real/hatch-control-room.webp" alt="Digital operations environment">
+          <figcaption>Desk-based development</figcaption>
         </figure>
         <figure class="hd-gallery__pending">
-          <div>Original photo<br><span>workshop / discussion</span></div>
+          <div><b>PHOTO SLOT 07</b><span>Workshop / discussion</span></div>
           <figcaption>Workshop and discussion</figcaption>
         </figure>
         <figure class="hd-gallery__pending">
-          <div>Original photo<br><span>desk / development</span></div>
-          <figcaption>Desk-based development</figcaption>
+          <div><b>PHOTO SLOT 08</b><span>Team culture / wider group</span></div>
+          <figcaption>Team culture — Digital &amp; Mineral Processing</figcaption>
         </figure>
       </div>
     </section>
 
     <footer class="hd-footer">
       <p>Built with curiosity, data, and real-world impact.</p>
-      <div><a href="https://www.linkedin.com" aria-label="LinkedIn">in</a><a href="https://github.com/gonza055" aria-label="GitHub">GH</a><a href="mailto:gonzalo@example.com" aria-label="Email">✉</a></div>
+      <a href="/projects/">← Back to Work</a>
     </footer>
   </div>
 </article>
