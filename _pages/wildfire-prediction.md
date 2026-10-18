@@ -23,7 +23,7 @@ description: "BYU applied machine-learning project combining seven-day weather h
   </header>
 
   <figure class="case-media case-media--wide case-media--photo">
-    <img src="/assets/images/real/wildfire-team.webp" alt="Gonzalo and teammates presenting the Wildfire Prediction project at BYU">
+    <img src="/assets/images/real/wildfire-team-v2.webp" alt="Gonzalo and teammates presenting the Wildfire Prediction project at BYU">
     <figcaption>Project showcase at BYU — Gonzalo and teammates with the original physical Wildfire Prediction poster.</figcaption>
   </figure>
 
@@ -53,7 +53,7 @@ description: "BYU applied machine-learning project combining seven-day weather h
       </figure>
 
       <figure class="case-media case-media--wide case-media--technical">
-        <img src="/assets/images/real/wildfire-poster.webp" alt="Original Wildfire Prediction project poster">
+        <img src="/assets/images/real/wildfire-poster-v2.webp" alt="Original Wildfire Prediction project poster">
         <figcaption>Original Wildfire Prediction project poster summarizing the problem, weather-data pipeline, spatial risk output, model importance, and project result.</figcaption>
       </figure>
 
