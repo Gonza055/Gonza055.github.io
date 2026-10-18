@@ -416,3 +416,10 @@
 @media(max-width:780px){
   .hd-hero__visual{aspect-ratio:3/1;min-height:0}
 }
+
+
+/* HERO Figure 2 — exact approved image placement */
+.hd-hero__visual img{
+  object-fit:cover!important;
+  object-position:right center!important;
+}
