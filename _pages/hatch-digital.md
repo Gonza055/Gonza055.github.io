@@ -178,16 +178,16 @@ description: "Hatch Digital case study: drone measurement concepts, HITM data pr
 
       <div class="hd-gallery">
         <figure>
-          <img src="/assets/images/real/hatch-hitm-presentation-original.png" alt="Gonzalo Loayza presenting HITM work to the Hatch Digital team">
-          <figcaption>Presenting HITM results</figcaption>
+          <img src="/assets/images/real/hatch-leadership-collaboration.webp" alt="Gonzalo Loayza with Hatch colleagues in front of the Hatch office sign">
+          <figcaption>Mentorship &amp; collaboration</figcaption>
         </figure>
         <figure>
           <img src="/assets/images/real/hatch-team-digital-en-practica-original.png" alt="Hatch Digital team after the Digital en práctica presentation">
           <figcaption>Hatch Digital team — Digital en práctica</figcaption>
         </figure>
         <figure>
-          <img src="/assets/images/real/hatch-workshop-discussion-original.png" alt="Workshop discussion during the Digital en práctica session">
-          <figcaption>Workshop and discussion</figcaption>
+          <img src="/assets/images/real/hatch-digital-project-team.webp" alt="Gonzalo Loayza with Hatch Digital colleagues in front of the Hatch office sign">
+          <figcaption>Project team — Hatch Digital</figcaption>
         </figure>
         <figure>
           <img src="/assets/images/real/hatch-desk-development-original.png" alt="Gonzalo Loayza working at his desk">
