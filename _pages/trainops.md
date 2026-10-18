@@ -28,7 +28,7 @@ description: "Hatch Urban Solutions case study: Python and C++ automation for la
         </div>
       </div>
       <div class="case3-hero__image">
-        <img src="/assets/images/real/urban-hatch-banner.webp" alt="Gonzalo Loayza at Hatch Urban Solutions" style="object-position:50% 46%;">
+        <img src="/assets/images/real/urban-hatch-banner-v2.webp" alt="Gonzalo Loayza at Hatch Urban Solutions" style="object-position:50% 46%;">
       </div>
     </div>
 
@@ -144,7 +144,7 @@ description: "Hatch Urban Solutions case study: Python and C++ automation for la
     </div>
 
     <figure class="case3-photo" style="margin-top:1.25rem;">
-      <img src="/assets/images/real/urban-team.webp" alt="Gonzalo Loayza with colleagues during his Hatch Urban Solutions internship">
+      <img src="/assets/images/real/urban-team-v2.webp" alt="Gonzalo Loayza with colleagues during his Hatch Urban Solutions internship">
       <figcaption>Hatch Urban Solutions team context during the 2024 internship — the analytical work sat inside a collaborative engineering environment.</figcaption>
     </figure>
   </section>
