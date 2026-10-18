@@ -201,3 +201,36 @@
   border-radius:50%;
   background:var(--hatch-yellow);
 }
+
+
+/* Final technical-image placement */
+.hd-problem-visual>img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+.hd-evidence-slot__visual{
+  height:125px;
+  overflow:hidden;
+}
+.hd-evidence-slot__visual img{
+  display:block;
+  width:100%;
+  height:100%;
+}
+.hd-evidence-slot__visual--technical{
+  background:#F4F6F8;
+}
+.hd-evidence-slot__visual--technical img{
+  object-fit:contain;
+}
+.hd-evidence-slot__visual--field-photo img{
+  object-fit:cover;
+  object-position:center;
+}
+.hd-evidence-slot__visual--technical:after,
+.hd-evidence-slot__visual--field-photo:after{
+  content:none!important;
+}
