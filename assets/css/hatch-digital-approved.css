@@ -234,3 +234,129 @@
 .hd-evidence-slot__visual--field-photo:after{
   content:none!important;
 }
+
+
+/* Image-fit refinement — preserve complete compositions */
+.hd-hero{
+  grid-template-columns:34% 66%;
+  min-height:300px;
+}
+.hd-hero__copy{
+  padding:20px 24px 18px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.hd-back{margin-bottom:8px}
+.hd-brand{margin-bottom:5px}
+.hd-hero h1{
+  font-size:clamp(1.78rem,2.55vw,2.72rem);
+  line-height:.98;
+}
+.hd-hero__meta{margin-top:6px!important;font-size:.82rem!important}
+.hd-hero__lead{margin-top:8px!important;font-size:.76rem!important;line-height:1.35!important}
+.hd-tags{margin-top:9px;gap:5px}
+.hd-tags span{padding:3px 8px;font-size:.56rem}
+.hd-hero__visual{
+  min-height:300px;
+  height:100%;
+  overflow:hidden;
+}
+.hd-hero__visual img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:72% center;
+}
+
+/* Give each technical visual enough room to be understood */
+.hd-problem-visual{
+  width:calc(100% - 18px);
+  height:auto;
+  aspect-ratio:16/9;
+  margin:0 9px;
+  background:#F4F6F8;
+}
+.hd-problem-visual>img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  background:#F4F6F8;
+}
+.hd-workcard--approach .hd-approach-visual{
+  height:auto;
+  aspect-ratio:16/9;
+  padding:6px;
+  background:#F7F8F9;
+}
+.hd-approach-visual img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+
+/* Evidence must show the full technical composition, not crop it */
+.hd-evidence-slot__visual{
+  height:auto;
+  aspect-ratio:16/9;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#F4F6F8;
+}
+.hd-evidence-slot__visual img,
+.hd-evidence-slot__visual--field-photo img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  background:#F4F6F8;
+}
+
+/* Gallery photographs keep their full 16:9 composition */
+.hd-gallery img{
+  width:100%;
+  height:auto;
+  aspect-ratio:16/9;
+  object-fit:contain;
+  object-position:center;
+  background:#F2F2F2;
+}
+.hd-gallery figcaption{
+  min-height:2.2em;
+  font-size:.58rem;
+  line-height:1.2;
+}
+
+/* At medium widths keep the hero image wide enough to retain drone + truck */
+@media(max-width:1000px){
+  .hd-hero{
+    grid-template-columns:36% 64%;
+    min-height:285px;
+  }
+  .hd-hero__copy{padding:17px 18px 15px}
+  .hd-hero h1{font-size:clamp(1.55rem,3.05vw,2.1rem)}
+  .hd-hero__lead{font-size:.68rem!important;line-height:1.3!important}
+  .hd-hero__meta{font-size:.72rem!important}
+  .hd-tags span{font-size:.5rem;padding:3px 6px}
+  .hd-hero__visual{min-height:285px}
+  .hd-hero__visual img{object-position:74% center}
+}
+
+/* Once space is genuinely narrow, stack instead of destroying the composition */
+@media(max-width:780px){
+  .hd-hero{grid-template-columns:1fr}
+  .hd-hero__copy{padding:22px 20px}
+  .hd-hero h1{font-size:2rem}
+  .hd-hero__lead{font-size:.78rem!important}
+  .hd-hero__visual{min-height:235px}
+  .hd-hero__visual img{object-position:70% center}
+}
+
+@media(max-width:700px){
+  .hd-problem-visual,
+  .hd-workcard--approach .hd-approach-visual,
+  .hd-evidence-slot__visual,
+  .hd-gallery img{aspect-ratio:16/9}
+}
