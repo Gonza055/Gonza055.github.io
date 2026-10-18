@@ -174,7 +174,7 @@
 
 <link rel="stylesheet" href="/assets/css/portfolio.css" />
 
-<link rel="stylesheet" href="/assets/css/buenaventura-approved.css?v=20261018-bvn2" />
+<link rel="stylesheet" href="/assets/css/buenaventura-approved.css?v=20261018-bvn-approved-visuals" />
 
 <article class="bvncase">
   <header class="bvn-hero">
@@ -220,32 +220,30 @@
       </div>
     </section>
 
-    <section class="bvn-grid-two bvn-problem-evidence">
-      <div>
-        <div class="bvn-section-head"><span></span><h2>The Data Problem</h2></div>
-        <h3 class="bvn-kicker">The challenge was not just modeling — it was making the data trustworthy enough to analyze.</h3>
-        <div class="bvn-problem-list">
-          <div><i>01</i><p><strong>Temporal misalignment</strong><br />Wear histories and available sensor data did not fully overlap in time, so direct sensor-to-wear correlations could not be forced responsibly.</p></div>
-          <div><i>02</i><p><strong>Sensor anomalies</strong><br />Temperature values around 6528°C clearly indicated calibration or recording errors that had to be identified before analysis.</p></div>
-          <div><i>03</i><p><strong>Missing / inconsistent records</strong><br />Material fields contained nulls, campaign counters reset, and comparison sheets mixed measured and projected values.</p></div>
-          <div><i>04</i><p><strong>Multiple operating campaigns</strong><br />Four alternating Vulco/Weir and Hofmann campaigns required a consistent basis for comparison.</p></div>
+    <section class="bvn-problem-evidence">
+      <div class="bvn-section-head"><span></span><h2>The Data Problem</h2><p>Why the available HPGR data could support exploration, but not yet a responsible predictive model.</p></div>
+      <div class="bvn-problem-top">
+        <div>
+          <h3 class="bvn-kicker">The challenge was not just modeling — it was making the data trustworthy enough to analyze.</h3>
+          <p class="bvn-bodycopy">Wear history, campaign records, material information, and HPGR sensor data came from different sources and time windows. The analysis therefore focused first on temporal alignment, data quality, campaign comparability, and the limits of what could be concluded.</p>
+        </div>
+        <div>
+          <div class="bvn-metrics">
+            <div><strong>4</strong><span>roller campaigns analyzed</span></div>
+            <div><strong>~163k</strong><span>HPGR sensor records documented</span></div>
+            <div><strong>16</strong><span>sensor-data columns in the operating dataset</span></div>
+            <div><strong>2</strong><span>roller families compared: Vulco/Weir and Hofmann</span></div>
+          </div>
+          <div class="bvn-quality-card">
+            <div class="bvn-quality-card__value">6528°C</div>
+            <div><strong>A data-quality issue, not a physical event.</strong><p>Impossible temperature values were explicitly flagged before any predictive interpretation.</p></div>
+          </div>
         </div>
       </div>
-
-      <div>
-        <div class="bvn-section-head"><span></span><h2>Evidence at a Glance</h2></div>
-        <p class="bvn-subcopy">Numbers taken from the internship datasets and analysis report.</p>
-        <div class="bvn-metrics">
-          <div><strong>4</strong><span>roller campaigns analyzed</span></div>
-          <div><strong>~163k</strong><span>HPGR sensor records documented</span></div>
-          <div><strong>16</strong><span>sensor-data columns in the operating dataset</span></div>
-          <div><strong>2</strong><span>roller families compared: Vulco/Weir and Hofmann</span></div>
-        </div>
-        <div class="bvn-quality-card">
-          <div class="bvn-quality-card__value">6528°C</div>
-          <div><strong>A data-quality issue, not a physical event.</strong><p>The analysis explicitly flagged impossible temperature values and treated sensor quality as a prerequisite to any predictive use.</p></div>
-        </div>
-      </div>
+      <figure class="bvn-problem-visual">
+        <img src="/assets/images/generated/bvn-hpgr-data-challenges-approved.png" alt="Key data challenges in the HPGR study: temporal misalignment, sensor anomalies, missing records, and campaign comparability" />
+        <figcaption>Portfolio visual rebuilt from the documented internship findings.</figcaption>
+      </figure>
     </section>
 
     <section>
@@ -266,27 +264,24 @@
     <section class="bvn-evidence-section">
       <div class="bvn-section-head"><span></span><h2>Technical Evidence</h2><p>Rebuilt directly from the HPGR workbook and report findings.</p></div>
       <article class="bvn-evidence-main">
-        <img src="/assets/images/generated/bvn-hpgr-wear-campaigns.svg" alt="HPGR roller thickness versus accumulated tonnage for four campaigns" />
+        <img src="/assets/images/generated/bvn-hpgr-wear-campaigns-approved.png" alt="HPGR roller thickness versus accumulated tonnage for four campaigns" />
         <div class="bvn-evidence-main__copy">
           <strong>Wear is highly structured within each campaign.</strong>
           <p>The workbook shows a repeated pattern: roller thickness declines as accumulated tonnage increases, then resets when a new campaign begins. This makes campaign-aware wear estimation possible, while still requiring engineering context before using it as a maintenance rule.</p>
         </div>
       </article>
       <div class="bvn-evidence-grid">
-        <article><img src="/assets/images/generated/bvn-hpgr-scatter.svg" alt="Scatter plot of HPGR thickness versus accumulated tonnage" /><h3>Global wear signal</h3><p>The complete dataset shows a moderate inverse relationship between thickness and accumulated tonnage, with the report documenting <b>r ≈ -0.63</b> and a global linear model with <b>R² ≈ 0.39</b>.</p></article>
-        <article><img src="/assets/images/generated/bvn-hpgr-correlations.svg" alt="Selected pairwise correlations for HPGR wear analysis" /><h3>Material and operating context matter</h3><p>MAT 2 showed a strong inverse association with thickness (<b>r ≈ -0.81</b>). It was treated as an investigation signal — not a causal conclusion — because material definitions and synchronized operating context still needed engineering validation.</p></article>
+        <article><img src="/assets/images/generated/bvn-hpgr-scatter-approved.png" alt="Scatter plot of HPGR thickness versus accumulated tonnage" /><h3>Global wear signal</h3><p>The complete dataset shows a moderate inverse relationship between thickness and accumulated tonnage, with the report documenting <b>r ≈ -0.63</b> and a global linear model with <b>R² ≈ 0.39</b>.</p></article>
+        <article><img src="/assets/images/generated/bvn-hpgr-correlations-approved.png" alt="Selected pairwise correlations for HPGR wear analysis" /><h3>Material and operating context matter</h3><p>MAT 2 showed a strong inverse association with thickness (<b>r ≈ -0.81</b>). It was treated as an investigation signal — not a causal conclusion — because material definitions and synchronized operating context still needed engineering validation.</p></article>
       </div>
     </section>
 
     <section class="bvn-framework">
-      <div class="bvn-section-head"><span></span><h2>Reliability Framework</h2><p>The second internship deliverable connected the analysis to maintenance standards.</p></div>
-      <div class="bvn-framework__flow">
-        <div><strong>ISO 14224</strong><span>reliability &amp; maintenance data</span></div><b>→</b>
-        <div><strong>ISO 17359</strong><span>condition monitoring guidance</span></div><b>→</b>
-        <div><strong>ISO 13374</strong><span>CBM data processing architecture</span></div><b>→</b>
-        <div><strong>ISO 13381-1</strong><span>prognostics / remaining life principles</span></div>
-      </div>
-      <div class="bvn-framework__message"><strong>Predictive maintenance starts before the prediction.</strong><span>Reliable data structures, monitoring logic, and engineering interpretation come first.</span></div>
+      <div class="bvn-section-head"><span></span><h2>Reliability Framework</h2><p>The maintenance-data manual connected the analytical work to reliability and condition-monitoring standards.</p></div>
+      <figure class="bvn-framework-visual">
+        <img src="/assets/images/generated/bvn-reliability-framework-approved.png" alt="Reliability data framework connecting ISO 14224, ISO 17359, ISO 13374, and ISO 13381-1" />
+        <figcaption>Conceptual framework distilled from the internship maintenance-data manual.</figcaption>
+      </figure>
     </section>
 
     <section class="bvn-grid-two bvn-outcome-grid">
@@ -311,7 +306,6 @@
       <div class="bvn-gallery bvn-gallery--editorial">
         <figure class="bvn-gallery__wide"><img src="/assets/images/real/bvn-gonzalo-field-wide.webp" alt="Gonzalo Loayza at the San Gabriel site" /><figcaption>San Gabriel — field context</figcaption></figure>
         <figure><img src="/assets/images/real/bvn-gonzalo-field-portrait.webp" alt="Gonzalo Loayza wearing Buenaventura San Gabriel PPE" /><figcaption>Buenaventura San Gabriel — field PPE</figcaption></figure>
-        <figure><img src="/assets/images/real/bvn-gonzalo-lima.webp" alt="Gonzalo Loayza at Buenaventura Lima" /><figcaption>Buenaventura Lima</figcaption></figure>
         <figure><img src="/assets/images/real/bvn-gonzalo-percy.webp" alt="Gonzalo Loayza with a Buenaventura colleague" /><figcaption>Mentorship &amp; collaboration</figcaption></figure>
         <figure><img src="/assets/images/real/bvn-team-culture.webp" alt="Buenaventura team gathering" /><figcaption>Team culture</figcaption></figure>
       </div>
