@@ -39,3 +39,108 @@
 .hd-evidence-slot__visual>span{position:absolute;left:7px;top:7px;padding:3px 6px;border-radius:3px;background:rgba(7,50,92,.74);color:#fff;font-size:.43rem;font-weight:800;letter-spacing:.04em;z-index:2}
 .hd-gallery__pending>div{display:flex!important;flex-direction:column;gap:4px;align-items:center;justify-content:center}.hd-gallery__pending>div b{font-size:.48rem;letter-spacing:.05em}.hd-gallery__pending>div span{font-size:.54rem;font-weight:500}
 @media(max-width:700px){.hd-photo-slot--hero{min-height:220px}}
+
+
+/* Palette refinement — professional engineering portfolio */
+.hdcase{
+  --navy:#062F56;
+  --blue:#1557C8;
+  --ink:#10213A;
+  --text:#52657A;
+  --line:#D8E3EC;
+  --soft:#F4F8FC;
+  --orange:#FF5A3C;
+  --cyan:#2E8BC0;
+  --teal:#148C8C;
+  color:var(--text);
+}
+
+/* Hero remains the strongest branded area */
+.hd-hero{border-color:#D8E3EC}
+.hd-hero__copy{background:linear-gradient(135deg,#052B4F 0%,#083B69 100%)}
+.hd-brand__hatch{color:var(--orange)}
+.hd-brand__unit{color:#C5D8E8}
+.hd-hero__meta{color:#DCE8F1!important}
+.hd-hero__lead{color:#F3F7FA!important}
+.hd-tags span{
+  border-color:rgba(219,232,242,.42);
+  background:rgba(20,73,118,.54);
+  color:#F8FBFD;
+}
+
+/* Navigation: quieter blue, Hatch accent only on interaction */
+.hd-tabs{border-bottom-color:var(--line)}
+.hd-tabs a{color:#294F78!important}
+.hd-tabs a:hover{color:var(--ink)!important;border-bottom-color:var(--orange);background:#FAFCFD}
+
+/* Main hierarchy: navy/ink instead of saturated blue */
+.hd-section__title>span{color:#173E67}
+.hd-section__title h2{color:var(--ink)}
+.hd-section__title p{color:var(--text)!important}
+.hd-overview__intro p,
+.hd-org-card p,
+.hd-workcard p,
+.hd-pillar small,
+.hd-result small,
+.hd-gallery figcaption,
+.hd-footer p{color:var(--text)!important}
+
+.hd-org-card{
+  border-color:var(--line);
+  background:linear-gradient(135deg,#FAFCFD,#F4F8FC);
+}
+.hd-org-card strong,
+.hd-pillar strong,
+.hd-workcard h3,
+.hd-result strong,
+.hd-subtitle,
+.hd-evidence-slot strong{color:var(--ink)!important}
+
+/* Overview: blue is now a functional accent, not body-copy color */
+.hd-pillar{border-right-color:var(--line)}
+.hd-pillar__icon{color:var(--blue)}
+
+/* Workstreams: subtle identity bands only */
+.hd-workcard{
+  border-color:var(--line);
+  box-shadow:0 2px 8px rgba(16,33,58,.025);
+}
+.hd-three .hd-workcard:nth-child(1){border-top:3px solid var(--cyan)}
+.hd-three .hd-workcard:nth-child(2){border-top:3px solid var(--orange)}
+.hd-three .hd-workcard:nth-child(3){border-top:3px solid var(--teal)}
+.hd-three .hd-workcard:nth-child(1) .hd-workcard__icon{color:var(--cyan)}
+.hd-three .hd-workcard:nth-child(2) .hd-workcard__icon{color:var(--orange)}
+.hd-three .hd-workcard:nth-child(3) .hd-workcard__icon{color:var(--teal)}
+
+.hd-chiprow span{
+  background:#F2F6F9;
+  color:#405A73;
+  border:1px solid #E1E8EE;
+}
+.hd-three .hd-workcard:nth-child(1) .hd-chiprow span:first-child{border-color:#BFDCEB;color:#236F95}
+.hd-three .hd-workcard:nth-child(2) .hd-chiprow span:first-child{border-color:#F1C9BE;color:#B64B35}
+.hd-three .hd-workcard:nth-child(3) .hd-chiprow span:first-child{border-color:#BFDCD8;color:#27766F}
+
+/* Results and evidence are neutral so real images will carry the page */
+.hd-result{background:#F5F8FA}
+.hd-result>span{color:#2B5F8F}
+.hd-evidence-slot{border-color:var(--line)}
+.hd-evidence-slot small{color:#8392A3}
+.hd-evidence-slot__visual>span{
+  background:rgba(16,33,58,.78);
+  color:#fff;
+}
+
+/* Temporary photo slots use neutral labels so they do not compete with content */
+.hd-photo-slot{border-color:var(--line)}
+.hd-photo-slot__label{background:rgba(16,33,58,.82)}
+.hd-photo-slot__label small{color:#D7E0E7}
+
+/* Gallery and footer: restrained */
+.hd-gallery img,.hd-gallery__pending>div{border-color:var(--line)}
+.hd-gallery__pending>div{
+  background:linear-gradient(135deg,#F4F7F9,#E9EEF2);
+  color:#6B7B8C;
+}
+.hd-footer{border-top-color:var(--line)}
+.hd-footer a{color:#294F78!important}
