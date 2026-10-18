@@ -2,191 +2,182 @@
 layout: single
 title: "Operational Mode Discovery"
 permalink: /projects/operational-mode-discovery/
-description: "BYU Honors thesis case study applying preprocessing, PCA, DBSCAN, and KPI profiling to identify interpretable operating regimes in Line 1 of the Miski Mayo phosphate concentrator."
+description: "BYU Honors thesis case study applying preprocessing, PCA, DBSCAN, and KPI profiling to identify interpretable operating regimes from industrial process data."
 ---
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/case-v3.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/honors-research-approved.css' | relative_url }}?v=20261018-honors1">
 
-<article class="case3 case3-honors-hero" style="--case-accent:#60a5fa; --case-accent-soft:#eff6ff;">
-  <a class="case3-back" href="/projects/">← Selected Work</a>
+<article class="honors-case">
 
-  <header class="case3-hero">
-    <div class="case3-hero__top" style="background:radial-gradient(circle at 72% 20%,rgba(96,165,250,.14),transparent 34%),linear-gradient(135deg,#061526,#0c2a4d);">
-      <div class="case3-hero__copy">
-        <p class="case3-eyebrow" style="color:#93c5fd!important;">BYU Honors · Computer Science · 2025–2026</p>
-        <h1>Process Data to Operating Modes.</h1>
-        <p class="case3-hero__lead">Using minute-level historian data from Line 1 of the Miski Mayo phosphate concentrator, I investigated whether recurring operating regimes could be discovered without supervision and then explained in operational terms.</p>
-        <div class="case3-tags">
-          <span class="case3-tag">Industrial Time-Series</span>
-          <span class="case3-tag">PCA</span>
-          <span class="case3-tag">DBSCAN</span>
-          <span class="case3-tag">Operational Analytics</span>
-        </div>
-      </div>
-      <div class="case3-hero__image">
-        <img src="/assets/images/real/honors-advisor-v2.webp" alt="Gonzalo Loayza with his Honors thesis advisor in Lima">
+  <header class="honors-hero">
+    <div class="honors-hero__copy">
+      <p class="honors-eyebrow">BYU HONORS RESEARCH · COMPUTER SCIENCE · 2025–2026</p>
+      <h1>Process Data<br><span>to Operating Modes</span></h1>
+      <p class="honors-hero__lead">Unsupervised learning to identify recurring operating regimes in an industrial mineral-processing circuit — and interpret what those regimes mean operationally.</p>
+      <div class="honors-hero__tags">
+        <span>Industrial Time-Series</span>
+        <span>PCA</span>
+        <span>DBSCAN</span>
+        <span>Operational Analytics</span>
       </div>
     </div>
-
-    <div class="case3-facts">
-      <div class="case3-fact"><span>Program</span><strong>BYU Honors</strong></div>
-      <div class="case3-fact"><span>Study</span><strong>Line 1 · Miski Mayo Concentrator</strong></div>
-      <div class="case3-fact"><span>Data</span><strong>Minute-level process history + daily KPI context</strong></div>
-      <div class="case3-fact"><span>Methods</span><strong>PCA · DBSCAN · KPI profiling</strong></div>
-      <div class="case3-fact"><span>Goal</span><strong>Interpretable operating regimes</strong></div>
+    <div class="honors-hero__visual">
+      <img src="/assets/images/generated/byu-operating-regimes.png" alt="Three recurrent operating regimes identified in PCA space">
     </div>
   </header>
 
-  <section class="case3-section">
-    <div class="case3-section__head">
-      <p class="case3-label">Research Question</p>
-      <h2>Does the plant operate as one state — or as several recurring modes?</h2>
-      <p>The thesis tests whether process history can reveal distinct operating regimes and whether those regimes differ meaningfully in recovery, production, variability, and process behavior.</p>
-    </div>
+  <main class="honors-body">
 
-    <div class="case3-problem">
-      <div class="case3-copybox">
-        <p><strong>Core question:</strong> can unsupervised learning reorganize high-dimensional process data into recurring states that engineers can recognize and discuss?</p>
+    <section class="honors-context">
+      <div class="honors-section-head">
+        <span>01</span>
+        <div><p>RESEARCH CONTEXT</p><h2>Operational-mode discovery from real plant history.</h2></div>
       </div>
-      <div class="case3-insight" style="border-color:#bfdbfe;">
-        <strong>Why the distinction matters</strong>
-        <p>Recovery and production were used to interpret the clusters after discovery — not to define them.</p>
+      <div class="honors-context__grid">
+        <div>
+          <h3>Operational Mode Discovery Using Unsupervised Learning</h3>
+          <p>The thesis investigates whether a mineral-processing circuit behaves as one broad operating state or as several recurring regimes that can be discovered from minute-level process variables and then interpreted using metallurgical and production KPIs.</p>
+        </div>
+        <dl class="honors-facts">
+          <div><dt>Program</dt><dd>BYU Honors · Computer Science</dd></div>
+          <div><dt>Honors Advisor</dt><dd>David Grimsman</dd></div>
+          <div><dt>Analytical scope</dt><dd>Concentrator Line 1</dd></div>
+          <div><dt>Data</dt><dd>Minute-level process history + daily KPI context</dd></div>
+          <div><dt>Methods</dt><dd>StandardScaler · PCA · DBSCAN · KPI profiling</dd></div>
+        </dl>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="case3-section">
-    <div class="case3-section__head">
-      <p class="case3-label">Method</p>
-      <h2>Discover structure first. Interpret performance second.</h2>
-    </div>
-
-    <figure class="case3-photo" style="background:#f8fafc;">
-      <img src="/assets/images/diagrams/honors-method.svg" alt="Honors thesis workflow from process data through preprocessing PCA DBSCAN and KPI interpretation" style="object-fit:contain;padding:1.6rem;min-height:285px;">
-      <figcaption>Process data → preprocessing and scaling → PCA → DBSCAN → retained regimes → KPI and process-signature interpretation.</figcaption>
-    </figure>
-
-    <div class="case3-process" style="margin-top:1rem;">
-      <div class="case3-step"><strong>01 · Prepare</strong><span>Clean, align, and scale multivariate process data.</span></div>
-      <div class="case3-step"><strong>02 · Reduce</strong><span>Use PCA to retain components explaining 95% of variance.</span></div>
-      <div class="case3-step"><strong>03 · Discover</strong><span>Apply DBSCAN using a k-distance-supported ε = 2.5.</span></div>
-      <div class="case3-step"><strong>04 · Interpret</strong><span>Compare regimes against KPIs and underlying process signatures.</span></div>
-    </div>
-  </section>
-
-  <section class="case3-section">
-    <div class="case3-section__head">
-      <p class="case3-label">Results</p>
-      <h2>Three recurrent regimes emerged.</h2>
-    </div>
-
-    <div class="case3-honors-summary">
-      <div class="case3-honors-summary__main">
-        <strong>Stable became the strongest reference state.</strong>
-        <p>It combined the highest average recovery, the lowest recovery variability, and the strongest average production among the retained regimes.</p>
+    <section class="honors-question">
+      <div class="honors-section-head">
+        <span>02</span>
+        <div><p>RESEARCH QUESTION</p><h2>Does the plant operate as one state — or as several recurring operating modes?</h2></div>
       </div>
-      <div class="case3-honors-summary__metric">
+      <div class="honors-question__grid">
+        <p>The process variables define the analytical structure. Recovery, production, and metallurgical KPIs are attached afterward to interpret the regimes — not to generate them.</p>
+        <div class="honors-question__rule"><strong>Core analytical rule</strong><span>Discover structure first → interpret performance second.</span></div>
+      </div>
+    </section>
+
+    <section class="honors-process-context">
+      <div class="honors-section-head">
+        <span>03</span>
+        <div><p>PROCESS CONTEXT</p><h2>The model reflects the active Line 1 configuration studied in the thesis.</h2></div>
+      </div>
+      <figure class="honors-wide-figure">
+        <img src="/assets/images/generated/byu-active-process-context.png" alt="Concentrator Line 1 active process context with feeding, washing and classification, desliming, cyclone classification, and final dewatering">
+        <figcaption>Active analytical pathway: feed loading → coarse screening and washing → intermediate classification and desliming → cyclone-based fine classification → final dewatering. Bypassed nominal equipment is excluded from the analytical model.</figcaption>
+      </figure>
+    </section>
+
+    <section class="honors-methodology">
+      <div class="honors-section-head">
+        <span>04</span>
+        <div><p>METHODOLOGY</p><h2>From process history to interpretable operating regimes.</h2></div>
+      </div>
+      <figure class="honors-wide-figure honors-wide-figure--method">
+        <img src="/assets/images/generated/byu-analytical-workflow.png" alt="Analytical workflow from process and KPI data through integration, imputation, scaling, PCA, epsilon selection, DBSCAN, intervention, export, and interpretation">
+        <figcaption>The workflow preserves a separation between structure discovery in process-variable space and later KPI-based operational interpretation.</figcaption>
+      </figure>
+    </section>
+
+    <section class="honors-results">
+      <div class="honors-section-head">
+        <span>05</span>
+        <div><p>RESULTS</p><h2>Three recurrent operating regimes emerged.</h2></div>
+      </div>
+
+      <div class="honors-metrics">
         <div><strong>3</strong><span>retained operating regimes</span></div>
-        <div><strong>44%</strong><span>time in the stable regime</span></div>
-        <div><strong>86.86%</strong><span>stable average recovery</span></div>
-        <div><strong>1.85%</strong><span>stable recovery standard deviation</span></div>
+        <div><strong>44%</strong><span>time in Drum Bypass</span></div>
+        <div><strong>44%</strong><span>time in Stable</span></div>
+        <div><strong>86.86%</strong><span>Stable average recovery</span></div>
+        <div><strong>1.85%</strong><span>Stable recovery standard deviation</span></div>
       </div>
-    </div>
 
-    <figure class="case3-photo" style="margin-top:1rem;background:#f8fafc;">
-      <img src="/assets/images/diagrams/honors-regimes.svg" alt="Three retained operating regimes from the BYU Honors thesis" style="object-fit:contain;padding:1.25rem;min-height:320px;">
-      <figcaption>Three retained operating regimes in PCA space — technical evidence remains visible inside the case study while the opening image now shows the research mentorship context.</figcaption>
-    </figure>
+      <figure class="honors-wide-figure honors-wide-figure--result">
+        <img src="/assets/images/generated/byu-operating-regimes.png" alt="Portfolio reconstruction of the three recurrent operating regimes identified in the thesis">
+        <figcaption>Portfolio reconstruction of the thesis result. Percentages and KPI values are thesis results; point positions reproduce the published PCA geometry for presentation, not the original raw coordinates.</figcaption>
+      </figure>
+    </section>
 
-    <div class="case3-results" style="margin-top:1rem;">
-      <article class="case3-result"><strong>12% · Unstable</strong><p>Diffuse behavior, lowest average recovery, and highest recovery variability.</p></article>
-      <article class="case3-result"><strong>44% · Drum Bypass</strong><p>A coherent recurrent condition with drum-speed values near zero.</p></article>
-      <article class="case3-result"><strong>44% · Stable</strong><p>Highest average recovery and production with the lowest recovery variability.</p></article>
-      <article class="case3-result"><strong>Operational meaning</strong><p>Labels were assigned only after geometry, KPIs, and process signatures agreed.</p></article>
-    </div>
-  </section>
+    <section class="honors-kpis">
+      <div class="honors-section-head">
+        <span>06</span>
+        <div><p>KPI EVIDENCE</p><h2>The regimes differed in both performance and variability.</h2></div>
+      </div>
+      <div class="honors-kpi-grid">
+        <figure>
+          <img src="/assets/images/generated/byu-recovery-by-regime.png" alt="Average recovery and recovery standard deviation by operating regime">
+          <figcaption>Recovery averages and standard deviations from thesis Table 5.1.</figcaption>
+        </figure>
+        <figure>
+          <img src="/assets/images/generated/byu-production-by-regime.png" alt="Average production and production standard deviation by operating regime">
+          <figcaption>Production averages and standard deviations from thesis Table 5.1.</figcaption>
+        </figure>
+      </div>
+    </section>
 
-  <section class="case3-section">
-    <div class="case3-section__head">
-      <p class="case3-label">Operating-Regime Comparison</p>
-      <h2>The clusters were different in both process signature and performance.</h2>
-    </div>
+    <section class="honors-interpretation">
+      <div class="honors-section-head">
+        <span>07</span>
+        <div><p>OPERATIONAL INTERPRETATION</p><h2>A cluster only becomes useful when it has physical and operational meaning.</h2></div>
+      </div>
+      <div class="honors-regimes">
+        <article class="honors-regime honors-regime--red">
+          <div class="honors-regime__top"><span></span><h3>Unstable</h3><b>12%</b></div>
+          <p>Diffuse operating behavior with the lowest average recovery and the highest recovery variability.</p>
+          <dl><div><dt>Recovery</dt><dd>84.89% ± 5.14%</dd></div><div><dt>Production</dt><dd>599.0 ± 44.44 tph</dd></div></dl>
+        </article>
+        <article class="honors-regime honors-regime--blue">
+          <div class="honors-regime__top"><span></span><h3>Drum Bypass</h3><b>44%</b></div>
+          <p>A coherent recurrent state associated with a distinct process signature, including drum-speed behavior near zero.</p>
+          <dl><div><dt>Recovery</dt><dd>85.96% ± 1.99%</dd></div><div><dt>Production</dt><dd>604.0 ± 50.22 tph</dd></div></dl>
+        </article>
+        <article class="honors-regime honors-regime--green">
+          <div class="honors-regime__top"><span></span><h3>Stable</h3><b>44%</b></div>
+          <p>The strongest reference condition: highest average recovery, highest average production, and lowest recovery variability.</p>
+          <dl><div><dt>Recovery</dt><dd>86.86% ± 1.85%</dd></div><div><dt>Production</dt><dd>606.8 ± 31.13 tph</dd></div></dl>
+        </article>
+      </div>
+    </section>
 
-    <table class="case3-regime-table">
-      <thead>
-        <tr>
-          <th>Regime</th>
-          <th>Share of Time</th>
-          <th>Recovery (avg)</th>
-          <th>Process Interpretation</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong style="color:#ef4444;"><span class="case3-regime-dot"></span>Unstable</strong></td>
-          <td>12%</td>
-          <td>84.89%</td>
-          <td>Diffuse, variable operating behavior.</td>
-        </tr>
-        <tr>
-          <td><strong style="color:#2563eb;"><span class="case3-regime-dot"></span>Drum Bypass</strong></td>
-          <td>44%</td>
-          <td>85.96%</td>
-          <td>Distinct condition associated with drum speed near zero.</td>
-        </tr>
-        <tr>
-          <td><strong style="color:#10b981;"><span class="case3-regime-dot"></span>Stable</strong></td>
-          <td>44%</td>
-          <td>86.86%</td>
-          <td>Highest recovery, lowest variability, and strongest production.</td>
-        </tr>
-      </tbody>
-    </table>
+    <section class="honors-mentorship">
+      <div class="honors-mentorship__photo"><img src="/assets/images/real/honors-advisor-v2.webp" alt="Gonzalo Loayza during an industrial research discussion"></div>
+      <div class="honors-mentorship__copy">
+        <p class="honors-mini-label">RESEARCH MENTORSHIP &amp; INDUSTRIAL CONTEXT</p>
+        <h2>Academic rigor connected to real operating questions.</h2>
+        <p>The thesis was completed under BYU Honors supervision, while industrial guidance helped frame the concentrator context, the use of real-world process data, and the operational meaning of the analysis.</p>
+        <div class="honors-mentorship__notes">
+          <div><strong>Honors Advisor</strong><span>David Grimsman</span></div>
+          <div><strong>Industrial guidance</strong><span>Plant-performance perspective and applied research context</span></div>
+        </div>
+      </div>
+    </section>
 
-    <div class="case3-callout" style="background:#eff6ff;border-color:#bfdbfe;color:#1e40af;">The KPI comparison comes after clustering. The regimes were discovered from process behavior, then interpreted using recovery, production, variability, and equipment signatures.</div>
-  </section>
+    <section class="honors-close">
+      <div>
+        <p class="honors-mini-label">WHAT I LEARNED</p>
+        <h2>A cluster is not an insight until it has operational meaning.</h2>
+        <p>Unsupervised learning can reveal structure in complex process data, but the real value comes from connecting those patterns back to process behavior, KPIs, physical equipment, and operational decisions.</p>
+      </div>
+      <div>
+        <p class="honors-mini-label">TECHNOLOGIES &amp; METHODS</p>
+        <div class="honors-tech">
+          <span>Python</span><span>Pandas</span><span>StandardScaler</span><span>PCA</span><span>DBSCAN</span><span>KPI Profiling</span><span>Data Visualization</span>
+        </div>
+      </div>
+    </section>
 
-  <section class="case3-section">
-    <div class="case3-section__head">
-      <p class="case3-label">Why It Matters</p>
-      <h2>Historian data becomes more useful when operating states are explicit.</h2>
-    </div>
+  </main>
 
-    <div class="case3-results">
-      <article class="case3-result"><strong>Reproducible</strong><p>PCA outputs, cluster labels, summaries, and KPI comparisons can be regenerated and audited.</p></article>
-      <article class="case3-result"><strong>Interpretable</strong><p>Regimes are tied back to physical process signatures rather than arbitrary cluster names.</p></article>
-      <article class="case3-result"><strong>Comparable</strong><p>Recovery, variability, and production can be evaluated by operating state instead of only by global averages.</p></article>
-      <article class="case3-result"><strong>Actionable later</strong><p>The framework can support future regime-aware monitoring and process-improvement analysis.</p></article>
-    </div>
-  </section>
-
-  <section class="case3-section">
-    <div class="case3-section__head">
-      <p class="case3-label">Technologies &amp; Methods</p>
-      <h2>Methods served interpretation, not the other way around.</h2>
-    </div>
-
-    <div class="case3-tech">
-      <div class="case3-tech__item"><strong>Python</strong><span>Reproducible analytical workflow</span></div>
-      <div class="case3-tech__item"><strong>StandardScaler</strong><span>Comparable multivariate feature space</span></div>
-      <div class="case3-tech__item"><strong>PCA</strong><span>95% variance target</span></div>
-      <div class="case3-tech__item"><strong>DBSCAN</strong><span>Density-based regime discovery</span></div>
-      <div class="case3-tech__item"><strong>KPI Profiling</strong><span>Recovery, production, and variability</span></div>
-    </div>
-  </section>
-
-  <section class="case3-learn" style="background:linear-gradient(135deg,#082f49,#0c4a6e);">
-    <p class="case3-label" style="color:#93c5fd!important;">What I Learned</p>
-    <h2>A cluster is not an insight until it has operational meaning.</h2>
-    <p>The value came from connecting mathematical structure back to the process: recurring states had to make sense in the underlying variables and show meaningful differences in metallurgical and production performance.</p>
-  </section>
-
-  <nav class="case3-next">
-    <span>Next Case Study</span>
-    <a href="/projects/trainops/">Hatch Urban Solutions · Simulation Data → Operational Insights →</a>
+  <nav class="honors-nav">
+    <a href="/projects/predictive-maintenance/"><small>Previous Project</small><strong>← Buenaventura San Gabriel</strong><span>Sensor Data → Reliability</span></a>
+    <a href="/projects/trainops/"><small>Next Project</small><strong>Hatch Urban Solutions →</strong><span>Simulation Data → Operational Insights</span></a>
   </nav>
+
 </article>
