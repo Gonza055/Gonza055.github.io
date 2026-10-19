@@ -26,7 +26,7 @@ description: "BYU Honors thesis case study applying preprocessing, PCA, DBSCAN, 
       </div>
     </div>
     <div class="honors-hero__visual">
-      <img src="https://proactivo.com.pe/wp-content/uploads/2019/06/miski-mayo-bayovar-800x446.jpg" alt="Industrial phosphate concentrator site view">
+      <img src="https://portal.minder.pe/wp-content/uploads/2024/09/maxresdefault-16.jpg" alt="Industrial phosphate concentrator site view">
     </div>
   </header>
 
