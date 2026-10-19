@@ -86,3 +86,133 @@
   .honors-hero__visual{padding:0!important;min-height:260px}
   .honors-hero__visual img{min-height:260px}
 }
+
+
+/* BYU-branded mentorship redesign */
+.honors-mentorship{
+  position:relative;
+  display:grid!important;
+  grid-template-columns:1.16fr .84fr!important;
+  gap:0!important;
+  align-items:stretch!important;
+  padding:0!important;
+  overflow:hidden;
+  background:var(--byu-navy)!important;
+  border-top:6px solid var(--byu-blue)!important;
+  border-bottom:0!important;
+}
+.honors-mentorship:after{
+  content:"";
+  position:absolute;
+  right:-90px;
+  bottom:-120px;
+  width:340px;
+  height:340px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(0,98,184,.26),rgba(0,98,184,0) 68%);
+  pointer-events:none;
+}
+.honors-mentorship__photo{
+  position:relative;
+  z-index:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:28px 0 28px 28px;
+  background:#001F3D;
+}
+.honors-mentorship__photo img{
+  display:block;
+  width:100%!important;
+  height:auto!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  border:1px solid rgba(255,255,255,.36)!important;
+  border-radius:8px!important;
+  background:#fff!important;
+  box-shadow:0 18px 36px rgba(0,0,0,.24);
+}
+.honors-mentorship__caption{
+  display:block;
+  margin-top:8px;
+  color:#A7C6ED;
+  font-size:.55rem;
+  letter-spacing:.04em;
+}
+.honors-mentorship__copy{
+  position:relative;
+  z-index:2;
+  padding:38px 34px 34px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.honors-mentorship .honors-mini-label{
+  color:#7FB9EE!important;
+  letter-spacing:.12em!important;
+}
+.honors-mentorship h2{
+  margin-top:7px!important;
+  color:#FFFFFF!important;
+  font-size:1.48rem!important;
+  line-height:1.12!important;
+  max-width:500px;
+}
+.honors-mentorship__copy>p:not(.honors-mini-label){
+  margin-top:16px!important;
+  color:#DCEAF6!important;
+  font-size:.72rem!important;
+  line-height:1.55!important;
+  max-width:510px;
+}
+.honors-mentorship__notes{
+  display:grid!important;
+  grid-template-columns:1fr!important;
+  gap:9px!important;
+  margin-top:20px!important;
+}
+.honors-mentorship__notes div{
+  padding:11px 13px!important;
+  border:1px solid rgba(167,198,237,.45)!important;
+  border-left:4px solid var(--byu-blue)!important;
+  border-radius:6px!important;
+  background:#FFFFFF!important;
+}
+.honors-mentorship__notes strong{
+  display:block;
+  color:var(--byu-blue)!important;
+  font-size:.53rem!important;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+.honors-mentorship__notes span{
+  display:block;
+  margin-top:4px!important;
+  color:var(--byu-navy)!important;
+  font-size:.59rem!important;
+  line-height:1.35;
+}
+.honors-section-head>span{
+  border-color:var(--byu-blue)!important;
+  color:var(--byu-blue)!important;
+  background:#FFFFFF;
+}
+.honors-wide-figure,
+.honors-kpi-grid figure{
+  box-shadow:0 8px 22px rgba(0,46,93,.045);
+}
+.honors-nav{
+  background:linear-gradient(135deg,#001F3D,var(--byu-navy))!important;
+  border-top:4px solid var(--byu-blue);
+}
+@media(max-width:1000px){
+  .honors-mentorship{grid-template-columns:1fr!important}
+  .honors-mentorship__photo{padding:24px 24px 0!important;background:var(--byu-navy)!important}
+  .honors-mentorship__copy{padding:28px 24px 30px!important}
+}
+@media(max-width:760px){
+  .honors-mentorship__photo{padding:18px 14px 0!important}
+  .honors-mentorship__copy{padding:24px 16px 26px!important}
+  .honors-mentorship h2{font-size:1.28rem!important}
+}
