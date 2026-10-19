@@ -9,7 +9,7 @@ description: "BYU Honors thesis case study applying preprocessing, PCA, DBSCAN, 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/honors-research-approved.css' | relative_url }}?v=20261018-honors1">
+<link rel="stylesheet" href="{{ '/assets/css/honors-research-approved.css' | relative_url }}?v=20261018-honors2">
 
 <article class="honors-case">
 
@@ -26,7 +26,7 @@ description: "BYU Honors thesis case study applying preprocessing, PCA, DBSCAN, 
       </div>
     </div>
     <div class="honors-hero__visual">
-      <img src="/assets/images/generated/byu-operating-regimes.png" alt="Three recurrent operating regimes identified in PCA space">
+      <img src="https://proactivo.com.pe/wp-content/uploads/2019/06/miski-mayo-bayovar-800x446.jpg" alt="Industrial phosphate concentrator site view">
     </div>
   </header>
 
@@ -147,7 +147,7 @@ description: "BYU Honors thesis case study applying preprocessing, PCA, DBSCAN, 
     </section>
 
     <section class="honors-mentorship">
-      <div class="honors-mentorship__photo"><img src="/assets/images/real/honors-advisor-v2.webp" alt="Gonzalo Loayza during an industrial research discussion"></div>
+      <div class="honors-mentorship__photo"><img src="/assets/images/real/honors-yale-original.webp" alt="Gonzalo Loayza with Dr. Yale Zhang during an industrial research discussion in Lima"></div>
       <div class="honors-mentorship__copy">
         <p class="honors-mini-label">RESEARCH MENTORSHIP &amp; INDUSTRIAL CONTEXT</p>
         <h2>Academic rigor connected to real operating questions.</h2>

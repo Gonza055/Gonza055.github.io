@@ -37,3 +37,52 @@
 .honors-nav{display:grid;grid-template-columns:1fr 1fr;background:var(--byu-navy)}.honors-nav a{display:flex;flex-direction:column;gap:3px;padding:18px 24px;color:#fff!important;text-decoration:none!important}.honors-nav a+a{border-left:1px solid rgba(255,255,255,.28);text-align:right;align-items:flex-end}.honors-nav small{color:#A9C9E3;font-size:.52rem}.honors-nav strong{font-size:.75rem}.honors-nav span{color:#DCEAF4;font-size:.56rem}
 @media(max-width:1000px){.honors-hero{grid-template-columns:1fr;min-height:0}.honors-hero__visual{padding:0 30px 30px}.honors-hero__copy{padding:42px 34px 30px}.honors-context__grid,.honors-mentorship,.honors-close{grid-template-columns:1fr}.honors-facts{grid-template-columns:repeat(3,1fr)}.honors-regimes{grid-template-columns:1fr}.honors-mentorship__photo img{height:auto;max-height:480px;object-fit:contain;background:#fff}}
 @media(max-width:760px){.honors-case{padding:0 7px 18px}.honors-hero__copy{padding:34px 24px 26px}.honors-hero h1{font-size:3.05rem}.honors-hero__visual{padding:0 16px 20px}.honors-body>section{padding:22px 12px}.honors-section-head{grid-template-columns:36px 1fr}.honors-section-head>span{width:30px;height:30px}.honors-question__grid,.honors-kpi-grid{grid-template-columns:1fr}.honors-facts{grid-template-columns:repeat(2,1fr)}.honors-metrics{grid-template-columns:repeat(2,1fr)}.honors-metrics div:last-child{grid-column:1/-1}.honors-mentorship__notes{grid-template-columns:1fr}.honors-nav{grid-template-columns:1fr}.honors-nav a+a{border-left:0;border-top:1px solid rgba(255,255,255,.28);text-align:left;align-items:flex-start}}
+
+/* Hero site photo + original Yale photograph */
+.honors-hero__visual{
+  position:relative;
+  padding:0!important;
+  background:#0A243C!important;
+  overflow:hidden;
+}
+.honors-hero__visual:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:linear-gradient(90deg,rgba(0,46,93,.22),rgba(0,46,93,0) 42%);
+}
+.honors-hero__visual img{
+  width:100%!important;
+  height:100%!important;
+  max-height:none!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+.honors-mentorship{
+  grid-template-columns:1.08fr .92fr!important;
+}
+.honors-mentorship__photo img{
+  display:block;
+  width:100%!important;
+  height:auto!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  border-radius:8px;
+  border:1px solid #CAD9E6;
+  background:#fff;
+}
+@media(max-width:1000px){
+  .honors-hero__visual{padding:0!important;min-height:330px}
+  .honors-hero__visual img{min-height:330px;object-fit:cover!important}
+  .honors-mentorship{grid-template-columns:1fr!important}
+  .honors-mentorship__photo img{max-height:none!important}
+}
+@media(max-width:760px){
+  .honors-hero__visual{padding:0!important;min-height:260px}
+  .honors-hero__visual img{min-height:260px}
+}
