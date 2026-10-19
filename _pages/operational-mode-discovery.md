@@ -9,7 +9,7 @@ description: "BYU Honors thesis case study applying preprocessing, PCA, DBSCAN, 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/honors-research-approved.css' | relative_url }}?v=20261018-honors2">
+<link rel="stylesheet" href="{{ '/assets/css/honors-research-approved.css' | relative_url }}?v=20261018-honors-byu3">
 
 <article class="honors-case">
 
@@ -147,14 +147,17 @@ description: "BYU Honors thesis case study applying preprocessing, PCA, DBSCAN, 
     </section>
 
     <section class="honors-mentorship">
-      <div class="honors-mentorship__photo"><img src="/assets/images/real/honors-yale-original.webp" alt="Gonzalo Loayza with Dr. Yale Zhang during an industrial research discussion in Lima"></div>
+      <div class="honors-mentorship__photo">
+        <img src="/assets/images/real/honors-yale-original.webp" alt="Gonzalo Loayza with Dr. Yale Zhang during an industrial research discussion in Lima">
+        <span class="honors-mentorship__caption">Industrial research discussion · Lima, Peru</span>
+      </div>
       <div class="honors-mentorship__copy">
         <p class="honors-mini-label">RESEARCH MENTORSHIP &amp; INDUSTRIAL CONTEXT</p>
         <h2>Academic rigor connected to real operating questions.</h2>
-        <p>The thesis was completed under BYU Honors supervision, while industrial guidance helped frame the concentrator context, the use of real-world process data, and the operational meaning of the analysis.</p>
+        <p>The thesis was completed under BYU Honors supervision, while industrial guidance helped connect the research to real concentrator behavior, operational data, and the practical interpretation of recurring process regimes.</p>
         <div class="honors-mentorship__notes">
-          <div><strong>Honors Advisor</strong><span>David Grimsman</span></div>
-          <div><strong>Industrial guidance</strong><span>Plant-performance perspective and applied research context</span></div>
+          <div><strong>Honors Advisor</strong><span>David Grimsman · Brigham Young University</span></div>
+          <div><strong>Industrial Research Guidance</strong><span>Dr. Yale Zhang · applied process and plant-performance context</span></div>
         </div>
       </div>
     </section>
