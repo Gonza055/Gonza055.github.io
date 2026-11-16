@@ -1,0 +1,271 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Code - Gonzalo Loayza</title>
+<meta name="description" content="A guided tour of Gonzalo Loayza’s public ML and software repositories, with implementation scope and limitations.">
+
+
+  <meta name="author" content="Gonzalo Loayza">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Gonzalo Loayza">
+<meta property="og:title" content="Code">
+<meta property="og:url" content="https://gonza055.github.io/code/">
+
+
+  <meta property="og:description" content="A guided tour of Gonzalo Loayza’s public ML and software repositories, with implementation scope and limitations.">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://gonza055.github.io/code/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://gonza055.github.io/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Gonzalo Loayza Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    
+<link rel="stylesheet" href="/assets/css/portfolio-layout-fix.css">
+<link rel="stylesheet" href="/assets/css/project-logic.css">
+
+
+
+
+<meta property="og:image" content="https://gonza055.github.io/assets/images/social/portfolio-social.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://gonza055.github.io/assets/images/social/portfolio-social.jpg">
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Gonzalo Loayza
+          <span class="site-subtitle">Machine Learning, Data Engineering & Industrial Analytics</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/">Work</a>
+            </li><li class="masthead__menu-item">
+              <a href="/resume/">Resume</a>
+            </li><li class="masthead__menu-item">
+              <a href="/code/">Code</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Code">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Code
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h1 id="explore-the-implementation">Explore the implementation</h1>
+
+<p>My industrial case studies explain the problem, contribution and outcome. These public repositories offer a separate view of software implementation and learning projects. They are not copies of employer code or operational datasets.</p>
+
+<h2 id="java-systems-multiplayer-chess">Java systems: multiplayer chess</h2>
+
+<p><a href="https://github.com/Gonza055/chess">Repository</a> · Java 21, HTTP, WebSocket, MySQL</p>
+
+<p>Start with the shared chess rules, then follow the HTTP server into services and data-access implementations. The terminal client and real-time messages show how the parts fit together. BYU CS 240 coursework includes supplied starter code and passoff tests; the README identifies this context and local-only deployment limitations.</p>
+
+<h2 id="machine-learning-nlp-experiments">Machine learning: NLP experiments</h2>
+
+<p><a href="https://github.com/Gonza055/LSTM-Based-Text-Generator-with-Bidirectional-Layers">Repository</a> · Python, TensorFlow/Keras</p>
+
+<p>Inspect <code class="language-plaintext highlighter-rouge">create_poetry.py</code> for n-gram preparation and bidirectional LSTM text generation, and <code class="language-plaintext highlighter-rouge">sentiment_analysis.py</code> for the headline-sarcasm classification exercises. These are learning experiments. Training accuracy and reused validation data are not presented as independent generalization results.</p>
+
+<h2 id="python-web-integration-find-it-quickly">Python web integration: Find It Quickly</h2>
+
+<p><a href="https://github.com/Gonza055/CS50-Find-It-Quickly">Repository</a> · Flask, JavaScript, geolocation</p>
+
+<p>A category-based nearby-place search project. Follow the Flask routes and data-driven templates into the Maps client. Local setup and route tests are documented; live map requests require the visitor’s permission and a configured provider key.</p>
+
+<h2 id="react-state-employee-team-manager">React state: employee team manager</h2>
+
+<p><a href="https://github.com/Gonza055/Employee-Management-System">Repository</a> · React, routing, local storage</p>
+
+<p>A browser-only sample roster demonstrating shared state, immutable member reassignment, grouped views and persistence. It is an educational application rather than an HR backend.</p>
+
+<h2 id="earlier-prototype-studybuddy">Earlier prototype: StudyBuddy</h2>
+
+<p><a href="https://github.com/Gonza055/CS260-StudyBuddy">Repository</a> · Express, WebSocket, HTML/CSS</p>
+
+<p>An early study-collaboration demo with simulated users. The README distinguishes working interface/server behavior from planned authentication, matching and scheduling features.</p>
+
+<p><a href="/projects/">Read the applied experience case studies</a> · <a href="/resume/">Resume</a> · <a href="https://github.com/Gonza055">GitHub profile</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 Gonzalo Loayza. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

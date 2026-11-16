@@ -92,14 +92,14 @@ story.append(job('Data Analytics Intern', 'Hatch Digital, Peru', 'June 2026 - Au
     'Presented the internship work and lessons learned to the Hatch Young Professionals community through a technical retrospective focused on measurement, data reliability, and operational decision support.',
 ]))
 story.append(job('Maintenance Data Analyst Intern', 'Compañía de Minas Buenaventura, San Gabriel Unit, Peru', 'Jun 2025 - Aug 2025', [
-    'Identified reliability and maintenance-analysis gaps in crushing and grinding equipment data, then processed and cleaned 50k+ noisy sensor time-series to support predictive-maintenance exploration.',
-    'Analyzed operating signals linked to equipment wear, ore variability, and process behavior to support condition-monitoring and reliability-focused decision-making.',
-    'Engineered 15+ features, including temperature deltas, load ratios, and transient-spike indicators, to improve the analytical basis for equipment monitoring workflows.',
-    'Structured 100+ assets under ISO 14224/17359 standards, improving maintenance-data traceability, consistency, and analytical usability.',
+    'Analyzed four HPGR roller-wear campaigns alongside approximately 163,000 sensor records across 16 data columns to investigate wear and operating behavior.',
+    'Aligned wear, tonnage, material, and sensor information; documented missing records, impossible readings, and limits to campaign comparability.',
+    'Used exploratory analysis, correlations, and linear regression to identify relationships requiring further engineering validation.',
+    'Documented reliability-data and condition-monitoring foundations; scoped future predictive work without claiming a deployed failure-prediction model.',
 ]))
 story.append(job('Data Analytics Intern', 'Hatch Ltd, Urban Solutions Sector, Vermont, USA', 'May 2024 - Aug 2024', [
     'Evaluated operational delay and network-performance challenges across simulation scenarios, then analyzed 200k+ records to identify bottlenecks and support planning decisions.',
-    'Built Python and C++ automation workflows that reduced processing time by about 70%, improving analysis speed, repeatability, and scenario-evaluation capacity.',
+    'Built Python and C++ automation workflows that reduced simulation-output processing time by about 70%, improving analysis speed, repeatability, and scenario-evaluation capacity.',
     'Integrated rider-survey information with onboard sensor data to strengthen scenario interpretation and validate service-level assumptions.',
     'Supported planning teams through statistical and optimization-based analysis, translating simulation outputs into practical insights for operational decision-making.',
 ]))
