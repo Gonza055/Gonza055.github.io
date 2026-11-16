@@ -25,6 +25,7 @@ permalink: /
       <div class="home3-actions">
         <a class="home3-btn home3-btn--primary" href="/projects/">Explore Selected Work →</a>
         <a class="home3-btn" href="/resume/">View Resume</a>
+        <a class="home3-btn" href="/code/">Explore Public Code</a>
       </div>
     </div>
 
@@ -36,9 +37,9 @@ permalink: /
   </section>
 
   <section class="home3-proof" aria-label="Selected evidence">
-    <div class="home3-proof__item"><strong>50k+</strong><span>industrial sensor time-series processed</span></div>
+    <div class="home3-proof__item"><strong>~163k</strong><span>HPGR sensor records reviewed</span></div>
     <div class="home3-proof__item"><strong>200k+</strong><span>simulation records analyzed and automated</span></div>
-    <div class="home3-proof__item"><strong>100+</strong><span>industrial assets structured for reliability analysis</span></div>
+    <div class="home3-proof__item"><strong>4</strong><span>HPGR roller-wear campaigns analyzed</span></div>
     <div class="home3-proof__item"><strong>~70%</strong><span>reduction in simulation-output processing time</span></div>
   </section>
 
@@ -68,9 +69,9 @@ permalink: /
         <div class="home3-card__body">
           <p class="home3-card__meta">Buenaventura San Gabriel · 2025</p>
           <h3>Sensor Data → Reliability</h3>
-          <p class="home3-card__flow">Predictive maintenance &amp; reliability analytics</p>
-          <p class="home3-card__desc">Processed noisy equipment time-series, engineered reliability features, and structured asset data for condition-monitoring analysis.</p>
-          <div class="home3-card__footer"><span class="home3-pill">50k+ time-series</span><span class="home3-pill">15+ features</span><span class="home3-pill">100+ assets</span></div>
+          <p class="home3-card__flow">HPGR wear &amp; reliability analytics</p>
+          <p class="home3-card__desc">Analyzed four HPGR wear campaigns alongside sensor records, documented data-quality limits, and established foundations for condition monitoring.</p>
+          <div class="home3-card__footer"><span class="home3-pill">~163k records</span><span class="home3-pill">16 data columns</span><span class="home3-pill">4 campaigns</span></div>
         </div>
       </a>
 
@@ -146,7 +147,7 @@ permalink: /
       <aside class="home3-more__about">
         <p class="home3-label">About</p>
         <h3>Software meets physical systems.</h3>
-        <p>I am a BYU Computer Science student graduating in December 2026, interested in applied ML, data engineering, and industrial AI for complex real-world systems.</p>
+        <p>I am a senior BYU Computer Science student with a Machine Learning emphasis and expected graduation in December 2026. My interests span applied ML, data engineering, and software for real-world decisions.</p>
         <a class="home3-link" href="/resume/">Experience &amp; education →</a>
       </aside>
     </div>

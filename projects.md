@@ -38,7 +38,7 @@ description: "Selected work by Gonzalo Loayza across industrial analytics, data 
           <span class="work3-card__tone"></span>
         </div>
         <div class="work3-card__body">
-          <p class="work3-card__meta">Hatch Digital · Digital Student · 2026</p>
+          <p class="work3-card__meta">Hatch Digital · Intern · 2026</p>
           <h3>Mining Data → Decisions</h3>
           <p class="work3-card__flow">Drones / CAEX · HITM · SIC</p>
           <p class="work3-card__desc">Three applied workstreams spanning measurement viability, technical-data preparation and validation, and operational decision support.</p>
@@ -57,10 +57,10 @@ description: "Selected work by Gonzalo Loayza across industrial analytics, data 
         <div class="work3-card__body">
           <p class="work3-card__meta">Buenaventura San Gabriel · 2025</p>
           <h3>Sensor Data → Reliability</h3>
-          <p class="work3-card__flow">Predictive maintenance &amp; reliability analytics</p>
-          <p class="work3-card__desc">Industrial time-series work focused on noisy sensor data, feature engineering, asset structure, and condition-monitoring analysis.</p>
+          <p class="work3-card__flow">HPGR wear &amp; reliability analytics</p>
+          <p class="work3-card__desc">Exploratory analysis of four HPGR wear campaigns, sensor quality, and the evidence needed for responsible condition monitoring.</p>
           <div class="work3-card__proof">
-            <span>50k+ time-series</span><span>15+ features</span><span>100+ assets</span>
+            <span>~163k records</span><span>16 data columns</span><span>4 campaigns</span>
           </div>
           <span class="work3-card__link">Read case study →</span>
         </div>
@@ -92,7 +92,7 @@ description: "Selected work by Gonzalo Loayza across industrial analytics, data 
           <p class="work3-card__flow">Rail simulation &amp; data automation</p>
           <p class="work3-card__desc">Python and C++ workflows for large-scale TrainOps simulation outputs, improving repeatability and reducing manual processing time.</p>
           <div class="work3-card__proof">
-            <span>200k+ records</span><span>Python</span><span>C++</span><span>~70% faster processing</span>
+            <span>200k+ records</span><span>Python</span><span>C++</span><span>~70% less processing time</span>
           </div>
           <span class="work3-card__link">Read case study →</span>
         </div>
@@ -103,6 +103,7 @@ description: "Selected work by Gonzalo Loayza across industrial analytics, data 
   <section class="work3-more">
     <div class="work3-head">
       <h2>Additional technical work.</h2>
+      <p><a href="/code/">Explore public code: Java systems, NLP experiments, Python APIs and React →</a></p>
       <p>Projects outside the four core industrial case studies that show broader ML and software experience.</p>
     </div>
 
