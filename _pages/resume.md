@@ -75,10 +75,10 @@ description: "Resume of Gonzalo Loayza, BYU Computer Science student focused on 
             <span class="resume2026__date">Jun 2025 – Aug 2025</span>
           </div>
           <ul>
-            <li>Identified reliability and maintenance-analysis gaps in crushing and grinding equipment data, then processed and cleaned 50k+ noisy sensor time-series to support predictive-maintenance exploration.</li>
-            <li>Analyzed operating signals linked to equipment wear, ore variability, and process behavior to support condition-monitoring and reliability-focused decision-making.</li>
-            <li>Engineered 15+ features, including temperature deltas, load ratios, and transient-spike indicators, to improve the analytical basis for equipment monitoring workflows.</li>
-            <li>Structured 100+ assets under ISO 14224/17359 standards, improving maintenance-data traceability, consistency, and analytical usability.</li>
+            <li>Analyzed four HPGR roller-wear campaigns alongside approximately 163,000 sensor records across 16 data columns to investigate wear and operating behavior.</li>
+            <li>Aligned wear, tonnage, material, and sensor information; documented missing records, impossible readings, and limits to campaign comparability.</li>
+            <li>Used exploratory analysis, correlations, and linear regression to identify relationships requiring further engineering validation.</li>
+            <li>Documented reliability-data and condition-monitoring foundations; scoped future predictive work without claiming a deployed failure-prediction model.</li>
           </ul>
         </article>
 
@@ -92,7 +92,7 @@ description: "Resume of Gonzalo Loayza, BYU Computer Science student focused on 
           </div>
           <ul>
             <li>Evaluated operational delay and network-performance challenges across simulation scenarios, then analyzed 200k+ records to identify bottlenecks and support planning decisions.</li>
-            <li>Built Python and C++ automation workflows that reduced processing time by about 70%, improving analysis speed, repeatability, and scenario-evaluation capacity.</li>
+            <li>Built Python and C++ automation workflows that reduced simulation-output processing time by about 70%, improving analysis speed, repeatability, and scenario-evaluation capacity.</li>
             <li>Integrated rider-survey information with onboard sensor data to strengthen scenario interpretation and validate service-level assumptions.</li>
             <li>Supported planning teams through statistical and optimization-based analysis, translating simulation outputs into practical insights for operational decision-making.</li>
           </ul>
