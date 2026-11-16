@@ -78,7 +78,7 @@ def hatch():
 
 
 def predictive():
-    img, _ = base_card('BUENAVENTURA · 2025', ['Predictive Maintenance &', 'Reliability Analytics'], ['50k+ industrial time-series · 15+ engineered features', '100+ assets structured for reliability analysis'], REAL / 'buenaventura-site.webp')
+    img, _ = base_card('BUENAVENTURA · 2025', ['HPGR Wear &', 'Reliability Analytics'], ['~163k sensor records · 16 data columns', 'Four roller-wear campaigns · Exploratory analysis'], REAL / 'buenaventura-site.webp')
     save(img, 'predictive-maintenance-social.jpg')
 
 
@@ -102,3 +102,4 @@ def wildfire():
 if __name__ == '__main__':
     portfolio(); hatch(); predictive(); operational(); trainops(); wildfire()
     print(f'Generated social previews in {OUT}')
+
